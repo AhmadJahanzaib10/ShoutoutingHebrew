@@ -1,0 +1,174 @@
+.influence-main{
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.influence-main-head-1{
+    font-weight: 600;
+    font-size: 60px;
+    color: #05AAA5;
+}
+.influence-main-head-2{
+    font-weight: 600;
+    font-size: 60px;
+    color: #F4A426;
+}
+.influence-para{
+    font-size: 20px;
+    color: #475467;
+}
+.influence-main-btn{
+    gap: 15px;
+}
+.influence-main-btn-1,
+.influence-main-btn-2{
+    width: 225px;
+    height: 60px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.influence-main-btn-1{
+    background-color: #15AFAA;
+}
+.influence-main-btn-2{
+    background-color: #F4A426;
+}
+.influence-video-section{
+    width: 100%;
+    background: url('../images/Influence-video-background.png');
+    background-repeat: no-repeat;
+    margin: 30px 0px;
+}
+.influence-video{
+    width: 800px;
+    height: 516px;
+    margin-top: 42px;
+}
+.social-impact-section{
+    margin: 80px 0px;
+}
+.social-impact-section div{
+    width: 496px;
+}
+.social-impact-section h2{
+    margin: 30px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #101828;
+}
+.social-impact-section div p{
+    font-size: 20px;
+    color: #101828;
+}
+.query-section{
+    margin: 120px 0px;
+}
+.query-section h2{
+    margin: 30px 0px;
+    font-weight: 600;
+    font-size: 48px;
+    color: #101828;
+}
+.query-section p{
+    font-size: 20px;
+    color: #101828;
+}
+
+@media screen and (max-width:992px) {
+    .influence-main-head-1,
+    .influence-main-head-2{
+        font-size: 50px;
+    }
+    .social-impact-section div{
+        width: 100%;
+    }
+    .social-impact-section{
+        flex-direction: column;
+        align-items: left;
+    }
+    .query-section{
+        flex-direction: column-reverse;
+        align-items: left;
+    }
+    .influence-video{
+        width: 700px;
+    }
+    .influence-video-section{
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .influence-main-head-1,
+    .influence-main-head-2{
+        font-size: 36px;
+    }
+    .influence-para{
+        font-size: 18px;
+    }
+    .influence-main-btn{
+        flex-direction: column;
+        width: 100%;
+        gap: 7px;
+    }
+    .influence-main-btn-1,
+    .influence-main-btn-2{
+        width: 100%;
+    }
+    .influence-video{
+        width: 100%;
+        height: 400px;
+    }
+    .social-impact-section{
+        margin: 20px 0px;
+    }
+    .social-impact-section div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .social-impact-section div p{
+        font-size: 18px;
+    }
+    .query-section{
+        margin: 0px 0px;
+    }
+    .query-section{
+        display: none;
+    }
+    .query-section h2{
+        display: none;
+    }
+    .query-section p{
+        display: none;
+        font-size: 20px;
+        color: #101828;
+    }
+    .query-btn{
+        display: none;
+    }
+    .query-image{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px){
+    .influence-main{
+        text-align: start;
+    }
+    .influence-main h2{
+        width: 100%;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:500px){
+    .influence-video{
+        height: 300px;
+    }
+}

@@ -1,0 +1,132 @@
+.register-as-advertiser-page{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.register-as-advertiser-page-sub{
+    width: 720px;
+    text-align: center;
+}
+.register-as-advertiser-page form{
+    width: 100%;
+}
+.register-as-advertiser-page-sub h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+    color: #101828;
+}
+.register-as-advertiser-page-sub p{
+    font-size: 16px;
+    color: #475467;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+}
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="password"]{
+    height: 52px;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 14px 10px 14px;
+}
+::placeholder{
+    color: #667085;
+}
+input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    border-color: #D0D5DD;
+    cursor: pointer;
+}
+.iti{
+    width: 100%;
+}
+.agreement p{
+    color: #344054;
+    font-size: 14px;
+    font-weight: 500;
+}
+.agreement a{
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+.availibility p{
+    color: #05AAA5;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.pass p{
+    color: #05AAA5;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: -20px;
+    left: 0px;
+}
+.register-as-advertiser-btn{
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: #05AAA5;
+    border: none;
+}
+.or-line{
+    height: 1px;
+    width: 45%;
+    background-color: #D0D5DD;
+}
+.other-register-as-advertiser-btn button{
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.old-acc p{
+    font-size: 14px;
+    color: #475467;
+}
+.old-acc a{
+    font-size: 14px;
+    color: #05AAA5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    .register-as-advertiser-page-sub{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .register-as-advertiser-page-sub h2{
+        font-size: 24px;
+    }
+    .two-boxes{
+        flex-direction: column;
+        gap: 0 !important;
+    }
+    .half-width{
+        width: 100% !important;
+    }
+    .c-pass{
+        margin-top: 35px !important;
+    }
+    .agreement{
+        align-items: start !important;
+        text-align: left !important;
+    }
+    .agreement input{
+        margin-top: 3px !important;
+    }
+}

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --success-color: #05aaa5;
+  --primary-color: rgba(5, 170, 165, 0.05);
+  --primary-text-color: rgba(5, 170, 165, 1);
+  --white-color: #fff;
+  --border-color: rgba(5, 170, 165, 0.25);
+  --card-text-color: rgba(71, 84, 103, 1);
+  --text-white-color: rgba(255, 255, 255, 1);
+  --card-span-color: rgba(32, 183, 178, 1);
+  --text-color: rgba(71, 84, 103, 1);
+  --text-heading-color: rgba(16, 24, 40, 1);
+  --orange-color: rgba(246, 145, 27, 0.05);
+  --orange-text-color: rgba(246, 145, 27, 1);
+  --ul-color: rgba(102, 112, 133, 1);
+  --radius-md: 8px;
+  --spacing-small: 6px;
+  --font-large: 48px;
+  --font-small: 20px;
+  --font-weight-medium: 600;
+  --font-weight-small: 400;
+}
+a {
+  text-decoration: none !important;
+}
+li {
+  list-style: none;
+}
+/* ----------------------------------------Hero-Section------------------------------------ */
+.hero-wrapper {
+  padding: 96px 0;
+  background-color: var(--primary-color) !important;
+  text-align: center !important;
+}
+.heading h1 {
+  font-size: var(--font-large) !important;
+  font-weight: var(--font-weight-medium) !important;
+  margin-bottom: 45px !important;
+  text-align: center !important;
+  color: var(--text-heading-color);
+}
+.heading-span {
+  color: var(--primary-text-color) !important;
+}
+.para p {
+  max-width: 1216px;
+  margin: 0 auto;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-small) !important;
+  line-height: 30px !important;
+  color: var(--text-color);
+  margin-bottom: 45px !important;
+  text-align: center !important;
+}
+.btn-header {
+  height: 60px;
+  width: 157px;
+  font-size: 16px;
+  background-color: var(--success-color) !important;
+  color: var(--white-color) !important;
+  border-radius: var(--radius-md) !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-header i {
+  color: var(--white-color);
+}
+.btn:hover {
+  color: var(--white-color) !important;
+}
+/* -------------------------------------------------SocialWrapperApp------------------------------------- */
+.social-wrapper {
+  padding: 40px 0;
+}
+.social-wrapper-inner {
+  padding: 50px 50px;
+  background-color: var(--primary-color);
+}
+.wrapper-info-inner-contest {
+  text-align: center;
+  padding: 50px 50px;
+  margin: 50px 0px;
+  background-color: var(--white-color);
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.info-inner .heading h1 {
+  margin-bottom: 15px !important;
+}
+
+.social-media-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 24px 24px;
+  border-radius: 10px;
+  border: none;
+  height: 275px !important;
+  background-color: var(--white-color) !important;
+}
+.social-media-info .heading h1 {
+  font-size: var(--font-small) !important;
+}
+.social-media-inner .para p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: none;
+}
+.social-media-info .heading h1,
+.social-media-inner .para p {
+  margin-bottom: 15px !important;
+  text-align: start !important;
+}
+.icon {
+  height: 116px;
+  width: 116px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  height: 50px;
+  width: 50px;
+}
+.fb {
+  position: absolute;
+  top: 0;
+  right: 45%;
+  /* height: 30px; */
+  width: 30px;
+  width: 30px !important;
+}
+.in {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  /* height: 30px; */
+  width: 30px;
+  width: 30px !important;
+}
+.insta {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  /* height: 30px; */
+  width: 30px;
+  width: 30px !important;
+}
+.twit {
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  /* height: 30px; */
+  width: 30px;
+  width: 30px !important;
+}
+.wrapper-info-inner-contest .social-icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.social-media-inner .para {
+  padding-bottom: 0;
+}
+.social-media-inner span {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-text-color);
+}
+.social-media-info-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.social-media-inner i {
+  font-size: 16px;
+  margin-top: 2px;
+  color: var(--primary-text-color);
+}
+.mass-shoutout-wrapper {
+  padding: 50px 50px;
+  margin: 30px 0;
+  background-color: var(--orange-color);
+}
+.mass-shoutout-wrapper .heading h1 {
+  margin-bottom: 30px !important;
+}
+.mass-shoutout-wrapper .para p {
+  max-width: 965px;
+}
+.mass-nav-items {
+  padding: 6px 0;
+  background-color: var(--white-color);
+}
+.mass-nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 0 30px;
+}
+.mass-nav-items ul li {
+  padding: 10px 10px;
+  background-color: var(--white-color);
+  transition: all 0.5s;
+}
+.mass-nav-items ul li:hover {
+  background-color: var(--orange-color);
+}
+.mass-nav-items ul li a {
+  color: var(--ul-color);
+  transition: 0.5s;
+}
+.mass-nav-items ul li:hover a {
+  color: var(--orange-text-color);
+}
+.mass-shoutout-wrapper .social-media-inner {
+  text-align: center;
+}
+.mass-shoutout-wrapper .social-media-inner .heading h1,
+.mass-shoutout-wrapper .social-media-inner .para p {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+.mass-shoutout-wrapper .social-media-inner .para p {
+  max-width: 390px;
+}
+.mass-shoutout-wrapper .social-media-inner .social-media-info-inner {
+  justify-content: center;
+}
+.active-mass-link{
+  background-color: #F6911B0D !important;
+}
+.active-mass-link a{
+  color: #F6911B !important;
+}
+.mob-select{
+  display: none;
+}
+/* ------------------------------------Responsive------------------------------------ */
+@media screen and (max-width: 1400px) {
+  .fb,
+  .twit {
+    right: 44%;
+  }
+  .insta,
+  .in {
+    left: 44%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .fb,
+  .twit {
+    right: 43%;
+  }
+  .insta,
+  .in {
+    left: 43%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .para p {
+    font-size: 18px !important;
+  }
+  .col-md {
+    margin-bottom: 30px;
+  }
+  .fb,
+  .twit {
+    right: 39%;
+  }
+  .insta,
+  .in {
+    left: 39%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-wrapper,
+  .social-group-wrapper {
+    padding: 70px 0;
+  }
+  .hero-wrapper .heading h1,
+  .hero-wrapper .para p {
+    text-align: start !important;
+  }
+  .social-wrapper-info .heading h1,
+  .social-wrapper-info .para p {
+    text-align: start !important;
+  }
+  .info-inner .heading h1,
+  .info-inner .para p {
+    text-align: center !important;
+  }
+  .heading h1 {
+    margin-bottom: 30px !important;
+  }
+  .hero-wrapper .para p {
+    margin-bottom: 0 !important;
+  }
+  .wrapper-info-inner-contest .social-icons {
+    display: none;
+  }
+  .social-media-inner .para p {
+    max-width: none;
+  }
+  .mass-nav-items ul {
+    display: none;
+  }
+  .para p {
+    font-size: 18px;
+  }
+  .btn-header {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 38px !important;
+  }
+  .col-md {
+    margin-bottom: 30px;
+  }
+  .mob-select{
+    display: block !important;
+  }
+  .mob-hide{
+    display: none !important;
+  }
+  .mob-select select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #F6911B40;
+    border-radius: 8px;
+    color: #F6911B !important;
+  }
+
+  .mass-nav-items{
+    padding: 0px !important;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .hero-wrapper,
+  .social-group-wrapper {
+    padding: 50px 0;
+  }
+  .social-wrapper-inner {
+    padding: 50px 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper-info-inner-contest {
+    padding: 50px 16px;
+  }
+  .mass-shoutout-wrapper {
+    padding: 50px 16px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .heading h1 {
+    font-size: 36px !important;
+  }
+  .wrapper-info-inner-contest {
+    padding: 50px 8px;
+  }
+  .mass-shoutout-wrapper {
+    padding: 50px 8px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .heading h1 {
+    font-size: 35px !important;
+  }
+}
+@media screen and (max-width: 335px) {
+  .heading h1 {
+    font-size: 34px !important;
+  }
+}
+@media screen and (max-width: 330px) {
+    .heading h1 {
+      font-size: 32px !important;
+    }
+  }

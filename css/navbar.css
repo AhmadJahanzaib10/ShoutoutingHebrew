@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar{
+    background: #05AAA505 !important;
+    padding: 15px 30px !important;
+}
+.navbar-brand img{
+    width: 180px;
+}
+.navbar-nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    color: #475467 !important;
+}
+.nav-link i{
+    color: #475467 !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.btn-login{
+    background-color: #F6911B;
+    color: #fff;
+    border-radius: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.btn-signup{
+    background-color: #05AAA5;
+    color: #fff;
+    border-radius: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.btn-login:hover{
+    background-color: #F6911B !important;
+}
+.btn-signup:hover{
+    background-color: #05AAA5 !important;
+}
+.sub-li h5{
+    font-size: 17px;
+    color: #101828 !important;
+}
+.sub-li p{
+    font-size: 15px;
+    color: #475467;
+}
+.dropdown-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-item img{
+    width: 20px;
+    margin-right: 5px;
+}
+.register-dropdown{
+    right: 60px !important;
+    width: fit-content !important;
+    left: auto !important;
+}
+.profile-dropdown{
+    right: 100px !important;
+    left: auto !important;
+  }
+.dashboard-navbar{
+    width: 75% !important;
+}
+.dashboard-navbar-2{
+    width: 60% !important;
+}
+.dashboard-nav .icon{
+    background-color: #F2F4F7;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+}
+.dashboard-nav .text h5{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.dashboard-nav .text p{
+    font-size: 12px;
+    margin-bottom: 0px !important;
+    color: #475467;
+}
+.place-order{
+    background-color: #05AAA5;
+    font-size: 14px;
+    border: 0px;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px){
+    .dashboard-navbar{
+        gap: 5px !important;
+    }
+    .nav-link{
+        font-size: 17px !important;
+    }
+}
+@media screen and (max-width: 992px){
+    .navbar{
+        background-color: #fff !important;
+    }
+    .navbar-toggler{
+        border: 0px !important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    .navbar-toggler.collapsed .navbar-toggler-icon {
+        background-image: url(../images/icons/close.png) !important;
+        /* Additional styles for the 'cross' icon */
+    }
+    /* .navbar-toggler:not(:focus) .navbar-toggler-icon{
+        background-image: url(--bs-navbar-toggler-icon-bg) !important;
+        width: 20px;
+    } */
+    .nav-item{
+        width: 100% !important;
+    }
+    .navbar-nav{
+        margin-top: 1rem !important;
+        gap: 10px !important;
+    }
+    .dropdown-toggle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-login, .btn-signup{
+        width: 48% !important;
+    }
+    .btns{
+        margin-top: 1rem !important;
+    }
+    .nav-icon{
+        width: 20px;
+    }
+    .nav-right{
+        flex-direction: column;
+        align-items: start !important;
+        margin-top: 1rem;
+    }
+    .profile-dropdown{
+        left: 100px !important;
+        right: auto !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 15px 15px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar-brand img{
+        width: 140px !important;
+    }
+    .sub-li h5{
+        font-size: 16px;
+        color: #475467;
+    }
+    .sub-li p{
+        font-size: 13px;
+        color: #475467;
+    }
+    .navbar{
+        padding: 15px 0px !important;
+    }
+}

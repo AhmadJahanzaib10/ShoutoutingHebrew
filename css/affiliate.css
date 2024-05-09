@@ -1,0 +1,215 @@
+.hero-wrapper {
+    padding: 96px 0;
+    background-color: rgba(5, 170, 165, 0.05) !important;
+    text-align: center !important;
+  }
+  .heading h1 {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    margin-bottom: 45px !important;
+    text-align: center !important;
+  }
+  .para p {
+    max-width: 1216px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    color: rgba(71, 84, 103, 1);
+    margin-bottom: 45px !important;
+    text-align: center !important;
+  }
+  .para p span{
+    text-decoration: underline;
+  }
+  .upword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .upword span,i{
+      font-size: 20px;
+      font-weight: 600;
+      color: #05aaa5;
+  }
+  .reason-wrapper{
+    padding: 4rem 0px;
+  }
+  .reason-text{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-right: 1rem;
+  }
+  .reason-text h2{
+    font-weight: 600;
+  }
+  .reason-text p{
+    color: #475467;
+    margin-top: 2rem;
+  }
+  .reason-img{
+    width: 45%;
+    background-color: #05AAA50D;
+    border-radius: 8px;
+  }
+  .reason-img img{
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .text-mb{
+    display: none !important;
+  }
+
+  .reason-text p span{
+    text-decoration: underline;
+  }
+  .points{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 1rem;
+  }
+  .points .number{
+    width: 24px;
+    height: 24px;
+    color: #475467;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #475467;
+  }
+  .points p{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  @media screen and (max-width: 768px) {
+    .reason-wrapper .row{
+      flex-direction: column !important;
+      gap: 20px;
+    }
+    .reason-text{
+      margin-bottom: 1rem;
+    }
+    .reason-text p{
+      margin-top: 1rem;
+    }
+    .upword{
+      gap: 0px !important;
+    }
+    .reason-img, .reason-text{
+      width: 100%;
+    }
+    .reason-img{
+      width: 95%;
+      margin: 0px auto;
+    }
+    .text-desk{
+      display: none !important;
+    }
+    .text-mb{
+      display: block !important;
+    }
+  }
+
+  
+@media screen and (max-width: 768px) {
+  .para p {
+    font-size: 18px !important;
+  }
+  .heading h1 {
+    font-size: 45px !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .para p {
+    font-size: 16px !important;
+  }
+  .heading h1 {
+    font-size: 43px !important;
+  }
+  .hero-wrapper,
+  .Shoutouting-wrapper,
+  .advertisment-wrapper {
+    padding: 80px 0;
+  }
+  .reason-text h2{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 471px) {
+  .para p {
+    font-size: 15px !important;
+  }
+  .heading h1 {
+    font-size: 40px !important;
+  }
+  .hero-wrapper,
+  .Shoutouting-wrapper,
+  .advertisment-wrapper {
+    padding: 75px 0;
+  }
+}
+@media screen and (max-width: 440px) {
+  .heading h1 {
+    font-size: 38px !important;
+  }
+  .hero-wrapper,
+  .Shoutouting-wrapper,
+  .advertisment-wrapper {
+    padding: 70px 0;
+  }
+
+  .upword {
+    justify-content: start;
+  }
+  .btn {
+    width: 100%;
+  }
+  .hero-wrapper,
+  .heading h1,
+  .para p {
+    text-align: left !important;
+  }
+  .advertisment-inner .cards-inner {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .heading h1 {
+    font-size: 36px !important;
+  }
+}
+@media screen and (max-width: 399px) {
+  .hero-wrapper,
+  .Shoutouting-wrapper,
+  .advertisment-wrapper {
+    padding: 70px 0;
+  }
+  .hero-wrapper,
+  .heading h1,
+  .para p {
+    text-align: left !important;
+  }
+  .advertisment-inner .cards-infop {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .heading h1 {
+    font-size: 34px !important;
+  }
+  .hero-wrapper,
+  .Shoutouting-wrapper,
+  .advertisment-wrapper {
+    padding: 45px 0;
+  }
+}
