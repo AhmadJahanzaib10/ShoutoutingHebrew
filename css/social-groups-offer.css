@@ -128,13 +128,45 @@
     font-weight: 500;
   }
 
+  .table-advertiser tbody tr td:nth-child(1){
+    color: #475467 !important;
+    font-weight: 400;
+  }
+
+  .table-advertiser tbody th,
+  .table-advertiser tbody td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
   .badge-progress{
     width: 100%;
     background-color: #ECFDF3;
+    border: 1px solid #ABEFC6;
     color: #067647;
     padding: 3px 10px;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 50px;
+  }
+  .badge-blue{
+    width: 100%;
+    background-color: #EFF8FF;
+    border: 1px solid #B2DDFF;
+    color: #175CD3;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+  }
+  .badge-danger{
+    width: 100%;
+    background-color: #FEF6EE;
+    border: 1px solid #F9DBAF;
+    color: #B93815;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
   }
   @media screen and (max-width: 576px) {
     .table-container{

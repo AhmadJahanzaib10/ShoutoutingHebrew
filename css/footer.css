@@ -8,14 +8,15 @@ footer{
     display: flex;
 }
 .col-66{
-    width: 66%;
+    width: 60%;
+    padding-right: 1rem;
 }
 .col-66 p{
     color: #94969C;
     margin-top: 2rem;
 }
 .col-33{
-    width: 25%;
+    width: 50%;
 }
 .col-33 h4{
     color: #F5F5F6;
@@ -38,6 +39,19 @@ footer hr{
     width: 20px;
 }
 
+.footer-link{
+    width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-link{
+        width: 50% !important;
+    }
+    .col-66{
+        width: 50% !important;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .col-33 h4{
         font-size: 19px;
@@ -45,12 +59,12 @@ footer hr{
     .col-33 a{
         font-size: 16px;
     }
-    .col-33{
-        width: 30%;
+    /* .col-33{
+        width: 50%;
     }
     .col-66{
-        width: 70%;
-    }
+        width: 50%;
+    } */
 }
 
 @media screen and (max-width: 992px) {
@@ -62,12 +76,20 @@ footer hr{
         margin-top: 1rem;
     }
     .col-66{
-        width: 100%;
+        width: 100% !important;
+    }
+    .footer-link{
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 576px){
     footer{
         padding: 4rem 0px !important;
+    }
+}
+@media screen and (max-width: 450px){
+    .footer-link{
+        flex-direction: column !important;
     }
 }
 @media screen and (max-width: 400px) {
