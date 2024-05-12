@@ -69,10 +69,15 @@ input[type="checkbox"]{
     font-weight: 400;
     cursor: pointer;
 }
-.responsive-label,
 .social-media-links-label p{
     color: #475467;
     font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.responsive-label{
+    color: #475467;
+    font-size: 12px;
     font-weight: 400;
     cursor: pointer;
 }
@@ -127,6 +132,58 @@ input[type="checkbox"]{
 }
 
 
+.question-pc-div{
+    width: 287px;
+    height: 58px;
+    background: #05AAA5;
+    top: -65px;
+    right: -10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: none;
+}
+.question-pc-div p{
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+}
+.question-pc-div .triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 10px 0 10px;
+border-color: #05AAA5 transparent transparent transparent;
+right: 7px;
+bottom: -10px;
+}
+.question-m-div{
+    width: 287px;
+    height: 58px;
+    background: #05AAA5;
+    top: -65px;
+    right: -45px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: none;
+}
+.question-m-div p{
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+}
+.question-m-div .triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 10px 0 10px;
+border-color: #05AAA5 transparent transparent transparent;
+right: 40px;
+bottom: -10px;
+}
+
+
 @media screen and (max-width:1200px){
     .pass p{
         bottom: -38px !important;
@@ -170,5 +227,11 @@ input[type="checkbox"]{
     }
     .register-as-shoutouter-right-form form > div{
         margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:576px) {
+    .question-m-div{
+        width: 267px;
+        text-align: left;
     }
 }
