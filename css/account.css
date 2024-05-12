@@ -58,6 +58,11 @@ a{
     border-radius: 10px;
     color: #05AAA5;
 }
+.toggle-tab.active{
+    color: #05AAA5;
+    background-color: rgba(5, 170, 165, 0.05);
+    border-radius: 10px;
+}
 .refer-shoutouter{
     background-color: rgba(5, 170, 165, 0.05);
     padding: 15px 10px;
@@ -99,6 +104,14 @@ label{
     font-size: 14px;
     font-weight: 500;
 }
+textarea{
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 14px 10px 14px;
+    height: 150px;
+}
 input[type="email"],
 input[type="text"],
 input[type="tel"],
@@ -121,6 +134,7 @@ input[type="password"],
     width: 98px;
     height: 48px;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 .acc-btn-1{
     border: 1px solid #D0D5DD;
@@ -135,24 +149,254 @@ input[type="password"],
     font-size: 16px;
     font-weight: 600;
 }
+.update-pass-btn{
+    border: 1px solid #05AAA5;
+    background-color: #05AAA5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 180px !important;
+}
 .ref-2{
     display: none;
 }
-.dropdown-2{
-    height: 52px;
-    border: 1px solid #05AAA5;
+.content{
+    display: none !important;
+}
+.content.active{
+    display: block !important;
+}
+.dropdown-items{
+    display: none !important;
+}
+.dropdown-items span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.social-accounts h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.social-media-links-label p,
+.responsive-label{
+    font-size: 14px;
+    font-weight: 400;
+} 
+.responsive-label{
+    font-size: 12px;
+    font-weight: 400;
+} 
+.social-media-links-label p > i,
+.responsive-label i{
+    cursor: pointer;
+}
+hr{
+    color: #D0D5DD;
+}
+.pass p{
+    color:#475467 ;
+    font-size: 14px;
+    font-weight: 400;
+    bottom: -20px;
+    left: 0px;
+    text-align: left;
+}
+.d-content h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #101828;
+}
+.d-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #475467;
+}
+.d-btn{
+    width: 193px;
+    height: 48px;
+    background-color: #05AAA5;
+    color: white;
     border-radius: 10px;
+    border: 1px solid #05AAA5;
     font-size: 16px;
     font-weight: 600;
-    outline: none;
-    padding: 10px 14px 10px 14px;
-    background-color:rgba(5, 170, 165, 0.05) ;
-    color: #05AAA5;
 }
-.list-2{
+.question-pc-div{
+    width: 287px;
+    height: 58px;
+    background: #05AAA5;
+    top: -65px;
+    right: -10px;
+    border-radius: 10px;
+    padding: 5px 10px;
     display: none;
 }
-
+.question-pc-div p{
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+}
+.question-pc-div .triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 10px 0 10px;
+border-color: #05AAA5 transparent transparent transparent;
+right: 7px;
+bottom: -10px;
+}
+.question-m-div{
+    width: 287px;
+    height: 58px;
+    background: #05AAA5;
+    top: -65px;
+    right: -45px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: none;
+}
+.question-m-div p{
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+}
+.question-m-div .triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 10px 0 10px;
+border-color: #05AAA5 transparent transparent transparent;
+right: 40px;
+bottom: -10px;
+}
+.acc-image{
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+}
+.image-upload{
+    border: 1px solid #D0D5DD;
+    border-radius:10px;
+    height: 125px;
+}
+.image-upload-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #D0D5DD;
+}
+input[type="file"]{
+    display: none;
+}
+.profile-pic-label{
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.profile-pic-label span:first-child{
+    font-weight: 600;
+    color: #05AAA5;
+}
+.profile-pic-label span:last-child{
+    font-size: 12px;
+}
+.social-group-add-btn{
+    border: 1px solid #05AAA5;
+    background-color: #05AAA5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    height: 48px;
+    border-radius: 10px;
+}
+.payouts{
+    width: 532px;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+}
+.payouts-headings{
+    background-color: #F9FAFB;
+    height: 44px;
+}
+.payouts-headings h2{
+    color: #475467;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    margin: 0;
+}
+.payouts-items,
+.payouts-total{
+    height: 73px;
+}
+.payouts-total{
+    background-color: #F9FAFB;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.payouts-items h2{
+    color: #475467;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin: 0;
+}
+.payouts-total h2{
+    color: #475467;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin: 0;
+}
+.payouts-total h2:last-child{
+    margin-right: 65px;
+}
+.payouts-headings h2:last-child{
+    margin-right: 50px;
+}
+.payouts-items h2:last-child{
+    margin-right: 70px;
+}
+.table-wrapper{
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+}
+.table-wrapper .table-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 5px 15px;
+}
+.table-title .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+.table-title .text p{
+    margin-bottom: 0px !important;
+    color: #475467;
+    font-size: 14px;
+}
+.table-title .text h5{
+    margin-bottom: 0px !important;
+    font-size: 18px;
+}
+.custom-table tbody td .controls i{
+    font-size: 20px;
+    cursor: pointer;
+    color: #475467;
+}
+.custom-table{
+    min-width: auto !important;
+}
+@media screen and (max-width:1200px){
+    .pass p{
+        bottom: -38px !important;
+    }
+}
 
 @media screen and (max-width:992px) {
     .acc-main{
@@ -164,23 +408,32 @@ input[type="password"],
     .acc-main-left{
         width: 100%;
     }
-    .list-2{
-        display: block;
+    .toggle-tabs-list{
+        display: none !important;
     }
-    .list-1{
-        display: none;
+    .toggle-tabs-list.show{
+        display: flex !important;
     }
-    .toggle-tab{
-        height: 48px;
-    padding: 10px 0px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    color: #667085;
+    .dropdown-items{
+        background-color:rgba(5, 170, 165, 0.05) ;
+        color: #05AAA5;
+        border: 1px solid #05AAA5;
+        display: flex !important;
+        height: 52px;
+        cursor: pointer;
+        padding: 10px 14px 10px 14px;
+        border-radius: 10px;
     }
+    .payouts{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width:767px) {
+    .pass p{
+        bottom: -20px !important;
+    }
     .two-boxes{
         flex-direction: column;
     }
@@ -194,10 +447,37 @@ input[type="password"],
     .acc-btn-2{
         width: 100% !important;
     }
+    .update-pass-btn{
+        width: 120% !important;
+    }
     .acc-navigate-head{
         font-size: 36px; 
     }
+    .social-media-links-label p{
+        display: none !important;
+    }
+    .responsive-label{
+        display: block !important;
+    }
+    .security-hr{
+        margin: 10px 0px !important;
+    }
+    .d-acc{
+        flex-direction: column !important;
+    }
+    .d-btn,
+    .social-group-add-btn{
+        width: 100%;
+    }
+    .custom-table{
+        min-width: 700px !important;
+    }
+}
 
+@media screen and (max-width:576px) {
+    .question-m-div{
+        width: 267px;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -206,5 +486,25 @@ input[type="password"],
 }
 .ref-2{
     display: block;
+}
+
+.payouts-total h2:last-child{
+    margin-right: 25px;
+}
+.payouts-headings h2:last-child{
+    margin-right: 20px !important;
+}
+.payouts-items h2:last-child{
+    margin-right: 30px;
+}
+}
+
+@media screen and (max-width:390px) {
+    
+.pass p{
+    bottom: -38px !important;
+}
+.c-pass{
+    margin-top: 40px !important;
 }
 }
