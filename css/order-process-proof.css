@@ -1,0 +1,338 @@
+.step-container {
+  position: relative;
+  text-align: center;
+  transform: translateY(-20%);
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1.5px solid #eaecf0;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer; /* Added cursor pointer */
+}
+
+.step-line {
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: #05aaa5;
+  z-index: -1;
+}
+
+.progress-bar {
+  background-color: #05aaa5;
+}
+
+#multi-step-form {
+  overflow-x: hidden;
+}
+
+.progress {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.step-container {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d0d5dd;
+  border-radius: 50%;
+}
+
+.active-step {
+  background-color: #05aaa5;
+  border: 1.5px solid #05aaa5;
+  box-shadow: 0px 0px 0px 4px #05aaa53d;
+}
+
+.active-step .dot {
+  background-color: #fff !important;
+}
+
+.bar-bg {
+  background-color: #05aaa50d;
+  padding-top: 3rem;
+  border-radius: 12px;
+  padding-bottom: 0rem;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+.accordion-button p {
+  font-size: 14px;
+  color: #475467;
+}
+.accordion-button h6 {
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #05aaa50d;
+}
+
+.accordion-button::after {
+  position: absolute;
+  right: 10px;
+  border: 1px solid #eceef2;
+  padding: 10px;
+  border-radius: 50%;
+}
+.accordion-body .row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.accordion-body .row > img {
+  width: 98px;
+}
+.accordion-body .data {
+  width: fit-content !important;
+}
+.accordion-body .data .icons {
+  display: flex;
+  gap: 10px;
+}
+.accordion-body .data .icons .icon {
+  display: flex;
+  gap: 10px;
+  color: #05aaa5;
+}
+.accordion-body .instruction {
+  border-top: 1px solid #d0d5dd;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.accordion-body .instruction .btn {
+  background-color: #f9fafb;
+  color: #344054;
+  border: 1px solid #eaecf0;
+}
+.accordion-body .instruction p {
+  font-size: 14px;
+  color: #475467;
+}
+.bg-green {
+  background-color: #05aaa5 !important;
+  color: #fff !important;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.accordion-body hr {
+  color: #eaecf0;
+  height: 2px;
+  margin: 5px 0px 10px 0px;
+}
+
+.step-3 {
+  border: 1px solid #dee2e6;
+  padding: 2rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.step-3 p {
+  width: 80%;
+}
+.ri-check-line {
+  display: none;
+  color: #fff;
+}
+
+.badge-progress {
+  width: 100%;
+  background-color: #ecfdf3;
+  border: 1px solid #abefc6;
+  color: #067647;
+  padding: 3px 10px;
+  font-weight: 500;
+  border-radius: 50px;
+  font-size: 13px;
+}
+.badge-blue {
+  width: 100%;
+  background-color: #eff8ff;
+  border: 1px solid #b2ddff;
+  color: #175cd3;
+  padding: 3px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.badge-danger {
+  width: 100%;
+  background-color: #fef6ee;
+  border: 1px solid #f9dbaf;
+  color: #b93815;
+  padding: 3px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+td {
+  vertical-align: middle;
+}
+.table > :not(caption) > * > * {
+  padding: 1.5rem 0.5rem;
+}
+.files {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.files h4 {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.files span {
+  font-size: 15px;
+}
+.modal-footer{
+    border-top: none;
+}
+.modal-footer .bg-transparent{
+    background-color: transparent;
+    border: 1px solid rgba(234, 236, 240, 1);
+    flex: 0 0 45%;
+}
+.modal-footer .bg-green{
+    flex: 0 0 50%;
+}
+.publish-post {
+  padding: 16px 20px;
+  border: 1px solid rgba(234, 236, 240, 1);
+  border-radius: 8px;
+}
+.publish-post label {
+  padding-bottom: 10px;
+}
+.modal-body input {
+  padding: 10px 14px;
+  border: 1px solid rgba(208, 213, 221, 1);
+  border-radius: 8px;
+  width: 100%;
+}
+.border-line {
+  text-align: center;
+  position: relative;
+}
+.border-line span:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 1px;
+  width: 166px;
+  background-color: rgba(208, 213, 221, 1);
+}
+.border-line span:after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: 0;
+  height: 1px;
+  width: 166px;
+  background-color: rgba(208, 213, 221, 1);
+}
+.drag-drop-image {
+  width: 100%;
+  padding: 30px 0;
+  border: 1px solid rgba(234, 236, 240, 1);
+  text-align: center;
+  border-radius: 12px;
+}
+.drag-drop-info h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(71, 84, 103, 1);
+}
+.drag-drop-info span {
+  color: rgba(5, 170, 165, 1) !important;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.drag-drop-icon {
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 992px){
+  .badge-blue{
+    font-size: 13px !important;
+  }
+  .badge-danger{
+    font-size: 13px !important;
+  }
+  .badge-progress{
+    font-size: 13px !important;
+  }
+  .table-wrapper{
+    overflow: scroll;
+  }
+  .table-responsive{
+    min-width: 800px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accordion-body .data .icons .icon {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .accordion-body .data h5 {
+    font-size: 17px;
+  }
+  .accordion-body .row > img {
+    width: 80px;
+  }
+  .progress {
+    width: 80% !important;
+  }
+  .step-container {
+    width: 80% !important;
+  }
+  .step-container .d-flex p {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .accordion-body .data {
+    margin-top: 2rem;
+  }
+  .accordion-body .data .icons {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 1rem;
+  }
+  .accordion-body .data .icons .icon {
+    font-size: 16px;
+    gap: 5px;
+  }
+  .accordion-body .data h5 {
+    font-size: 20px;
+  }
+  .accordion-body .row > img {
+    width: 98px !important;
+  }
+}
