@@ -179,6 +179,33 @@
     .step-container .d-flex p{
       font-size: 12px !important;
     }
+    .progress{
+      height: 3px;
+      transform: rotate(90deg) translate(45px,0px) !important;
+      width: 120px !important;
+      margin: 0px !important;
+    }
+    .step-container{
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .step-container > .d-flex{
+      justify-content: start !important;
+      gap: 15px !important;
+      align-items: start !important;
+      flex-direction: row !important;
+    }
+    .step-container .d-flex:nth-child(1) p, .step-container .d-flex:nth-child(3) p{
+      transform: translate(0px) !important;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .progress{
+      transform: rotate(90deg) translate(45px,30px) !important;
+    }
+    .step-container {
+      width: 90% !important;
+    }
   }
   @media screen and (max-width: 380px) {
     .accordion-body .data{
