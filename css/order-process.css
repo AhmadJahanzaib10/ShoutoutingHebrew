@@ -200,3 +200,8 @@
       width: 98px !important;
     }
   }
+@media screen and (max-width: 360px) {
+  .modal-footer .bg-green {
+    flex: 0 0 48%;
+  }
+}
