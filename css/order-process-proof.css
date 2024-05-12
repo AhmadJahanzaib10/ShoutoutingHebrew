@@ -296,26 +296,53 @@ td {
   }
 }
 @media screen and (max-width: 576px) {
-  .accordion-body .data .icons .icon {
-    font-size: 12px;
-    gap: 5px;
+    .accordion-body .data .icons .icon{
+      font-size: 12px;
+      gap: 5px;
+    }
+    .accordion-body .data h5{
+      font-size: 17px;
+    }
+    .accordion-body .row > img {
+      width: 80px;
+    }
+    .progress{
+      width: 80% !important;
+    }
+    .step-container {
+      width: 80% !important;
+    }
+    .step-container .d-flex p{
+      font-size: 12px !important;
+    }
+    .progress{
+      height: 3px;
+      transform: rotate(90deg) translate(45px,0px) !important;
+      width: 120px !important;
+      margin: 0px !important;
+    }
+    .step-container{
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .step-container > .d-flex{
+      justify-content: start !important;
+      gap: 15px !important;
+      align-items: start !important;
+      flex-direction: row !important;
+    }
+    .step-container .d-flex:nth-child(1) p, .step-container .d-flex:nth-child(3) p{
+      transform: translate(0px) !important;
+    }
   }
-  .accordion-body .data h5 {
-    font-size: 17px;
+  @media screen and (max-width:450px) {
+    .progress{
+      transform: rotate(90deg) translate(45px,30px) !important;
+    }
+    .step-container {
+      width: 90% !important;
+    }
   }
-  .accordion-body .row > img {
-    width: 80px;
-  }
-  .progress {
-    width: 80% !important;
-  }
-  .step-container {
-    width: 80% !important;
-  }
-  .step-container .d-flex p {
-    font-size: 12px !important;
-  }
-}
 @media screen and (max-width: 380px) {
   .accordion-body .data {
     margin-top: 2rem;
