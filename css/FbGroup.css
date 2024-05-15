@@ -139,7 +139,7 @@ label {
   justify-content: space-between;
   padding: 12px 0px;
 }
-.file-structure .option-wrapper ul {
+/* .file-structure .option-wrapper ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,9 +149,13 @@ label {
   font-weight: 500;
   color: rgba(26, 26, 26, 0.7);
   padding: 15px 15px;
-}
+} */
 .file-structure .btn-header {
   width: 67px !important;
+}
+.file-structure .button{
+  margin-left: auto;
+  display: block;
 }
 .filter {
   width: 100%;
