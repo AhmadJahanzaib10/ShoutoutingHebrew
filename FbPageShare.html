@@ -231,6 +231,7 @@
 
 function updateSliderBackground() {
   const value = slider.value;
+  console.log(value);
   const max = slider.max;
   const percentage = (value / max) * 100;
   slider.style.background = `linear-gradient(to right, #04AA6D ${percentage}%, #ddd ${percentage}%)`;
