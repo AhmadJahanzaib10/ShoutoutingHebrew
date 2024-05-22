@@ -24,32 +24,4 @@ question_m.forEach((qm, index)=>{
     })
 })
 
-// Country dropdown
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    const selectDrop = document.querySelector('#countries');
-  
-    const fetchCitynames = async()=>{
-try{
-    const res = await fetch("https://api.first.org/data/v1/countries");
-    const resData = await res.json();
-    const data = resData.data;
-    console.log(resData)
-      let output = "";
-      Object.keys(data).map((count,index) => {
-        console.log(count)
-
-        output += `
-        
-        <option value="${count}">${count}</option>`;
-      })
-  
-      selectDrop.innerHTML = output;
-}catch(error){
-    console.log(error.message);
-}
-}
-fetchCitynames()
-  
-  });
