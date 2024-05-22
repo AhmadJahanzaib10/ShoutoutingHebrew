@@ -31,6 +31,10 @@
 }
 .influence-main-btn-1{
     background-color: #15AFAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 .influence-main-btn-2{
     background-color: #F4A426;
