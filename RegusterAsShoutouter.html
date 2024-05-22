@@ -179,7 +179,7 @@
             </li>
           </ul>
           <div class="d-flex gap-2 btns">
-            <a href="Login.html" class="btn-login btn">Login</a>
+            <button class="btn-login btn" type="submit">Login</button>
             <button
               class="btn-signup btn"
               data-bs-toggle="dropdown"
@@ -200,7 +200,7 @@
                 </a>
               </li>
               <li>
-                <a href="RegusterAsShoutouter.html" class="dropdown-item fw-semibold">
+                <a href="#" class="dropdown-item fw-semibold">
                   <img src="images/icons/puzzle.png" alt="" />
                   Register as Marketer
                 </a>
@@ -223,14 +223,14 @@
         oversee or administer. Complete the form provided below to join us today
         and transform your online presence into a rewarding venture!
       </p>
-      <div class="row my-5 register-as-shoutouter-forms">
+      <form action="" class="row my-5 register-as-shoutouter-forms">
 
-        <!-- left form -->
+        <!-- left side of form -->
         <div class="col-lg-6 center-line register-as-shoutouter-left-form">
           <section class="register-as-shoutouter-contact">
             <div class="register-as-shoutouter-contact-sub d-flex flex-column mx-auto justify-content-center align-items-start">
             <h2 class="register-as-shoutouter-contact-head">Contact Details</h2>
-              <form class="d-flex flex-column mx-auto mt-2" action="">
+              <div class="d-flex flex-column mx-auto mt-2" style="width:100%">
                 <div class="d-flex w-100 gap-3 two-boxes">
                   <div
                     class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2"
@@ -297,6 +297,32 @@
                   </div>
                 </div>
 
+
+                <div class="d-flex w-100 gap-3 two-boxes">
+                  <div
+                    class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative"
+                  >
+                    <label for="pass">Date of Birth *</label>
+                    <input
+                      class="w-100"
+                      type="Date"
+                      name="pass"
+                      placeholder="Enter your Date of Birth"
+                    />
+                  </div>
+                  <div
+                    class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2"
+                  >
+                    <label for="c-pass">Country *</label>
+                    <input
+                      class="w-100"
+                      type="password"
+                      name="c-pass"
+                      placeholder="Enter your country"
+                    />
+                  </div>
+                </div>
+
                 <div class="d-flex w-100 gap-3 two-boxes">
                   <div
                     class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative"
@@ -325,17 +351,19 @@
                   </div>
                 </div>
 
-              </form>
+
+
+              </div>
             </div>
           </section>
         </div>
 
-        <!-- right-form -->
+        <!-- right side of form -->
         <div class="col-lg-6 register-as-shoutouter-right-form">
             <section class="register-as-shoutouter-social">
                 <div class="register-as-shoutouter-social-sub d-flex flex-column mx-auto justify-content-center align-items-start">
                     <h2 class="register-as-shoutouter-social-head">My Social Accounts</h2>
-                    <form action="" class="d-flex flex-column mx-auto mt-2">
+                    <div style="width:100%" class="w-full form-to-div d-flex flex-column mx-auto mt-2">
                         <div
                     class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2"
                   >
@@ -570,7 +598,7 @@
                       </div>
                     </div>
                   </div>
-                    </form>
+                    </div>
                 </div>
             </section>
 
@@ -642,7 +670,7 @@
                 <p>Have an account? <a href="">Login</a></p>
               </div>
 
-      </div>
+      </form>
     </div>
 
     <!-- left -->
