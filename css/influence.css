@@ -34,6 +34,10 @@
 }
 .influence-main-btn-2{
     background-color: #F4A426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 .influence-video-section{
     width: 100%;
