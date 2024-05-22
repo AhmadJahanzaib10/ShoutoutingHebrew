@@ -37,7 +37,8 @@ input[type="email"],
 input[type="text"],
 input[type="tel"],
 input[type="password"],
-input[type="Date"]{
+input[type="Date"],
+select{
     height: 52px;
     border: 1px solid #D0D5DD;
     border-radius: 10px;
