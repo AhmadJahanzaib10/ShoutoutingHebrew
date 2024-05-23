@@ -53,6 +53,9 @@ a{
     cursor: pointer;
     color: #667085;
 }
+.toggle-tab a{
+    color: #667085 !important;
+}
 .toggle-tab:hover{
     background-color: rgba(5, 170, 165, 0.05);
     border-radius: 10px;
