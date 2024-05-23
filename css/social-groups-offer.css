@@ -2,7 +2,7 @@
     background-color: #05AAA50D;
     padding: 3rem 0px;
 }
-.btn-group button{
+.btn-group > a{
     width: 170px !important;
     border: 1px solid #D0D5DD;
     flex: inherit !important;
