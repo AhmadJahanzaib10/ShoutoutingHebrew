@@ -114,11 +114,11 @@
     border: 1px solid #EAECF0;
   }
 
-  tbody tr td .d-flex button{
+  tbody tr td .d-flex button,   tbody tr td .d-flex a{
     background-color: #05AAA5;
     color: #fff;
   }
-tbody tr td .d-flex button:hover{
+tbody tr td .d-flex button:hover, tbody tr td .d-flex a:hover{
     background: #008f8b !important;
     color: #fff !important;
 }
