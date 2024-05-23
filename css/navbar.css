@@ -23,6 +23,7 @@
 }
 .nav-link i{
     color: #475467 !important;
+    font-size: 400 !important;
 }
 .dropdown-toggle::after{
     display: none !important;
