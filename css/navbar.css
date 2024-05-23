@@ -9,6 +9,7 @@
 .navbar{
     background: #05AAA505 !important;
     padding: 15px 30px !important;
+    height: 80px !important;
 }
 .navbar-brand img{
     width: 180px;
@@ -115,6 +116,7 @@
 @media screen and (max-width: 992px){
     .navbar{
         background-color: #fff !important;
+        height: auto !important;
     }
     .navbar-toggler{
         border: 0px !important;
