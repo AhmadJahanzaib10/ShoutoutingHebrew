@@ -118,6 +118,10 @@
     background-color: #05AAA5;
     color: #fff;
   }
+tbody tr td .d-flex button:hover{
+    background: #008f8b !important;
+    color: #fff !important;
+}
   tbody tr td .d-flex button:nth-child(2){
     background-color: #F6911B;
     color: #fff;
