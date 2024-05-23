@@ -11,6 +11,10 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }
+.btn-group > a:hover{
+    background: #05AAA5 !important;
+    color: #fff !important;
+}
 .btn-group .btn-white{
     background-color: #fff;
     color: #344054;
