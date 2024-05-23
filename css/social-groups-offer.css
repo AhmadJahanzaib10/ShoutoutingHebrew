@@ -155,6 +155,7 @@ tbody tr td .d-flex button:hover, tbody tr td .d-flex a:hover{
     padding: 3px 10px;
     font-weight: 500;
     border-radius: 50px;
+    font-size: 13px;
   }
   .badge-blue{
     width: 100%;
