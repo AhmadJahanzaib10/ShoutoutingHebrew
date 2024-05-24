@@ -222,7 +222,8 @@ li {
     border-color: unset;
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: unset;
+      isolation: isolate;
+       border-color: unset;
 }
 .mass-nav-items ul li {
   padding: 10px 10px;
