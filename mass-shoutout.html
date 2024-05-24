@@ -1,366 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shout Out</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/mass-shoutout.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./mass-shoutout.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
     <!-- ----------------------------------NavBar-------------------------------- -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-          <ul class="navbar-nav dashboard-navbar-2 mb-2 mb-lg-0 gap-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" aria-disabled="true">My Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" aria-disabled="true">Blog</a>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center gap-2 align-items-center nav-right">
-            <button class="btn btn-primary place-order">Place Order</button>
-          <div class="d-flex dashboard-nav gap-2 justify-content-center align-items-center btns" data-bs-toggle="dropdown"
-          aria-expanded="false" role="button">
-           <div class="profile d-flex gap-2 justify-content-center align-items-center">
-            <div class="icon">
-              <i class="ri-user-3-line"></i>
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav dashboard-navbar-2 mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">My Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">Blog</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center gap-2 align-items-center nav-right">
+                    <button class="btn btn-primary place-order">Place Order</button>
+                    <div class="d-flex dashboard-nav gap-2 justify-content-center align-items-center btns"
+                        data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                        <div class="profile d-flex gap-2 justify-content-center align-items-center">
+                            <div class="icon">
+                                <i class="ri-user-3-line"></i>
+                            </div>
+                            <div class="text">
+                                <h5>Group Admin</h5>
+                                <p>Influencer : <span class="balance">$10000.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu profile-dropdown">
+                        <li>
+                            <a href="#" class="dropdown-item fw-semibold">
+                                <img src="images/icons/user-color.png" alt="">
+                                Account Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item fw-semibold">
+                                <img src="images/icons/log-out-01.png" alt="">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="text">
-              <h5>Group Admin</h5>
-              <p>Influencer : <span class="balance">$10000.00</span></p>
-            </div>
-           </div>
-          </div>
-            <ul class="dropdown-menu profile-dropdown">
-                <li>
-                  <a href="#" class="dropdown-item fw-semibold">
-                    <img src="images/icons/user-color.png" alt="">
-                    Account Information
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-item fw-semibold">
-                    <img src="images/icons/log-out-01.png" alt="">
-                    Logout
-                  </a>
-                </li>
-              </ul>
-          </div>
         </div>
-      </div>
     </nav>
 
     <!-- ----------------------------------Hero-Section----------------------------- -->
     <section>
-      <div class="hero-wrapper">
-        <div class="container">
-          <div class="hero-main">
-            <div class="heading">
-              <h1>
-                Shout-Out Loud:
-                <span class="heading-span">Buy Social Shares And Posts</span>
-              </h1>
+        <div class="hero-wrapper">
+            <div class="container">
+                <div class="hero-main">
+                    <div class="heading">
+                        <h1>
+                            Shout-Out Loud:
+                            <span class="heading-span">Buy Social Shares And Posts</span>
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <p>
+                            Boost brand visibility by promoting your content through social
+                            media shoutouts. Elevate your brand awareness and engage with a
+                            broader audience effortlessly.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="para">
-              <p>
-                Boost brand visibility by promoting your content through social
-                media shoutouts. Elevate your brand awareness and engage with a
-                broader audience effortlessly.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- ----------------------------------SocialApp-Wrapper------------------------- -->
     <section>
-      <div class="social-wrapper">
-        <div class="container">
-          <div class="social-wrapper-inner">
-            <div class="social-wrapper-info">
-              <div class="heading">
-                <h1>Social Groups ShoutOut</h1>
-              </div>
-              <div class="para">
-                <p>
-                  Extend the exposure of your services or products to various
-                  social groups on platforms like Facebook, WhatsApp, Telegram,
-                  or LinkedIn. Group admins will showcase your post either as a
-                  sticky post or through daily post bumping, following their
-                  established guidelines.
-                </p>
-              </div>
-
-              <div class="wrapper-info-inner-contest">
-                <div class="info-inner">
-                  <div class="social-icons">
-                    <div class="icon">
-                    <img src="./images/icons/Group 1.png" alt="">
-                    </div>
-                    <img src="./images/fb.png" class="fb">
-                    <img src="./images/icons/instagram.png" alt="" class="insta">
-                    <img src="./images/icons/linkedin 1.png" alt class="in" />
-                    <img src="./images/icons/telegram-large.png" alt class="twit" />
-                  </div>
-                  <div class="heading">
-                    <h1>Cross Channels Advertising?</h1>
-                  </div>
-                  <div class="para">
-                    <p>
-                      Publish your post in groups across multiple social
-                      platforms.
-                    </p>
-                  </div>
-                  <div class="button">
-                    <button class="btn-header">
-                      Place Order <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="row my-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                  <div class="social-media-inner">
-                    <div class="social-media-icon">
-                      <img src="./images/icons/fb-large.png" alt="image" />
-                    </div>
-                    <div class="social-media-info">
-                      <div class="heading">
-                        <h1>Facebook Groups</h1>
-                      </div>
-                      <div class="para">
-                        <p>
-                          Get your post published by admins of Facebook groups
-                        </p>
-                      </div>
-                      <div class="social-media-info-inner">
-                        <span>Place Order</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                  <div class="social-media-inner">
-                    <div class="social-media-icon">
-                      <img src="./images/icons/telegram-large.png" alt="image" />
-                    </div>
-                    <div class="social-media-info">
-                      <div class="heading">
-                        <h1>Telegram Groups</h1>
-                      </div>
-                      <div class="para">
-                        <p>
-                          Publish a sticky post in Telegram groups and pages
-                        </p>
-                      </div>
-                      <div class="social-media-info-inner">
-                        <span>Place Order</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                  <div class="social-media-inner">
-                    <div class="social-media-icon">
-                      <img src="./images/icons/Vector.png" alt="image" />
-                    </div>
-                    <div class="social-media-info">
-                      <div class="heading">
-                        <h1>LinkedIn Groups</h1>
-                      </div>
-                      <div class="para">
-                        <p>Publish your post in LinkedIn related groups</p>
-                      </div>
-                      <div class="social-media-info-inner">
-                        <span>Place Order</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                  <div class="social-media-inner">
-                    <div class="social-media-icon">
-                      <img src="./images/icons/Group 1.png" alt="image" />
-                    </div>
-                    <div class="social-media-info">
-                      <div class="heading">
-                        <h1>WhatsApp Groups</h1>
-                      </div>
-                      <div class="para">
-                        <p>Place a whatsapp group order</p>
-                      </div>
-                      <div class="social-media-info-inner">
-                        <span>Place Order</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mass-shoutout-wrapper">
-            <div class="heading">
-              <h1>Mass ShoutOut</h1>
-            </div>
-            <div class="para">
-              <p>
-                Utilize individuals who are willing to share your content across
-                various social groups on platforms such as Facebook, Instagram,
-                LinkedIn, Twitter, TikTok, or YouTube. Click the relevant social
-                icon below to begin.
-              </p>
-            </div>
-            <div class="mass-nav-items mob-hide">
-              <ul>
-                <li class="active-mass-link"><a href="#">Facebook Marketing</a></li>
-                <li><a href="#">Instagram Marketing</a></li>
-                <li><a href="#">Youtube Marketing</a></li>
-                <li><a href="#">Twitter Marketing</a></li>
-                <li><a href="#">Tiktok Marketing</a></li>
-              </ul>
-            </div>
-            <div class="mass-nav-items mob-select">
-              <select name="marketing" id="">
-                <option value="">Facebook Marketing</option>
-                <option value="">Instagram Marketing</option>
-                <option value="">Youtube Marketing</option>
-                <option value="">Twitter Marketing</option>
-                <option value="">Tiktok Marketing</option>
-              </select>
-            </div>
-            <div class="row my-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                    <div class="social-media-inner">
-                      <div class="social-media-icon">
-                        <img src="./images/icons/share-2 1.png" alt="image" />
-                      </div>
-                      <div class="social-media-info">
+        <div class="social-wrapper">
+            <div class="container">
+                <div class="social-wrapper-inner">
+                    <div class="social-wrapper-info">
                         <div class="heading">
-                          <h1>Buy FaceShares</h1>
+                            <h1>Social Groups ShoutOut</h1>
                         </div>
                         <div class="para">
-                          <p>
-                            Instruct Facebook users what post to write in their wall
-                          </p>
+                            <p>
+                                Extend the exposure of your services or products to various
+                                social groups on platforms like Facebook, WhatsApp, Telegram,
+                                or LinkedIn. Group admins will showcase your post either as a
+                                sticky post or through daily post bumping, following their
+                                established guidelines.
+                            </p>
                         </div>
-                        <div class="social-media-info-inner">
-                          <span>Place Order</span>
-                          <i class="fa-solid fa-arrow-right"></i>
+
+                        <div class="wrapper-info-inner-contest">
+                            <div class="info-inner">
+                                <div class="social-icons">
+                                    <div class="icon">
+                                        <img src="./images/icons/Group 1.png" alt="">
+                                    </div>
+                                    <img src="./images/fb.png" class="fb">
+                                    <img src="./images/icons/instagram.png" alt="" class="insta">
+                                    <img src="./images/icons/linkedin 1.png" alt class="in" />
+                                    <img src="./images/icons/telegram-large.png" alt class="twit" />
+                                </div>
+                                <div class="heading">
+                                    <h1>Cross Channels Advertising?</h1>
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        Publish your post in groups across multiple social
+                                        platforms.
+                                    </p>
+                                </div>
+                                <div class="button">
+                                    <button class="btn-header">
+                                        Place Order <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="row my-4">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                <div class="social-media-inner">
+                                    <div class="social-media-icon">
+                                        <img src="./images/icons/fb-large.png" alt="image" />
+                                    </div>
+                                    <div class="social-media-info">
+                                        <div class="heading">
+                                            <h1>Facebook Groups</h1>
+                                        </div>
+                                        <div class="para">
+                                            <p>
+                                                Get your post published by admins of Facebook groups
+                                            </p>
+                                        </div>
+                                        <div class="social-media-info-inner">
+                                            <span>Place Order</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                <div class="social-media-inner">
+                                    <div class="social-media-icon">
+                                        <img src="./images/icons/telegram-large.png" alt="image" />
+                                    </div>
+                                    <div class="social-media-info">
+                                        <div class="heading">
+                                            <h1>Telegram Groups</h1>
+                                        </div>
+                                        <div class="para">
+                                            <p>
+                                                Publish a sticky post in Telegram groups and pages
+                                            </p>
+                                        </div>
+                                        <div class="social-media-info-inner">
+                                            <span>Place Order</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                <div class="social-media-inner">
+                                    <div class="social-media-icon">
+                                        <img src="./images/icons/Vector.png" alt="image" />
+                                    </div>
+                                    <div class="social-media-info">
+                                        <div class="heading">
+                                            <h1>LinkedIn Groups</h1>
+                                        </div>
+                                        <div class="para">
+                                            <p>Publish your post in LinkedIn related groups</p>
+                                        </div>
+                                        <div class="social-media-info-inner">
+                                            <span>Place Order</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                <div class="social-media-inner">
+                                    <div class="social-media-icon">
+                                        <img src="./images/icons/Group 1.png" alt="image" />
+                                    </div>
+                                    <div class="social-media-info">
+                                        <div class="heading">
+                                            <h1>WhatsApp Groups</h1>
+                                        </div>
+                                        <div class="para">
+                                            <p>Place a whatsapp group order</p>
+                                        </div>
+                                        <div class="social-media-info-inner">
+                                            <span>Place Order</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-md">
-                <div class="social-media-inner">
-                  <div class="social-media-icon">
-                    <img src="./images/icons/post 1.png" alt="image" />
-                  </div>
-                  <div class="social-media-info">
+                </div>
+                <div class="mass-shoutout-wrapper">
                     <div class="heading">
-                      <h1>Buy FaceShares</h1>
+                        <h1>Mass ShoutOut</h1>
                     </div>
                     <div class="para">
-                      <p>Get your Facebook post shared by multiple users</p>
+                        <p>
+                            Utilize individuals who are willing to share your content across
+                            various social groups on platforms such as Facebook, Instagram,
+                            LinkedIn, Twitter, TikTok, or YouTube. Click the relevant social
+                            icon below to begin.
+                        </p>
                     </div>
-                    <div class="social-media-info-inner">
-                      <span>Place Order</span>
-                      <i class="fa-solid fa-arrow-right"></i>
+                    <div class="mass-nav-items mob-hide">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="active-mass-link nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                    role="tab" aria-controls="home" aria-selected="true">Facebook Marketing</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    role="tab" aria-controls="profile" aria-selected="false">Instagram Marketing</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    role="tab" aria-controls="contact" aria-selected="false">Youtube Marketing</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="twitter-tab" data-bs-toggle="tab" data-bs-target="#twitter"
+                                    role="tab" aria-controls="twitter" aria-selected="false">Twitter Marketing</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tiktok-tab" data-bs-toggle="tab" data-bs-target="#tiktok"
+                                    role="tab" aria-controls="tiktok" aria-selected="false">Tiktok Marketing</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
+                    <div class="mass-nav-items mob-select">
+                        <select name="marketing" id="">
+                            <option value="">Facebook Marketing</option>
+                            <option value="">Instagram Marketing</option>
+                            <option value="">Youtube Marketing</option>
+                            <option value="">Twitter Marketing</option>
+                            <option value="">Tiktok Marketing</option>
+                        </select>
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row my-4">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/share-2 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>
+                                                        Instruct Facebook users what post to write in their wall
+                                                    </p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/post 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>Get your Facebook post shared by multiple users</p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row my-4">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/share-2 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>
+                                                        Instruct Facebook users what post to write in their wall
+                                                    </p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/post 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>Get your Facebook post shared by multiple users</p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row my-4">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/share-2 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>
+                                                        Instruct Facebook users what post to write in their wall
+                                                    </p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/post 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>Get your Facebook post shared by multiple users</p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+                                <div class="row my-4">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/share-2 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>
+                                                        Instruct Facebook users what post to write in their wall
+                                                    </p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/post 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>Get your Facebook post shared by multiple users</p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tiktok" role="tabpanel" aria-labelledby="tiktok-tab">
+                                <div class="row my-4">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/share-2 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>
+                                                        Instruct Facebook users what post to write in their wall
+                                                    </p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-md">
+                                        <div class="social-media-inner">
+                                            <div class="social-media-icon">
+                                                <img src="./images/icons/post 1.png" alt="image">
+                                            </div>
+                                            <div class="social-media-info">
+                                                <div class="heading">
+                                                    <h1>Buy FaceShares</h1>
+                                                </div>
+                                                <div class="para">
+                                                    <p>Get your Facebook post shared by multiple users</p>
+                                                </div>
+                                                <div class="social-media-info-inner">
+                                                    <span>Place Order</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-              </div>
-             
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- ----------------------------------Footer-------------------------------- -->
     <footer>
-      <div class="container top-footer">
-        <div class="col-66">
-          <img src="images/logo.png" alt="">
-          <p>Shoutouting is a marketplace that connects companies that are looking to improve their online ranking score with reviews writers for hire.
-          </p>
+        <div class="container top-footer">
+            <div class="col-66">
+                <img src="images/logo.png" alt="">
+                <p>Shoutouting is a marketplace that connects companies that are looking to improve their online ranking
+                    score with reviews writers for hire.
+                </p>
+            </div>
+            <div class="d-flex justify-content-between align-items-start footer-link">
+                <div class="col-33 d-flex justify-content-start align-items-start flex-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">How it works ( Companies)</a>
+                    <a href="#">How it works ( Influencers)</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="col-33 d-flex justify-content-start align-items-start flex-column">
+                    <h4>Social Platforms</h4>
+                    <a href="#">Facebook Marketing</a>
+                    <a href="#">Instagram Marketing</a>
+                    <a href="#">Tiktok Marketing</a>
+                    <a href="#">Twitter Marketing</a>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content-between align-items-start footer-link">
-          <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-            <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">How it works ( Companies)</a>
-            <a href="#">How it works ( Influencers)</a>
-            <a href="affiliate.html">Affiliate Program</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-          </div>
-          <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-            <h4>Social Platforms</h4>
-            <a href="#">Facebook Marketing</a>
-            <a href="#">Instagram Marketing</a>
-            <a href="#">Tiktok Marketing</a>
-            <a href="#">Twitter Marketing</a>
-          </div>
+        <hr>
+        <div class="container bottom-footer d-flex justify-content-between align-items-center">
+            <p>Shoutouting © 2024 All Rights Reserved.</p>
+            <div class="social-icons d-flex gap-4">
+                <img src="images/icons/telegram.png" alt="">
+                <img src="images/icons/linkdin.png" alt="">
+            </div>
         </div>
-      </div>
-      <hr>
-      <div class="container bottom-footer d-flex justify-content-between align-items-center">
-        <p>Shoutouting © 2024 All Rights Reserved.</p>
-        <div class="social-icons d-flex gap-4">
-          <img src="images/icons/telegram.png" alt="">
-          <img src="images/icons/linkdin.png" alt="">
-        </div>
-      </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./js/navbar.js"></script>
-  </body>
+</body>
+
 </html>
