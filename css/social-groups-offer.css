@@ -127,6 +127,19 @@ tbody tr td .d-flex .do-job:hover{
     color: #fff;
   }
 
+tbody tr td .d-flex .dispute{
+    background-color: red;
+    color: #fff;
+  }
+tbody tr td .d-flex .view{
+    background-color: blue;
+    color: #fff;
+  }
+tbody tr td .d-flex .details{
+    background-color: yellow;
+    color: #fff;
+  }
+
   .custom-table tbody td:nth-child(1){
     color: #05AAA5 !important;
     font-weight: 500;
