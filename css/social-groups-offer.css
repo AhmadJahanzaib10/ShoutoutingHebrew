@@ -114,15 +114,15 @@
     border: 1px solid #EAECF0;
   }
 
-  tbody tr td .d-flex button,   tbody tr td .d-flex > a{
+  tbody tr td .d-flex .do-job{
     background-color: #05AAA5;
     color: #fff;
   }
-tbody tr td .d-flex button:hover, tbody tr td .d-flex a:hover{
+tbody tr td .d-flex .do-job:hover{
     background: #008f8b !important;
     color: #fff !important;
 }
-  tbody tr td .d-flex button:nth-child(2){
+  tbody tr td .d-flex .reject{
     background-color: #F6911B;
     color: #fff;
   }
