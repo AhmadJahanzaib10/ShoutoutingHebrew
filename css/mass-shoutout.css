@@ -213,7 +213,16 @@ li {
     justify-content: space-between;
     margin-bottom: 0;
     padding: 0 10px;
-    border-bottom: unset;
+      
+}.nav-tabs{
+   border-bottom: unset;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: unset;
+    border-color: unset;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: unset;
 }
 .mass-nav-items ul li {
   padding: 10px 10px;
@@ -223,6 +232,9 @@ li {
 .mass-nav-items ul li:hover {
   background-color: var(--orange-color);
 }
+
+
+
 .mass-nav-items ul li a {
   color: var(--ul-color);
   transition: 0.5s;
