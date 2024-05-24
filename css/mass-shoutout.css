@@ -235,7 +235,12 @@ li {
 }
 
 
-
+.nav-tabs .nav-link {
+     margin-bottom: unset;
+     border:unset; 
+     border-top-left-radius: unset; 
+    border-top-right-radius: unset; 
+}
 .mass-nav-items ul li a {
   color: var(--ul-color);
   transition: 0.5s;
