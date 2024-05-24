@@ -208,11 +208,12 @@ li {
   background-color: var(--white-color);
 }
 .mass-nav-items ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0;
-  padding: 0 10px;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0 10px;
+    border-bottom: unset;
 }
 .mass-nav-items ul li {
   padding: 10px 10px;
@@ -225,9 +226,13 @@ li {
 .mass-nav-items ul li a {
   color: var(--ul-color);
   transition: 0.5s;
+  background-color:unset;
+  border-color: unset;
 }
 .mass-nav-items ul li:hover a {
   color: var(--orange-text-color);
+  
+  border-color: unset;
 }
 .mass-shoutout-wrapper .social-media-inner {
   text-align: center;
