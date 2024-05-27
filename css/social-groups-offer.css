@@ -114,28 +114,28 @@
     border: 1px solid #EAECF0;
   }
 
-  tbody tr td .d-flex .do-job{
+  tbody tr td .d-flex .btn-do-job{
     background-color: #05AAA5;
     color: #fff;
   }
-tbody tr td .d-flex .do-job:hover{
+tbody tr td .d-flex .btn-do-job:hover{
     background: #008f8b !important;
     color: #fff !important;
 }
-  tbody tr td .d-flex .reject{
+  tbody tr td .d-flex .btn-reject{
     background-color: #F6911B;
     color: #fff;
   }
 
-tbody tr td .d-flex .dispute{
+tbody tr td .d-flex .btn-dispute{
     background-color: red;
     color: #fff;
   }
-tbody tr td .d-flex .view{
+tbody tr td .d-flex .btn-view{
     background-color: blue;
     color: #fff;
   }
-tbody tr td .d-flex .details{
+tbody tr td .d-flex .btn-details{
     background-color: yellow;
     color: #fff;
   }
