@@ -128,15 +128,15 @@ tbody tr td .d-flex .btn-do-job:hover{
   }
 
 tbody tr td .d-flex .btn-dispute{
-    background-color: red;
+    background-color: #FF4742;
     color: #fff;
   }
 tbody tr td .d-flex .btn-view{
-    background-color: blue;
+    background-color: #fa6400;
     color: #fff;
   }
 tbody tr td .d-flex .btn-details{
-    background-color: yellow;
+    background-color: #6200ee;
     color: #fff;
   }
 
