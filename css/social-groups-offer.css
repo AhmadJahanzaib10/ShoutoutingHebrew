@@ -138,6 +138,14 @@ tbody tr td .d-flex .btn-dispute:hover{
     background-color: #ce4f4f;
     color: #fff;
   }
+tbody tr td .d-flex .btn-upload-proof{
+    background-color: #838384;
+    color: #fff;
+  }
+tbody tr td .d-flex .btn-upload-proof:hover{
+    background-color: #727070;
+    color: #fff;
+  }
 tbody tr td .d-flex .btn-view{
     background-color: #559bdd;
     color: #fff;
