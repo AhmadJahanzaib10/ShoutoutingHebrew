@@ -126,20 +126,34 @@ tbody tr td .d-flex .btn-do-job:hover{
     background-color: #F6911B;
     color: #fff;
   }
-
+tbody tr td .d-flex .btn-reject:hover{
+    background-color: #da811c;
+    color: #fff;
+  }
 tbody tr td .d-flex .btn-dispute{
-    background-color: #FF4742;
+    background-color: #ec5151;
+    color: #fff;
+  }
+tbody tr td .d-flex .btn-dispute:hover{
+    background-color: #ce4f4f;
     color: #fff;
   }
 tbody tr td .d-flex .btn-view{
-    background-color: #fa6400;
+    background-color: #559bdd;
     color: #fff;
-  }
+}
+tbody tr td .d-flex .btn-view:hover{
+    background-color: #4a78a3;
+    color: #fff;
+}
 tbody tr td .d-flex .btn-details{
-    background-color: #6200ee;
+    background-color: #3ead76;
     color: #fff;
-  }
-
+}
+tbody tr td .d-flex .btn-details:hover{
+    background-color: #2e8158;
+    color: #fff;
+}
   .custom-table tbody td:nth-child(1){
     color: #05AAA5 !important;
     font-weight: 500;
