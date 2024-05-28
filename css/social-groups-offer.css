@@ -1,8 +1,9 @@
-.hero{
+.hero {
     background-color: #05AAA50D;
     padding: 3rem 0px;
 }
-.btn-group > a{
+
+.btn-group > a {
     width: 170px !important;
     border: 1px solid #D0D5DD;
     flex: inherit !important;
@@ -11,73 +12,83 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }
-.btn-group > a:hover{
-    background: #05AAA5 !important;
-    color: #fff !important;
-}
-.btn-group .btn-white{
+
+    .btn-group > a:hover {
+        background: #05AAA5 !important;
+        color: #fff !important;
+    }
+
+.btn-group .btn-white {
     background-color: #fff;
     color: #344054;
 }
 
-.table-responsive{
+.table-responsive {
     margin-top: 2rem;
     padding: 0px;
     width: 100%;
     margin: 0px auto;
     margin-top: 1rem;
-  }
-  
-  .custom-table {
+}
+
+.custom-table {
     width: 100%;
     min-width: 900px;
     overflow-x: auto;
-  }
-  
-  .custom-table{
+}
+
+.custom-table {
     scrollbar-width: thin !important;
     overflow-x: auto;
     margin-bottom: 0px !important;
-  }
-  .custom-table thead tr,
-  .custom-table thead th {
-    border-top: none ;
-    border-bottom: none !important;
-    color: #A09D9D;
-    font-size: 17px;
-    font-weight: 500;
-    background-color: #F9FAFB !important;
-  }
-  .custom-table tbody th,
-  .custom-table tbody td {
-    font-weight: 400;
-    font-weight: 300;
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    vertical-align: baseline;
-  }
-  /* .custom-table tbody tr:nth-child(odd) td{
+}
+
+    .custom-table thead tr,
+    .custom-table thead th {
+        border-top: none;
+        border-bottom: none !important;
+        color: #A09D9D;
+        font-size: 17px;
+        font-weight: 500;
+        background-color: #F9FAFB !important;
+    }
+
+    .custom-table tbody th,
+    .custom-table tbody td {
+        font-weight: 400;
+        font-weight: 300;
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        vertical-align: baseline;
+    }
+    /* .custom-table tbody tr:nth-child(odd) td{
     background-color: #EAF0FB;
   }
   .custom-table tbody tr:nth-child(even) .prog{
     background-color: #F2F2F2;
   } */
-  .custom-table th::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
-  }
-  .custom-table td::-webkit-scrollbar {
-    width: 1px;
-    height: 5px;
-  }
-  
-  .custom-table::-webkit-scrollbar{
-      width: 6px;
-      width: 6px;
-  }
-  
-  .table-header{
+    .custom-table th::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+    }
+
+    .custom-table td::-webkit-scrollbar {
+        width: 1px;
+        height: 5px;
+    }
+
+    .custom-table::-webkit-scrollbar {
+        width: 6px;
+        width: 6px;
+    }
+
+    .custom-table td a {
+        color: #05AAA5;
+        text-decoration: none;
+    }
+
+.table-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -85,104 +96,130 @@
     margin-bottom: 5px;
     margin-top: 2rem;
     padding: 0px 10px;
-  }
-  .table-header h4{
-    color: #3558B0;
-    margin-bottom: 0px !important;
-  }
-  .table-header > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  .table-header > div select{
-    width: 150px;
-    background-color: #fff;
-    border: 1px solid grey;
-  }
+}
 
-  .table-border{
+    .table-header h4 {
+        color: #3558B0;
+        margin-bottom: 0px !important;
+    }
+
+    .table-header > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+        .table-header > div select {
+            width: 150px;
+            background-color: #fff;
+            border: 1px solid grey;
+        }
+
+.table-border {
     border: 1px solid #EAECF0 !important;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding-top: 20px ;
+    padding-top: 20px;
     border-radius: 8px;
-  }
+}
 
-  .custom-table thead{
+.custom-table thead {
     border: 1px solid #EAECF0;
-  }
+}
 
-  tbody tr td .d-flex .btn-do-job{
+tbody tr td .d-flex .btn-do-job {
+    background-color: #057baa;
+    color: #fff;
+}
+
+    tbody tr td .d-flex .btn-do-job:hover {
+        background: #016187 !important;
+        color: #fff !important;
+    }
+
+tbody tr td .d-flex .btn-accept {
     background-color: #05AAA5;
     color: #fff;
-  }
-tbody tr td .d-flex .btn-do-job:hover{
-    background: #008f8b !important;
-    color: #fff !important;
 }
-  tbody tr td .d-flex .btn-reject{
-    background-color: #F6911B;
-    color: #fff;
-  }
-tbody tr td .d-flex .btn-reject:hover{
-    background-color: #da811c;
-    color: #fff;
-  }
-tbody tr td .d-flex .btn-dispute{
+
+    tbody tr td .d-flex .btn-accept:hover {
+        background: #008f8b !important;
+        color: #fff !important;
+    }
+
+tbody tr td .d-flex .btn-reject {
     background-color: #ec5151;
     color: #fff;
-  }
-tbody tr td .d-flex .btn-dispute:hover{
-    background-color: #ce4f4f;
+}
+
+    tbody tr td .d-flex .btn-reject:hover {
+        background-color: #ce4f4f;
+        color: #fff;
+    }
+
+tbody tr td .d-flex .btn-dispute {
+    background-color: #F6911B;
     color: #fff;
-  }
-tbody tr td .d-flex .btn-upload-proof{
-    background-color: #838384;
-    color: #fff;
-  }
-tbody tr td .d-flex .btn-upload-proof:hover{
-    background-color: #727070;
-    color: #fff;
-  }
-tbody tr td .d-flex .btn-view{
+}
+
+    tbody tr td .d-flex .btn-dispute:hover {
+        background-color: #da811c;
+        color: #fff;
+    }
+
+tbody tr td .d-flex .btn-view {
     background-color: #559bdd;
     color: #fff;
 }
-tbody tr td .d-flex .btn-view:hover{
-    background-color: #4a78a3;
-    color: #fff;
-}
-tbody tr td .d-flex .btn-details{
+
+    tbody tr td .d-flex .btn-view:hover {
+        background-color: #4a78a3;
+        color: #fff;
+    }
+
+tbody tr td .d-flex .btn-details {
     background-color: #3ead76;
     color: #fff;
 }
-tbody tr td .d-flex .btn-details:hover{
-    background-color: #2e8158;
+
+    tbody tr td .d-flex .btn-details:hover {
+        background-color: #2e8158;
+        color: #fff;
+    }
+
+tbody tr td .d-flex .btn-upload-proof {
+    background-color: #c5b34b;
     color: #fff;
 }
-  .custom-table tbody td:nth-child(1){
-    color: #05AAA5 !important;
-    font-weight: 500;
-  }
-  .custom-table tbody td:nth-child(2){
-    color: #05AAA5 !important;
-    font-weight: 500;
-  }
 
-  .table-advertiser tbody tr td:nth-child(1){
+    tbody tr td .d-flex .btn-upload-proof:hover {
+        background-color: #b5a444;
+        color: #fff;
+    }
+
+.custom-table tbody td:nth-child(1) {
+    color: #05AAA5 !important;
+    font-weight: 500;
+}
+
+.custom-table tbody td:nth-child(2) {
+    color: #05AAA5 !important;
+    font-weight: 500;
+}
+
+.table-advertiser tbody tr td:nth-child(1) {
     color: #475467 !important;
     font-weight: 400;
-  }
+}
 
-  .table-advertiser tbody th,
-  .table-advertiser tbody td {
+.table-advertiser tbody th,
+.table-advertiser tbody td {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-  }
+}
 
-  .badge-progress{
+.badge-progress {
     width: 100%;
     background-color: #ECFDF3;
     border: 1px solid #ABEFC6;
@@ -191,8 +228,9 @@ tbody tr td .d-flex .btn-details:hover{
     font-weight: 500;
     border-radius: 50px;
     font-size: 13px;
-  }
-  .badge-blue{
+}
+
+.badge-blue {
     width: 100%;
     background-color: #EFF8FF;
     border: 1px solid #B2DDFF;
@@ -201,8 +239,9 @@ tbody tr td .d-flex .btn-details:hover{
     font-size: 13px;
     font-weight: 500;
     border-radius: 50px;
-  }
-  .badge-danger{
+}
+
+.badge-danger {
     width: 100%;
     background-color: #FEF6EE;
     border: 1px solid #F9DBAF;
@@ -211,7 +250,8 @@ tbody tr td .d-flex .btn-details:hover{
     font-size: 13px;
     font-weight: 500;
     border-radius: 50px;
-  }
+}
+
 .badge-yellow {
     width: 100%;
     background-color: #F5F2CE;
@@ -233,22 +273,26 @@ tbody tr td .d-flex .btn-details:hover{
     font-weight: 500;
     border-radius: 50px;
 }
-  @media screen and (max-width: 576px) {
-    .table-container{
+
+@media screen and (max-width: 576px) {
+    .table-container {
         width: 97% !important;
         margin-left: auto;
         margin-right: auto;
     }
-    .btn-group button{
+
+    .btn-group button {
         width: 45% !important;
         border: 1px solid #D0D5DD;
         font-size: 14px;
     }
-    .btn-group .btn-thrice{
+
+    .btn-group .btn-thrice {
         width: 33% !important;
         font-size: 12px !important;
     }
-    .hero h1{
+
+    .hero h1 {
         text-align: start !important;
     }
-  }
+}
