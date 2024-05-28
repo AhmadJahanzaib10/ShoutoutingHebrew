@@ -1,5 +1,5 @@
 .register-as-advertiser-page{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .register-as-advertiser-page-sub{
@@ -26,7 +26,9 @@ label{
 input[type="email"],
 input[type="text"],
 input[type="tel"],
-input[type="password"]{
+input[type="password"],
+input[type="Date"],
+select {
     height: 52px;
     border: 1px solid #D0D5DD;
     border-radius: 10px;
@@ -62,7 +64,7 @@ input[type="checkbox"]{
     font-weight: 600;
     cursor: pointer;
 }
-.pass p{
+.pass p, .username p {
     color: #05AAA5;
     font-size: 12px;
     font-weight: 600;
