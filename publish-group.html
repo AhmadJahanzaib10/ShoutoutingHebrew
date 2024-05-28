@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/order-process.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    .accordion-button::after{
+      display: none !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -78,7 +83,13 @@
               <!-- Step 2 form fields here -->
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
-                  <div id="collapseOne" class="accordion-collapse">
+                  <h2 class="accordion-header">
+                    <button disabled class="accordion-button" type="button">
+                      <h6>Order Details</h6>
+                      <p>View the task to be completed</p>
+                    </button>                   
+                  </h2>
+                  <div>
                     <div class="accordion-body">
                       <div class="row">
                         <img src="images/icons/fb-xxl.png" alt="">
