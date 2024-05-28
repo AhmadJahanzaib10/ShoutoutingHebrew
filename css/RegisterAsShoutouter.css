@@ -1,44 +1,52 @@
-.navbar{
-    padding: 17.5px 30px !important;
-}
-.register-as-shoutouter-page{
-    padding-top: 100px;
+.register-as-shoutouter-page {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.register-as-shoutouter-page-sub {
+    width: 720px;
+}
+
 .register-as-shoutouter-contact-head,
-.register-as-shoutouter-social-head{
+.register-as-shoutouter-social-head {
     font-size: 20px;
     font-weight: 600;
 }
+
 .register-as-shoutouter-contact-sub,
-.register-as-shoutouter-social-sub{
+.register-as-shoutouter-social-sub {
     width: 100%;
     text-align: center;
 }
+
 .register-as-shoutouter-contact form,
-.register-as-shoutouter-social form{
+.register-as-shoutouter-social form {
     width: 100%;
 }
-.register-as-shoutouter-head{
+
+.register-as-shoutouter-head {
     font-weight: 600;
     font-size: 30px;
     margin-top: 15px;
     color: #101828;
 }
-.register-as-shoutouter-para{
+
+.register-as-shoutouter-para {
     font-size: 16px;
     color: #475467;
 }
-label{
+
+label {
     font-size: 14px;
     font-weight: 500;
 }
+
 input[type="email"],
 input[type="text"],
 input[type="tel"],
 input[type="password"],
 input[type="Date"],
-select{
+select {
     height: 52px;
     border: 1px solid #D0D5DD;
     border-radius: 10px;
@@ -47,52 +55,62 @@ select{
     padding: 10px 14px 10px 14px;
     background-color: transparent;
 }
-::placeholder{
+
+::placeholder {
     color: #667085;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     height: 16px;
     width: 16px;
     border-color: #D0D5DD;
     cursor: pointer;
 }
-.iti{
+
+.iti {
     width: 100%;
 }
-.agreement p{
+
+.agreement p {
     color: #344054;
     font-size: 14px;
     font-weight: 500;
 }
-.agreement a{
+
+.agreement a {
     color: #344054;
     font-size: 14px;
     font-weight: 600;
 }
-.availibility p{
+
+.availibility p {
     color: #05AAA5;
     font-size: 12px;
     font-weight: 400;
     cursor: pointer;
 }
-.social-media-links-label p{
+
+.social-media-links-label p {
     color: #475467;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
 }
-.responsive-label{
+
+.responsive-label {
     color: #475467;
     font-size: 12px;
     font-weight: 400;
     cursor: pointer;
 }
-.social-media-links-label i{
+
+.social-media-links-label i {
     color: #98A2B3;
     height: 12px;
     width: 12px;
 }
-.pass p{
+
+.pass p, .username p{
     color: #05AAA5;
     font-size: 12px;
     font-weight: 600;
@@ -100,7 +118,8 @@ input[type="checkbox"]{
     left: 0px;
     text-align: left;
 }
-.register-as-shoutouter-btn{
+
+.register-as-shoutouter-btn {
     height: 52px;
     font-size: 16px;
     font-weight: 600;
@@ -110,12 +129,14 @@ input[type="checkbox"]{
     border: none;
     width: 97%;
 }
-.or-line{
+
+.or-line {
     height: 1px;
     width: 48%;
     background-color: #D0D5DD;
 }
-.other-register-as-shoutouter-btn button{
+
+.other-register-as-shoutouter-btn button {
     height: 44px;
     border: 1px solid #D0D5DD;
     border-radius: 10px;
@@ -123,22 +144,25 @@ input[type="checkbox"]{
     font-size: 16px;
     font-weight: 600;
 }
-.old-acc p{
+
+.old-acc p {
     font-size: 14px;
     color: #475467;
 }
-.old-acc a{
+
+.old-acc a {
     font-size: 14px;
     color: #05AAA5;
     font-weight: 600;
     text-decoration: none;
 }
-.center-line{
+
+.center-line {
     border-right: 1px solid #D0D5DD;
 }
 
 
-.question-pc-div{
+.question-pc-div {
     width: 287px;
     height: 58px;
     background: #05AAA5;
@@ -148,22 +172,25 @@ input[type="checkbox"]{
     padding: 5px 10px;
     display: none;
 }
-.question-pc-div p{
-    color: white;
-    font-weight: 600;
-    font-size: 12px;
-    margin: auto;
-}
-.question-pc-div .triangle{
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 20px 10px 0 10px;
-border-color: #05AAA5 transparent transparent transparent;
-right: 7px;
-bottom: -10px;
-}
-.question-m-div{
+
+    .question-pc-div p {
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .question-pc-div .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 10px 0 10px;
+        border-color: #05AAA5 transparent transparent transparent;
+        right: 7px;
+        bottom: -10px;
+    }
+
+.question-m-div {
     width: 287px;
     height: 58px;
     background: #05AAA5;
@@ -173,70 +200,82 @@ bottom: -10px;
     padding: 5px 10px;
     display: none;
 }
-.question-m-div p{
-    color: white;
-    font-weight: 600;
-    font-size: 12px;
-    margin: auto;
-}
-.question-m-div .triangle{
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 20px 10px 0 10px;
-border-color: #05AAA5 transparent transparent transparent;
-right: 40px;
-bottom: -10px;
-}
+
+    .question-m-div p {
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .question-m-div .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 10px 0 10px;
+        border-color: #05AAA5 transparent transparent transparent;
+        right: 40px;
+        bottom: -10px;
+    }
 
 
-@media screen and (max-width:1200px){
-    .pass p{
+@media screen and (max-width:1200px) {
+    .pass p {
         bottom: -38px !important;
     }
 }
 
 @media screen and (max-width:992px) {
-.center-line{
-    border-right: 0 !important;
-}
-.pass p{
-    bottom: -20px !important;
-}
-.register-as-shoutouter-right-form{
-    margin-top: 35px;
-}
+    .center-line {
+        border-right: 0 !important;
+    }
+
+    .pass p {
+        bottom: -20px !important;
+    }
+
+    .register-as-shoutouter-right-form {
+        margin-top: 35px;
+    }
 }
 
 @media screen and (max-width:767px) {
-    .two-boxes{
+    .two-boxes {
         flex-direction: column;
     }
-    .half-width{
+
+    .half-width {
         width: 100% !important;
     }
-    .agreement{
+
+    .agreement {
         align-items: start !important;
         text-align: left !important;
     }
-    .agreement input{
-        margin-top: 3px !important;
-    }
-    .other-register-as-shoutouter-btn button{
+
+        .agreement input {
+            margin-top: 3px !important;
+        }
+
+    .other-register-as-shoutouter-btn button {
         width: 100% !important;
     }
-    .responsive-label{
+
+    .responsive-label {
         display: block !important;
     }
-    .social-media-links-label p{
+
+    .social-media-links-label p {
         display: none !important;
     }
-    .register-as-shoutouter-right-form form > div{
+
+    .register-as-shoutouter-right-form form > div {
         margin-bottom: 10px;
     }
 }
+
 @media screen and (max-width:576px) {
-    .question-m-div{
+    .question-m-div {
         width: 267px;
         text-align: left;
     }
