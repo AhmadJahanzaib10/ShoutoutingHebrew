@@ -274,7 +274,71 @@ tbody tr td .d-flex .btn-upload-proof {
     border-radius: 50px;
 }
 
+/* New */
+
+.btn-do-job {
+    background-color: #057baa;
+    color: #fff;
+}
+.btn-do-job:hover {
+        background: #016187 !important;
+        color: #fff !important;
+    }
+.btn-accept {
+    background-color: #05AAA5;
+    color: #fff;
+}
+.btn-accept:hover {
+        background: #008f8b !important;
+        color: #fff !important;
+    }
+.btn-reject {
+    background-color: #ec5151;
+    color: #fff;
+}
+.btn-reject:hover {
+        background-color: #ce4f4f;
+        color: #fff;
+    }
+.btn-dispute {
+    background-color: #F6911B;
+    color: #fff;
+}
+.btn-dispute:hover {
+        background-color: #da811c;
+        color: #fff;
+    }
+.btn-view {
+    background-color: #559bdd;
+    color: #fff;
+}
+.btn-view:hover {
+        background-color: #4a78a3;
+        color: #fff;
+    }
+
+    @media screen and (max-width:767px) {
+        .btn-responsive-mb{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btn-responsive-mb div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .btn-responsive-mb div button{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+
 @media screen and (max-width: 576px) {
+    .top-three-btn a{
+        width: 130px !important;
+    }
     .table-container {
         width: 97% !important;
         margin-left: auto;
@@ -294,5 +358,11 @@ tbody tr td .d-flex .btn-upload-proof {
 
     .hero h1 {
         text-align: start !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .top-three-btn a{
+        width: 100px !important;
     }
 }
