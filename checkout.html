@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shout Out</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/social-groups-offer.css">
+  <link rel="stylesheet" href="css/order-process.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    .accordion-button::after{
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"
+        ><img src="images/logo.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav dashboard-navbar-2 mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" aria-disabled="true">My Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" aria-disabled="true">Blog</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center gap-2 align-items-center nav-right">
+          <button class="btn btn-primary place-order">Place Order</button>
+        <div class="d-flex dashboard-nav gap-2 justify-content-center align-items-center btns"  data-bs-toggle="dropdown"
+        aria-expanded="false" role="button">
+         <div class="profile d-flex gap-2 justify-content-center align-items-center">
+          <div class="icon">
+            <i class="ri-user-3-line"></i>
+          </div>
+          <div class="text">
+            <h5>Group Admin</h5>
+            <p>Influencer : <span class="balance">$10000.00</span></p>
+          </div>
+          <ul class="dropdown-menu profile-dropdown">
+              <li>
+                <a href="#" class="dropdown-item fw-semibold">
+                  <img src="images/icons/user-color.png" alt="">
+                  Account Information
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item fw-semibold">
+                  <img src="images/icons/log-out-01.png" alt="">
+                  Logout
+                </a>
+              </li>
+            </ul>
+         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btn btn-outline">My Offers</button>
+          <button type="button" class="btn btn-outline btn-white">Account Settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-section mt-5 mb-5">
+    <div class="container">
+      <div class="row w-50 mx-auto">
+        <div class="checkout-top">
+            <h3>Checkout</h3>
+            <div class="contents">
+                <div class="options">
+                    <div class="icon">$</div>
+                    <p>41.40</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <div class="item">
+                <h3>Summary</h3>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <h4>(<span>$</span>) <span class="price">36.00</span></h4>
+                </div>
+                <div class="right">
+                    <p>Subtotal</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <h4>(<span>$</span>) <span class="price">5.40</span></h4>
+                </div>
+                <div class="right">
+                    <p>"Shoutouting" Service Fee</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <h4>(<span>$</span>) <span class="price">41.40</span></h4>
+                </div>
+                <div class="right">
+                    <p>Total</p>
+                </div>
+            </div>
+            <div class="coupon">
+                <form action="">
+                    <input type="text" placeholder="Gift Card or Discount Code">
+                    <button class="btn-coupon btn" type="submit" style="background-color: #05AAA5; color: #fff;">Apply</button>
+                </form>
+            </div>
+            <button class="btn btn-use-balance">Use Account Balance</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container top-footer">
+      <div class="col-66">
+        <img src="images/logo.png" alt="" />
+        <p>
+          Shoutouting is a marketplace that connects companies that are
+          looking to improve their online ranking score with reviews writers
+          for hire.
+        </p>
+      </div>
+      <div class="d-flex justify-content-between align-items-start footer-link">
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">How it works ( Companies)</a>
+          <a href="#">How it works ( Influencers)</a>
+          <a href="affiliate.html">Affiliate Program</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column">
+          <h4>Social Platforms</h4>
+          <a href="#">Facebook Marketing</a>
+          <a href="#">Instagram Marketing</a>
+          <a href="#">Tiktok Marketing</a>
+          <a href="#">Twitter Marketing</a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container bottom-footer d-flex justify-content-between align-items-center">
+      <p>Shoutouting © 2024 All Rights Reserved.</p>
+      <div class="social-icons d-flex gap-4">
+        <img src="images/icons/telegram.png" alt="" />
+        <img src="images/icons/linkdin.png" alt="" />
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+</body>
+
+</html>
