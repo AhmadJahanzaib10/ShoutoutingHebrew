@@ -1,0 +1,72 @@
+.checkout-top{
+    background-color: #f0f0f02b;
+    padding: 0.8rem 1rem;
+}
+.checkout-top h3{
+    font-size: 24px;
+}
+.checkout-top .contents .options{
+    display: flex;
+}
+.order-summary{
+    background-color: #f0f0f02b;
+    margin-top: 1rem;
+    padding: 1rem 0.5rem 2rem 0.5rem !important;
+}
+.order-summary .item{
+    padding: 0.8rem 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(223, 223, 223);
+}
+.order-summary .item h3{
+    font-size: 21px;
+}
+.order-summary .item h4{
+    font-size: 16px;
+}
+.order-summary .item span:not(.price){
+    color: #05AAA5;
+}
+.order-summary .item .right p{
+    margin-bottom: 0px !important;
+    font-size: 13px;
+}
+.order-summary .coupon{
+    margin-top: 0.5rem;
+}
+.order-summary .coupon form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-summary .coupon input{
+    width: 85%;
+    padding: 0.4rem 1rem;
+    border: 0.5px solid rgb(223, 223, 223);
+    outline: none;
+}
+.order-summary .copoun form .btn-coupon{
+    background: #05AAA5 !important;
+    padding: 0.5rem auto !important;
+    color: #fff;
+}
+.btn-use-balance{
+    background-color: #05AAA5 !important;
+    width: 100%;
+    color: #fff;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 992px) {
+    .w-50{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .w-50{
+        width: 90% !important;
+    }
+}
