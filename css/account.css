@@ -53,9 +53,6 @@ a{
     cursor: pointer;
     color: #667085;
 }
-.toggle-tab a{
-    color: #667085 !important;
-}
 .toggle-tab:hover{
     background-color: rgba(5, 170, 165, 0.05);
     border-radius: 10px;
@@ -97,6 +94,12 @@ a{
 .change-email div > h2{
     font-size: 18px;
     font-weight: 600;
+}
+.social-group-heading{
+    background-color: #F2FBFA;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 .change-email div > p{
     font-size: 14px;
