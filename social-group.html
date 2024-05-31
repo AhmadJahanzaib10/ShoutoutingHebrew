@@ -119,87 +119,160 @@
       <div class="w-100 d-flex flex-column gap-3">
         <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
           <div>
-            <h2 class="social-group-heading">Add Your Social Media Groups - For Admins ONLY !</h2>
+            <h2 class="social-group-heading d-flex gap-3 align-items-center" style="color:#16ADAA";>
+              <img src="./images/Back.png" alt="">
+              Add Your Social Group
+            </h2>
             <p>
-                Generate revenue from your groups, channels, communities, or pages on social media platforms like linkedIn, Facebook, Telegram,
-                and whatsapp by sharing sponsored content.
+              Before Filling out the form with your social media group details, please follow these instructions: 
             </p>
-            <p>
-                if you’re an admin of a group, channel, page, community with a significant following, share your group details and we’ll connect
-                you with advertisers seeking collaboration opportunities.
-            </p>
-            <p>
-              Ready to get started? Click the
-              <a href="#" style="color: #05aaa5">Fill out the form and kickstart you monetization journe</a>
-            </p>
+            <ul class="social-group-ul">
+              <li> <span> Ensure you have adminitrative access to the social media groups you intend to provide details for(Facebook, Telegram, 
+                LinkedIn, WhatsApp). </span></li>
+                <li>
+                  <span>
+                  Double-check the accuracy of the group names and URLs before submiting them.
+                </span>
+                </li>
+                <li>
+                  <span>
+                  Provide the number of members or followers for each group if possible.
+                </span>
+                </li>
+                <li>
+                  <span>
+                   Include any relevant information about the target audience or demographics of your groups.
+                  </span>
+                  </li>
+            </ul>
           </div>
-          <button class="social-group-add-btn">Add Group</button>
-          <hr class="my-2" />
+          <h2 style="
+          font-size: 30px;
+          font-weight: 500;
+          margin-bottom:-15px;
+          ">Fill Out The Form</h2>
+          <hr />
 
-          <!-- Add table here -->
-          <div class="table-wrapper border-0">
-            <div class="table-responsive mt-0">
-              <table class="table custom-table">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Group Name</th>
-                    <th scope="col">Members</th>
-                    <th scope="col">Link</th>
-                    <th scope="col">Status</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          
+          <!-- form -->
+
+          <form class="w-100 d-flex flex-column gap-3">
+            <div
+              class="change-email d-flex justify-content-center gap-2 flex-column"
+            >
+
+  
+              <div class="d-flex w-100 gap-3 two-boxes">
+                <div
+                  class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative"
+                >
+                  <label for="n-pass">Social Group Platform<span style="color:red">*</span></label>
+                  <select name="state" id="cars" class="dropdown w-100">
+                    <option selected>Select Platform</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="instagram">Instagram</option>
+                  </select>
+                </div>
+                <div
+                  class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2"
+                >
+                  <label for="cn-pass">Group Name<span style="color:red">*</span></label>
+                  <input
+                    class="w-100"
+                    type="password"
+                    name="cn-pass"
+                    placeholder="Name of Group"
+                  />
+                </div>
+              </div>
+
+
+              <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
+                <label for="o-pass">Group Link <span style="color:red">*</span></label>
+                <input
+                  class="w-100"
+                  type="password"
+                  name="0-pass"
+                  placeholder="https://www.example.com"
+                />
+              </div>
+
+
+              <div class="d-flex w-100 gap-3 two-boxes">
+                <div
+                  class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2"
+                >
+                  <label for="cn-pass">Number of members/subscribers/ followers<span style="color:red">*</span></label>
+                  <input
+                    class="w-100"
+                    type="number"
+                    name="cn-pass"
+                    placeholder="Write number of members"
+                  />
+                </div>
+                <div
+                  class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative"
+                >
+                  <label for="n-pass">Group Topics<span style="color:#858585">(Select at least one topic)</span> <span style="color:red">*</span></label>
+                  <select name="state" id="cars" class="dropdown w-100">
+                    <option selected>Select Topics</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="instagram">Instagram</option>
+                  </select>
+                </div>
+                
+              </div>
+
+
+              <div class="d-flex w-100 gap-3 two-boxes">
+
+                <div
+                  class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative"
+                >
+                  <label for="n-pass">Group Language<span style="color:#858585">(Select at least one language)</span> <span style="color:red">*</span></label>
+                  <select name="state" id="cars" class="dropdown w-100">
+                    <option selected>Select Language</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="instagram">Instagram</option>
+                  </select>
+                </div>
+
+                <div
+                  class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2"
+                >
+                  <label for="cn-pass">Price Per Week - Daily post jump <span style="color:#858585">(in USD)</span><span style="color:red">*</span></label>
+                  <input
+                    class="w-100"
+                    type="number"
+                    name="cn-pass"
+                    placeholder="$1000"
+                  />
+                </div>  
+              </div>
+
+              <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
+                <label for="o-pass">Instructions for Advertisers<span style="color:red">*</span></label>
+                <textarea name="message" id="txtMessage" class="w-100"
+                placeholder="Please specify all instructions, your Do's and Don'ts limitations for advertisers if you have such......"></textarea>
+              </div>
+
+
+
             </div>
-          </div>
+  
+            <hr class="my-2 security-hr" />
+  
+            <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+              <button class="acc-btn-2 update-pass-btn">Save</button>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
