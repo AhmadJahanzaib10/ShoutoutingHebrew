@@ -30,6 +30,8 @@ footer hr{
     width: 70%;
     border: 1px solid #1F242F;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .bottom-footer p{
     color: #94969C;
