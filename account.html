@@ -75,6 +75,7 @@
       <a href="" class="w-50 h-100 d-flex align-items-center justify-content-center">My Offers</a>
       <a href="" class="w-50 h-100 d-flex align-items-center justify-content-center">Account Settings</a>
     </div>
+    <h2 class="acc-navigate-head">Account Settings</h2>
   </div>
 
   <div class="container acc-main d-flex gap-4 justify-content-between">
@@ -86,59 +87,173 @@
         <span><i class="ri-arrow-down-s-line"></i></span>
       </div>
       <ul class="toggle-tabs-list w-100 gap-1 d-flex flex-column">
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Account</a>
-        </li>
         <li class="toggle-tab w-100 d-flex align-items-center active">
-          <a href="#">Social Groups</a>
+          Account
         </li>
         <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Change Picture</a>
+          My Social Groups
         </li>
         <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Link Accounts</a>
+          Change Picture
         </li>
         <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Payout Details</a>
+          Link Accounts
+        </li>
+        <li class="toggle-tab w-100 d-flex align-items-center">
+          Payout Details
         </li>
         <li class="toggle-tab w-100 d-flex align-items-center">Security</li>
         <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Billing Information</a>
+          Billing Information
         </li>
         <li class="toggle-tab w-100 d-flex align-items-center">Balance</li>
         <li class="toggle-tab w-100 d-flex align-items-center">
-          <a href="#">Delete Account</a>
+          Delete Account
         </li>
       </ul>
     </div>
 
     <!-- right-tabs -->
 
-    <!--tab-2  -->
+    <!-- tab-1 -->
     <div class="w-75 acc-main-right content active">
+      <div class="w-100 d-flex flex-column gap-3">
+        <div class="refer-shoutouter d-flex justify-content-center gap-2 flex-column">
+          <h2>Refer A ShoutOuter/Social Media Group Admin</h2>
+          <p class="ref-1">
+            Referrel Link:
+            https://WWW.shoutouting.com/Register/Influencer?ref=shoutouter
+          </p>
+          <p class="ref-2">
+            Referrel Link: https://WWW.shoutouting.com/Register/<br />Influencer?ref=shoutouter
+          </p>
+        </div>
+
+        <div class="refer-advertiser d-flex mt-2 justify-content-center gap-2 flex-column">
+          <h2>Refer An Advertiser</h2>
+          <p class="ref-1">
+            Referrel Link:
+            https://WWW.shoutouting.com/Register/Advertiser?ref=shoutouter
+          </p>
+          <p class="ref-2">
+            Referrel Link: https://WWW.shoutouting.com/Register/<br />Advertiser?ref=shoutouter
+          </p>
+        </div>
+
+        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Change your Current Email</h2>
+            <p>Please enter your new email.</p>
+          </div>
+          <hr class="m-0" />
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="c-email">Current Email</label>
+              <input class="w-100" type="email" name="c-email" placeholder="shoutouter@shoutouting.com" />
+            </div>
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="n-email">Enter new Email</label>
+              <input class="w-100" type="email" name="n-email" placeholder="Enter new Email" />
+            </div>
+          </div>
+        </div>
+
+        <div class="change-email mt-3 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Change your Current Email</h2>
+            <p>Please enter your new email.</p>
+          </div>
+          <hr class="m-0" />
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="f-name">First Name</label>
+              <input class="w-100" type="text" name="f-name" placeholder="First Name" />
+            </div>
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="l-name">Last Name</label>
+              <input class="w-100" type="text" name="l-name" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="u-name">Username</label>
+              <input class="w-100" type="text" name="u-name" placeholder="User Name" />
+            </div>
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="country">Country</label>
+              <select name="country" id="cars" class="dropdown w-100">
+                <option value="united states">United States</option>
+                <option value="canada">Canada</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="state">State</label>
+              <select name="state" id="cars" class="dropdown w-100">
+                <option selected>Select State</option>
+                <option value="canada">Canada</option>
+              </select>
+            </div>
+
+            <!-- dropdown invisible -->
+            <div class="d-flex invisible invisible-box w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="n-email">Country</label>
+              <select name="country" id="cars" class="dropdown w-100">
+                <option value="united states">United States</option>
+                <option value="canada">Canada</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+          <button class="acc-btn-1">Cancel</button>
+          <button class="acc-btn-2">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!--tab-2  -->
+    <div class="w-75 acc-main-right content">
       <div class="w-100 d-flex flex-column gap-3">
         <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
           <div>
-            <h2 class="social-group-heading">Add Your Social Media Groups - For Admins ONLY !</h2>
+            <h2>Add Your Social Media Groups - For Admins ONLY !</h2>
             <p>
-                Generate revenue from your groups, channels, communities, or pages on social media platforms like linkedIn, Facebook, Telegram,
-                and whatsapp by sharing sponsored content.
-            </p>
-            <p>
-                if you’re an admin of a group, channel, page, community with a significant following, share your group details and we’ll connect
-                you with advertisers seeking collaboration opportunities.
+              Generate revenue from your groups, channels, communities, or
+              pages on social media platforms like LinkedIn, Facebook,
+              Telegram, and WhatsApp by sharing sponsored content. If you're
+              an admin of a group, channel, page, or community with a
+              significant following, share your group details, and we'll
+              connect you with advertisers seeking collaboration
+              opportunities.
             </p>
             <p>
               Ready to get started? Click the
-              <a href="#" style="color: #05aaa5">Fill out the form and kickstart you monetization journe</a>
+              <span style="color: #05aaa5">Add Group</span> button and
+              kickstart your monetisation journey.
             </p>
           </div>
           <button class="social-group-add-btn">Add Group</button>
           <hr class="my-2" />
 
           <!-- Add table here -->
-          <div class="table-wrapper border-0">
-            <div class="table-responsive mt-0">
+          <div class="table-wrapper">
+            <div class="table-title">
+              <div class="text">
+                <h5>Your Social Groups</h5>
+                <p>Please enter  your new email.</p>
+              </div>
+              <img src="images/icons/dots-vertical.png" alt="">
+            </div>
+            <div class="table-responsive">
               <table class="table custom-table">
                 <thead>
                   <tr>
@@ -203,6 +318,452 @@
         </div>
       </div>
     </div>
+
+    <!--tab-3  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 d-flex flex-column gap-3">
+        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Change Picture</h2>
+            <p>Please upload your profile picture</p>
+          </div>
+          <hr class="m-0" />
+
+          <div class="acc-image d-flex align-items-center justify-content-center">
+            <img src="./images/Icon.png" alt="" />
+          </div>
+
+          <div class="d-flex w-100 image-upload w-100 flex-column align-items-center justify-content-center mt-3 gap-2">
+            <div class="image-upload-icon d-flex align-items-center justify-content-center">
+              <img src="./images/upload-cloud-02.png" alt="" />
+            </div>
+            <label for="profile-pic" class="text-center profile-pic-label">
+              <span>Click to upload</span>
+              or drag and drop <br />
+              <span> SVG, PNG, JPG or GIF (max. 800x400px) </span>
+            </label>
+            <input id="profile-pic" type="file" />
+          </div>
+        </div>
+
+        <hr class="my-3" />
+
+        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+          <button class="acc-btn-1">Cancel</button>
+          <button class="acc-btn-2">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!--tab-4  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 social-accounts d-flex flex-column gap-3">
+        <h2 class="">Connect Your Social Accounts To Get More Jobs</h2>
+        <hr />
+        <form action="" class="w-100 d-flex flex-column mx-auto mt-2">
+          <!-- facebook -->
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Facebook Profile Link</label>
+              <div class="position-relative">
+                <p class="mb-0 d-flex gap-2">
+                  How to find your Facebook profile's link?<i class="question-pc ri-question-line"></i>
+                </p>
+                <div class="position-absolute question-line-div question-pc-div">
+                  <div class="triangle position-absolute"></div>
+                  <p>
+                    Click on your name or profile picture at the top left of
+                    Facebook URL and copy the URL
+                  </p>
+                </div>
+              </div>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="&#xf082; Facebook Profile URL"
+              style="font-family: Inter, FontAwesome" />
+            <div class="position-relative">
+              <p class="mb-0 d-flex gap-2 responsive-label d-none">
+                How to find your Facebook profile's link?<i class="question-m ri-question-line"></i>
+              </p>
+              <div class="position-absolute question-line-div question-m-div">
+                <div class="triangle position-absolute"></div>
+                <p>
+                  Click on your name or profile picture at the top left of
+                  Facebook URL and copy the URL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- instagram -->
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Instagram Profile Link</label>
+              <div class="position-relative">
+                <p class="mb-0 d-flex gap-2">
+                  How to find your Instagram profile's link?<i class="question-pc ri-question-line"></i>
+                </p>
+                <div class="position-absolute question-line-div question-pc-div">
+                  <div class="triangle position-absolute"></div>
+                  <p>
+                    Click on your name or profile picture at the top left of
+                    Instagram URL and copy the URL
+                  </p>
+                </div>
+              </div>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="&#xf16d; Instagram Profile URL"
+              style="font-family: Inter, FontAwesome" />
+            <div class="position-relative">
+              <p class="mb-0 d-flex gap-2 d-none responsive-label">
+                How to find your Instagram profile's link?<i class="question-m ri-question-line"></i>
+              </p>
+              <div class="position-absolute question-line-div question-m-div">
+                <div class="triangle position-absolute"></div>
+                <p>
+                  Click on your name or profile picture at the top left of
+                  Instagram URL and copy the URL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- tiktok -->
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Tiktok Profile Link</label>
+              <div class="position-relative">
+                <p class="mb-0 d-flex gap-2">
+                  How to find your Tiktok profile's link?<i class="question-pc ri-question-line"></i>
+                </p>
+                <div class="position-absolute question-line-div question-pc-div">
+                  <div class="triangle position-absolute"></div>
+                  <p>
+                    Click on your name or profile picture at the top left of
+                    Tiktok URL and copy the URL
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <input class="w-100" type="text" name="u-name" placeholder="&#xe07b; Tiktok Profile URL"
+              style="font-family: Inter, FontAwesome" />
+
+            <div class="position-relative">
+              <p class="mb-0 d-flex gap-2 d-none responsive-label">
+                How to find your Tiktok profile's link?
+                <i class="question-m ri-question-line"></i>
+              </p>
+              <div class="position-absolute question-line-div question-m-div">
+                <div class="triangle position-absolute"></div>
+                <p>
+                  Click on your name or profile picture at the top left of
+                  Tiktok URL and copy the URL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Twitter -->
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Twitter Profile Link</label>
+              <div class="position-relative">
+                <p class="mb-0 d-flex gap-2">
+                  How to find your Twitter profile's link?<i class="question-pc ri-question-line"></i>
+                </p>
+                <div class="position-absolute question-line-div question-pc-div">
+                  <div class="triangle position-absolute"></div>
+                  <p>
+                    Click on your name or profile picture at the top left of
+                    Twitter URL and copy the URL
+                  </p>
+                </div>
+              </div>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="&#xe61b; Twitter Profile URL"
+              style="font-family: Inter, FontAwesome" />
+            <div class="position-relative">
+              <p class="mb-0 d-flex gap-2 d-none responsive-label">
+                How to find your Twitter profile's link?<i class="question-m ri-question-line"></i>
+              </p>
+              <div class="position-absolute question-line-div question-m-div">
+                <div class="triangle position-absolute"></div>
+                <p>
+                  Click on your name or profile picture at the top left of
+                  Twitter URL and copy the URL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Youtube -->
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Youtube Profile Link</label>
+              <div class="position-relative">
+                <p class="mb-0 d-flex gap-2">
+                  How to find your Youtube profile's link?<i class="question-pc ri-question-line"></i>
+                </p>
+                <div class="position-absolute question-line-div question-pc-div">
+                  <div class="triangle position-absolute"></div>
+                  <p>
+                    Click on your name or profile picture at the top left of
+                    Youtube URL and copy the URL
+                  </p>
+                </div>
+              </div>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="&#xf167; Youtube Profile URL"
+              style="font-family: Inter, FontAwesome" />
+            <div class="position-relative">
+              <p class="mb-0 d-flex gap-2 d-none responsive-label">
+                How to find your Youtube profile's link?<i class="question-m ri-question-line"></i>
+              </p>
+              <div class="position-absolute question-line-div question-m-div">
+                <div class="triangle position-absolute"></div>
+                <p>
+                  Click on your name or profile picture at the top left of
+                  Youtube URL and copy the URL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+            <button class="acc-btn-1">Cancel</button>
+            <button class="acc-btn-2">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--tab-5  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 social-accounts d-flex flex-column gap-3">
+        <h2 class="">Your Payout Details</h2>
+        <hr />
+        <form action="" class="w-100 d-flex flex-column mx-auto mt-2">
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Paypal Email</label>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="Enter Paypal Email" />
+          </div>
+
+          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
+            <div class="social-media-links-label w-100 d-flex justify-content-between">
+              <label for="u-name">Payoneer Email</label>
+            </div>
+            <input class="w-100" type="text" name="u-name" placeholder="Enter Payoneer Email" />
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+            <button class="acc-btn-1">Cancel</button>
+            <button class="acc-btn-2">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--tab-6  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 d-flex flex-column gap-3">
+        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Password</h2>
+            <p>Please enter your old password to change your password.</p>
+          </div>
+          <hr class="m-0" />
+
+          <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
+            <label for="o-pass">Enter old password</label>
+            <input class="w-100" type="password" name="0-pass" placeholder="Enter old password" />
+          </div>
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative">
+              <label for="n-pass">New password</label>
+              <input class="w-100" type="password" name="n-pass" placeholder="Enter New password" />
+
+              <p class="position-absolute mb-0">
+                Your new password must be more than 8 characters.
+              </p>
+            </div>
+            <div class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="cn-pass">Confirm new password</label>
+              <input class="w-100" type="password" name="cn-pass" placeholder="Confirm new password" />
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5 security-hr" />
+
+        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+          <button class="acc-btn-1">Cancel</button>
+          <button class="acc-btn-2 update-pass-btn">Update Password</button>
+        </div>
+      </div>
+    </div>
+
+    <!--tab-7  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 d-flex flex-column gap-3">
+        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Billing Information</h2>
+            <p>Please enter your billing information.</p>
+          </div>
+          <hr class="m-0" />
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="state">Country</label>
+              <select name="state" id="cars" class="dropdown w-100 form-select">
+                <option selected>Select Country</option>
+                <option value="canada">Canada</option>
+                <option value="united states">United States</option>
+              </select>
+            </div>
+
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="n-email">State</label>
+              <select name="country" id="cars" class="dropdown w-100 form-select">
+                <option selected>Select State</option>
+                <option value="california">California</option>
+                <option value="texas">Texas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="state">City</label>
+              <select name="state" id="cars" class="dropdown w-100 form-select">
+                <option selected>Select City</option>
+                <option value="new york">New York</option>
+                <option value="miami">Miami</option>
+              </select>
+            </div>
+
+            <!-- invisible for design concerns -->
+            <div class="d-flex invisible invisible-box w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="n-email">State</label>
+              <select name="country" id="cars" class="dropdown w-100">
+                <option selected>Select State</option>
+                <option value="california">California</option>
+                <option value="texas">Texas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
+            <label for="o-pass">Address</label>
+            <textarea class="w-100" type="password" name="0-pass" placeholder="Enter your address"></textarea>
+          </div>
+
+          <div class="d-flex w-100 gap-3 two-boxes">
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="f-name">Zip Code</label>
+              <input class="w-100" type="text" name="f-name" placeholder="Enter your Zip Code" />
+            </div>
+            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
+              <label for="l-name">VAT ID (For European countries)</label>
+              <input class="w-100" type="text" name="l-name" placeholder="VAT ID (For European countries)" />
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-3" />
+
+        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+          <button class="acc-btn-1">Cancel</button>
+          <button class="acc-btn-2">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!--tab-8  -->
+    <div class="w-75 acc-main-right content">
+      <div class="w-100 d-flex flex-column gap-3">
+        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+          <div>
+            <h2>Balance</h2>
+            <p>Minimum Withdraw Limit is $50</p>
+          </div>
+          <hr class="my-2" />
+
+          <div class="payouts">
+            <div class="d-flex px-3 my-4 align-items-center justify-content-between">
+              <h2 class="change-email d-flex justify-content-center gap-2 flex-column">
+                Payouts
+              </h2>
+              <i style="color: #98a2b3; cursor: pointer" class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="d-flex px-3 payouts-headings align-items-center justify-content-between">
+              <h2>Source</h2>
+              <h2>Balance</h2>
+            </div>
+
+            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
+              <h2>My Groups Publications</h2>
+              <h2>$10</h2>
+            </div>
+
+            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
+              <h2>Post Sharing Balance</h2>
+              <h2>$20</h2>
+            </div>
+
+            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
+              <h2>Referral Balance</h2>
+              <h2>$20</h2>
+            </div>
+
+            <div class="d-flex px-3 payouts-total align-items-center justify-content-between">
+              <h2>Total Balance</h2>
+              <h2>$50</h2>
+            </div>
+          </div>
+
+          <hr class="my-2" />
+
+          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
+            <button class="acc-btn-1">Cancel</button>
+            <button class="acc-btn-2">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--tab-9  -->
+    <div class="w-75 acc-main-right content">
+      <div class="d-acc w-100 d-flex justify-content-between">
+        <div class="d-content">
+          <h2>Deactivate your Account</h2>
+          <p>
+            Your profile will be hidden and it will be activated when you
+            login next time.
+          </p>
+        </div>
+
+        <button class="d-btn">Deactivate Account</button>
+      </div>
+
+      <hr />
+
+      <div class="d-acc w-100 d-flex justify-content-between">
+        <div class="d-content">
+          <h2>Permanently Delete Account</h2>
+          <p>Your profile will be deleted permanently.</p>
+        </div>
+
+        <button class="d-btn">Delete Account</button>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -248,7 +809,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="js/navbar.js"></script>
-  <script src="./js/social-group.js"></script>
+  <script src="./js/account.js"></script>
   <script src="https://kit.fontawesome.com/84fc85d233.js" crossorigin="anonymous"></script>
 </body>
 
