@@ -71,7 +71,7 @@
     left: auto !important;
 }
 .profile-dropdown{
-    right: 100px !important;
+    right: 0px !important;
     left: auto !important;
   }
 .dashboard-navbar{
@@ -79,6 +79,9 @@
 }
 .dashboard-navbar-2{
     width: 60% !important;
+}
+.dashboard-nav{
+    position: relative;
 }
 .dashboard-nav .icon{
     background-color: #F2F4F7;
