@@ -1,1 +1,97 @@
+.badge-progress {
+    width: 100%;
+    background-color: #ECFDF3;
+    border: 1px solid #ABEFC6;
+    color: #067647;
+    padding: 3px 10px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 13px;
+}
 
+.badge-blue {
+    width: 100%;
+    background-color: #EFF8FF;
+    border: 1px solid #B2DDFF;
+    color: #175CD3;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.badge-danger {
+    width: 100%;
+    background-color: #FEF6EE;
+    border: 1px solid #F9DBAF;
+    color: #B93815;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.badge-yellow {
+    width: 100%;
+    background-color: #F5F2CE;
+    border: 1px solid #F9DBAF;
+    color: #908a24;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.badge-orange {
+    width: 100%;
+    background-color: #FFE6C8;
+    border: 1px solid #E8A966;
+    color: #A9632C;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* New */
+
+.btn-do-job {
+    background-color: #057baa;
+    color: #fff;
+}
+.btn-do-job:hover {
+        background: #016187 !important;
+        color: #fff !important;
+    }
+.btn-accept {
+    background-color: #05AAA5;
+    color: #fff;
+}
+.btn-accept:hover {
+        background: #008f8b !important;
+        color: #fff !important;
+    }
+.btn-reject {
+    background-color: #ec5151;
+    color: #fff;
+}
+.btn-reject:hover {
+        background-color: #ce4f4f;
+        color: #fff;
+    }
+.btn-dispute {
+    background-color: #F6911B;
+    color: #fff;
+}
+.btn-dispute:hover {
+        background-color: #da811c;
+        color: #fff;
+    }
+.btn-view {
+    background-color: #559bdd;
+    color: #fff;
+}
+.btn-view:hover {
+        background-color: #4a78a3;
+        color: #fff;
+    }
