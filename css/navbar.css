@@ -105,6 +105,13 @@
     font-size: 14px;
     border: 0px;
 }
+.notification-menu ul {
+    margin-bottom: 0px !important;
+    width: 325px;
+    max-height: 425px;
+    min-height: 105px;
+    overflow-y: auto;
+}
 .notification-desktop{
     position: relative;
     list-style: none;
