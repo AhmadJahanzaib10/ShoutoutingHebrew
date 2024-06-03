@@ -7,6 +7,16 @@
 }
 .checkout-top .contents .options{
     display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.checkout-top .contents{
+    display: flex;
+    gap: 10px;
+}
+.checkout-top .contents .options p{
+    margin-bottom: 0rem !important;
 }
 .order-summary{
     background-color: #f0f0f02b;
@@ -68,5 +78,12 @@
 @media screen and (max-width: 576px) {
     .w-50{
         width: 90% !important;
+    }
+    .checkout-top .contents .options p{
+        font-size: 13px;
+    }
+    .main-section .container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }
