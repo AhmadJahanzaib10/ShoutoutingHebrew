@@ -321,6 +321,9 @@ input[type="file"]{
   font-weight: 600;
   width: 120px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
 .payouts{
