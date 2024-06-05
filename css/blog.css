@@ -1,0 +1,44 @@
+.card-title{
+    color: rgb(13, 110, 253) !important;
+    margin-top: 1rem !important;
+    text-decoration: none !important;
+    margin-bottom: 1rem !important;
+}
+.card-text{
+    margin-top: 1rem !important;
+    color: rgb(127, 127, 127) !important;
+}
+.blog-post-image{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-post-title{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-post-dets{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.blog-layout p{
+    color: rgb(127, 127, 127);
+}
+.side-blogs{
+    /* height: 250px ; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .side-blogs h6{
+    padding: 10px 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  .side-blogs a{
+    padding: 5px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+  }
+  .recent-blogs, .similar-blogs{
+    margin-bottom: 2rem;
+  }
