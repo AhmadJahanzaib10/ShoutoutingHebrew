@@ -1,5 +1,5 @@
 .acc-navigate{
-  height: 290px;
+  height: 150px;
   background-color: rgba(5, 170, 165, 0.05);
   text-align: center;
 }
@@ -35,7 +35,7 @@ a{
   font-size: 48px;
 }
 .acc-main{
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .toggle-tabs{
@@ -103,6 +103,18 @@ a{
   padding: 1rem 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-group-heading .insturction {
+  cursor: pointer;
+  user-select: none;
+}
+.social-group-heading .insturction span{
+  font-weight: 400 !important;
+  font-size: 16px;
 }
 .change-email div > p{
   font-size: 14px;
@@ -151,6 +163,7 @@ input[type="number"],
   color: #344054;
   font-size: 16px;
   font-weight: 600;
+  background-color: #fff;
 }
 .acc-btn-2{
   border: 1px solid #05AAA5;
@@ -417,6 +430,66 @@ input[type="file"]{
 .social-group-ul li{
   color: #05AAA5;
 }
+.w-33{
+  width: 33%;
+}
+.w-22{
+  width: 22%;
+}
+.w-66{
+  width: 66%;
+}
+.radio-boxes{
+  border: 1px solid #D0D5DD;
+  padding: 10px 14px 10px 14px;
+  border-radius: 10px;
+}
+.radio-boxes .radios{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+.radio-opt span{
+  font-size: 12px;
+}
+.radio-opt input[type="radio"]{
+  /* position: relative;
+	appearance: none;
+	-webkit-appearance: none;
+	transition: linear 0.8s;
+	height: 0;
+	width: 0;
+	-webkit-tap-highlight-color: transparent; */
+}
+
+.gap-half{
+  gap: 0.5rem !important;
+}
+.pricing .heading{
+  width: 100%;
+  background-color: #ECFDF3;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+}
+.pricing .heading h3{
+  font-size: 18px;
+  color: #05AAA5;
+}
+.price-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border: 1px solid #D0D5DD;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.price-input input{
+  border: 0px !important;
+  height: 100% !important;
+}
 @media screen and (max-width:1200px){
   .pass p{
       bottom: -38px !important;
@@ -497,11 +570,47 @@ input[type="file"]{
   .custom-table{
       min-width: 700px !important;
   }
+  .price-input{
+    width: 100%;
+  }
+  .w-66{
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .change-email .gap-3{
+    gap: 0.5rem !important;
+  }
+  .change-email .mt-3{
+    margin-top: 0.5rem !;
+  }
+  .radio-boxes .radios{
+    justify-content: start !important;
+    gap: 20px !important;
+  }
+  .radio-opt{
+    flex-direction: row !important;
+  }
+  .radio-boxes label{
+    font-size: 14px !important;
+  }
 }
 
 @media screen and (max-width:576px) {
   .question-m-div{
       width: 267px;
+  }
+  .change-email div > h2 {
+    font-size: 14px;
+  }
+  .social-group-heading .insturction span {
+    font-size: 12px;
+  }
+  .social-group-heading .insturction{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
   }
 }
 
@@ -532,4 +641,23 @@ input[type="file"]{
 .c-pass{
   margin-top: 40px !important;
 }
+}
+
+@media screen and (max-width: 1400px) {
+  .radios{
+    gap: 0px !important;
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .radio-opt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .radio-boxes label{
+    font-size: 12px;
+  }
 }

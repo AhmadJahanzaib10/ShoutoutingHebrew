@@ -78,7 +78,7 @@
         <div class="hero-wrapper">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-md-12 col-sm-12 my-4">
+              <div class="col-lg-12 col-md-12 col-sm-12 my-4">
                 <div class="hero-main">
                   <div class="heading">
                     <h1>Shoutout through Facebook Groups</h1>
@@ -102,7 +102,7 @@
                       </h1>
                     </div>
                     <div class="field-wrapper-main">
-                      <div class="fields-wrapper">
+                      <div class="fields-wrapper w-25">
                         <label for="html">Select Platform</label>
                         <select name="select">
                           <option value="" hidden id="fb">Facebook</option>
@@ -111,7 +111,7 @@
                         </select>
                         <img src="./images/icons/chevron-down.png" alt="" />
                       </div>
-                      <div class="fields-wrapper">
+                      <div class="fields-wrapper w-25">
                         <label for="html">Category</label>
                         <input type="text" disabled />
                         <div class="selection">
@@ -125,7 +125,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="fields-wrapper">
+                      <div class="fields-wrapper w-25">
                         <label for="html">Geo Targeting</label>
                         <select name="select">
                           <option value="" selected disabled hidden>All</option>
@@ -134,12 +134,41 @@
                         </select>
                         <img src="./images/icons/chevron-down.png" alt="" />
                       </div>
-                      <div class="fields-wrapper">
+                      <div class="fields-wrapper w-25">
                         <label for="html">Group Language</label>
                         <select name="select">
                           <option value="" selected disabled hidden>All</option>
                           <option value="male">English</option>
                           <option value="female">Urdu</option>
+                        </select>
+                        <img src="./images/icons/chevron-down.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="field-wrapper-main">
+                      <div class="fields-wrapper w-33">
+                        <label for="html">Poster Is</label>
+                        <select name="select">
+                          <option value="Admin & Guest Poster" selected>Admin & Guest Poster</option>
+                          <option value="Admin" id="fb">Admin</option>
+                          <option value="Guest Poster">Guest Poster</option>
+                        </select>
+                        <img src="./images/icons/chevron-down.png" alt="" />
+                      </div>
+                      <div class="fields-wrapper w-33">
+                        <label for="html">Digital Asset Type</label>
+                        <select name="select">
+                          <option value="Page & Group" selected>Page & Group</option>
+                          <option value="Page">Page</option>
+                          <option value="Group">Group</option>
+                        </select>
+                        <img src="./images/icons/chevron-down.png" alt="" />
+                      </div>
+                      <div class="fields-wrapper w-33">
+                        <label for="html">Group Privacy</label>
+                        <select name="select">
+                          <option value="Public & Private" selected>Public & Private</option>
+                          <option value="Public">Public</option>
+                          <option value="Private">Private</option>
                         </select>
                         <img src="./images/icons/chevron-down.png" alt="" />
                       </div>
@@ -155,9 +184,29 @@
                           placeholder="Enter Text"
                         />
                         <div class="btnCpst">
-                          <button class="btn-header">Place Order</button>
+                          <button class="btn-header">Apply Filters</button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+
+                  <div class="package">
+                    <h4>Select Your package</h4>
+                    <div class="packages">
+                      <form action="#">
+                        <div class="radio">
+                          <input type="radio" checked name="package" id="1day" value="1day">
+                          <label for="1day">1 Day</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" name="package" id="3day" value="3day">
+                          <label for="3day">3 Day</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" name="package" id="7day" value="7day">
+                          <label for="7day">7 Day</label>
+                        </div>
+                      </form>
                     </div>
                   </div>
 
@@ -169,7 +218,7 @@
                       <span>Share</span>
                       <div class="ups-down">
                         <span>25</span>
-                        <img src="./images/icons/Icon.png" alt="" />
+                        <i class="ri-expand-up-down-line"></i>
                       </div>
                       <span>Entries</span>
                     </div>
@@ -183,11 +232,16 @@
                           <tr>
                             <th scope="col"><input type="checkbox"></th>
                             <th scope="col">Interested</th>
-                            <th scope="col">Group’s Name</th>
+                            <th scope="col" style="text-align: start;">Group/Page's Name</th>
+                            <th scope="col">Poster</th>
+                            <th scope="col">Group</th>
                             <th scope="col">Members <i class="ri-question-line"></i></th>
                             <th scope="col">Geo Target</th>
                             <th scope="col">Category</th>
-                            <th scope="col">Cost (Per Week)</th>
+                            <th scope="col">Cost</th>
+                            <th scope="col">CPM</th>
+                            <th scope="col">ER</th>
+                            <th scope="col">Views</th>
                             <th scope="col">Instructions</th>
                           </tr>
             
@@ -196,84 +250,39 @@
                           <tr>
                             <td><input type="checkbox"></td>
                             <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
+                            <td>
+                              <h6 style="color: #05AAA5;" class="group-title">Example of adding a TG group</h6>
+                              <p class="group-desc">Description about the group - Lorem ipsum dolor sit amet, consectetur adipiscing elit.Description about the group </p>
+                            </td>
+                            <td>Admin</td>
+                            <td><span class="private-badge">Private</span></td>
                             <td>1000</td>
                             <td>Israel</td>
                             <td>Utilities &Tools... <i class="ri-question-line"></i></td>
                             <td>$50.00</td>
+                            <td>$50.00</td>
+                            <td>-</td>
+                            <td>1234</td>
                             <td><a href="#" style="color: #05AAA5;">Read</a></td>
                           </tr>
                           <tr>
                             <td><input type="checkbox"></td>
                             <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
+                            <td>
+                              <h6 style="color: #05AAA5;" class="group-title">Example of adding a TG group</h6>
+                              <p class="group-desc">Description about the group - Lorem ipsum dolor sit amet, consectetur adipiscing elit.Description about the group </p>
+                            </td>
+                            <td>Guest</td>
+                            <td><span class="public-badge">Public</span></td>
                             <td>1000</td>
                             <td>Israel</td>
                             <td>Utilities &Tools... <i class="ri-question-line"></i></td>
                             <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
                             <td>$50.00</td>
+                            <td>-</td>
+                            <td>1234</td>
                             <td><a href="#" style="color: #05AAA5;">Read</a></td>
                           </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
-                            <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
-                            <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
-                            <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
-                            <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox"></td>
-                            <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
-                            <td style="color: #05AAA5;">Example of adding a TG group</td>
-                            <td>1000</td>
-                            <td>Israel</td>
-                            <td>Utilities &Tools... <i class="ri-question-line"></i></td>
-                            <td>$50.00</td>
-                            <td><a href="#" style="color: #05AAA5;">Read</a></td>
-                          </tr>
-
                         </tbody>
                       </table>
                     </div>
@@ -295,84 +304,86 @@
                       <button class="btn bg-green">Next <i class="ri-arrow-right-line"></i></button>
                     </div>
                   </div>
-
-                  <div class="editor-panel">
-                    <div class="file-structure">
-                      <!-- <div class="option-wrapper">
-                        <ul>
-                          <li><a href="#">File</a></li>
-                          <li><a href="#">Edit</a></li>
-                          <li><a href="#">View</a></li>
-                          <li><a href="#">Insert</a></li>
-                          <li><a href="#">Format</a></li>
-                          <li><a href="#">Tool</a></li>
-                          <li><a href="#">Help</a></li>
-                        </ul>
-                      </div> -->
-                      <div class="button">
-                        <button class="btn-header">Post</button>
+                  <div class="row">
+                    <div class="editor-panel col-lg-6">
+                      <div class="file-structure">
+                        <!-- <div class="option-wrapper">
+                          <ul>
+                            <li><a href="#">File</a></li>
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">View</a></li>
+                            <li><a href="#">Insert</a></li>
+                            <li><a href="#">Format</a></li>
+                            <li><a href="#">Tool</a></li>
+                            <li><a href="#">Help</a></li>
+                          </ul>
+                        </div> -->
+                        <p>Write your Ad here</p>
+                        <div class="button">
+                          <button class="btn-header">Post</button>
+                        </div>
+                      </div>
+                      <div id="div_editor1" style="width: 100%">
+                        
                       </div>
                     </div>
-                    <div id="div_editor1" style="width: 100%">
-                      
-                    </div>
-                  </div>
-
-                  <div class="Photo-wrapper">
-                    <div class="heading">
-                      <h1>Add Photo/Video</h1>
-                      <div class="drag-drop-image">
-                        <div class="drag-drop-icon">
-                          <img
-                            src="./images/icons/Featured icon.png"
-                            id="upload-icon"
-                            talt=""
-                          />
-                        </div>
-                        <div class="drag-drop-info">
-                          <h5><span>Click to upload</span>or drag and drop</h5>
-                          <h5>SVG, PNG, JPG or GIF (max. 800x400px)</h5>
+  
+                    <div class="Photo-wrapper col-lg-6">
+                      <div class="heading">
+                        <h1>Add Photo/Video</h1>
+                        <div class="drag-drop-image">
+                          <div class="drag-drop-icon">
+                            <img
+                              src="./images/icons/Featured icon.png"
+                              id="upload-icon"
+                              talt=""
+                            />
+                          </div>
+                          <div class="drag-drop-info">
+                            <h5><span>Click to upload</span>or drag and drop</h5>
+                            <h5>SVG, PNG, JPG or GIF (max. 800x400px)</h5>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="hero-main Summary">
-                  <div class="heading">
-                    <h1>Summary</h1>
-                  </div>
-                  <div class="price-info-main">
-                    <div class="price-info">
-                      <h5>Subtotal</h5>
-                      <span>$250</span>
+              <div class="summary">
+                    <div class="heading">
+                      <h1>Summary</h1>
                     </div>
-                    <div class="price-info border-line">
-                      <div class="info-question">
-                        <h5>Service Fee</h5>
-                        <img src="./images/icons/help-circle.png" alt="" />
+                    <div class="price-info-main">
+                      <div class="price-info">
+                        <h5>Subtotal</h5>
+                        <span>$250</span>
                       </div>
-                      <span>$37.5</span>
-                    </div>
-                    <div class="price-info">
-                      <div class="info-question">
-                        <h5>Service Fee</h5>
-                        <img src="./images/icons/help-circle.png" alt="" />
+                      <div class="price-info border-line">
+                        <div class="info-question">
+                          <h5>Service Fee</h5>
+                          <img src="./images/icons/help-circle.png" alt="" />
+                        </div>
+                        <span>$37.5</span>
                       </div>
-                      <span>$287.5</span>
+                      <div class="price-info">
+                        <div class="info-question">
+                          <h5>Service Fee</h5>
+                          <img src="./images/icons/help-circle.png" alt="" />
+                        </div>
+                        <span>$287.5</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="btnCpst">
-                    <button class="btn-header">Place Order</button>
-                  </div>
-                </div>
+                    <div class="btnCpst">
+                      <button class="btn-header">Place Order</button>
+                    </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </section>
+
+    <button class="btn toggle-summary"><i class="ri-arrow-right-wide-fill"></i></button>
 
     <footer>
       <div class="container top-footer">

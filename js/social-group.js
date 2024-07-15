@@ -22,7 +22,6 @@ question_pc.forEach((qp, index)=>{
 // pop-up on hovering "?" sign for mobiles
 const question_m = document.querySelectorAll('.question-m')
 const question_m_div = document.querySelectorAll('.question-m-div')
-console.log(question_m_div)
 question_m.forEach((qm, index)=>{
     qm.addEventListener('click',()=>{
     question_m_div[index].style.display = 'flex';
@@ -32,3 +31,55 @@ question_m.forEach((qm, index)=>{
     })
 })
 
+const instructionBtn = document.querySelector(".insturction");
+const instructions = document.querySelector(".instructions-form");
+
+instructionBtn.addEventListener("click",()=>{
+  if(instructions.classList.contains("d-none")){
+    instructions.classList.remove("d-none");
+    instructionBtn.querySelector("span").innerText = "Hide Instructions";
+    instructionBtn.querySelector("i").classList.remove("ri-arrow-down-s-line");
+    instructionBtn.querySelector("i").classList.add("ri-arrow-up-s-line");
+  }
+  else{
+    instructions.classList.add("d-none");
+    instructionBtn.querySelector("span").innerText = "View Instructions";
+    instructionBtn.querySelector("i").classList.add("ri-arrow-down-s-line");
+    instructionBtn.querySelector("i").classList.remove("ri-arrow-up-s-line");
+  }
+})
+
+// const groupBox = document.querySelector(".group-status");
+// const assetBox = document.querySelector(".asset-type");
+// const iamBox = document.querySelector(".i-am");
+// const groupCheckBox = document.querySelector("#group-asset");
+// const radios = document.getElementsByName('asset');
+
+// function checkRadio() {
+//     const groupRadio = document.getElementById('group-asset');
+//     return groupRadio.checked;
+// }
+
+// function updateBoxes() {
+//     if (checkRadio()) {
+//         iamBox.classList.remove("w-50");
+//         assetBox.classList.remove("w-50");
+//         groupBox.classList.remove("d-none");
+//         iamBox.classList.add("w-33");
+//         assetBox.classList.add("w-33");
+//     } else {
+//         iamBox.classList.add("w-50");
+//         assetBox.classList.add("w-50");
+//         groupBox.classList.add("d-none");
+//         iamBox.classList.remove("w-33");
+//         assetBox.classList.remove("w-33");
+//     }
+// }
+
+// Initialize the view on load
+// window.addEventListener("load", updateBoxes);
+
+// Add event listeners to both radio buttons
+// radios.forEach(radio => {
+//     radio.addEventListener("change", updateBoxes);
+// });

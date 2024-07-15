@@ -22,5 +22,20 @@ function openFileUploader() {
 document.addEventListener("DOMContentLoaded",()=>{
   let a = document.querySelector("#div_editor1 a");
   a.style.display = "none";
-  console.log(a)
+})
+
+const sumBtn = document.querySelector(".toggle-summary");
+const summary = document.querySelector(".summary");
+
+sumBtn.addEventListener("click",()=>{
+  if(summary.classList.contains("hide-summary")){
+    summary.classList.remove("hide-summary");
+    sumBtn.querySelector("i").classList.remove("ri-arrow-left-wide-fill");
+    sumBtn.querySelector("i").classList.add("ri-arrow-right-wide-fill");
+  }
+  else{
+    summary.classList.add("hide-summary");
+    sumBtn.querySelector("i").classList.add("ri-arrow-left-wide-fill");
+    sumBtn.querySelector("i").classList.remove("ri-arrow-right-wide-fill");
+  }
 })
