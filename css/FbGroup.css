@@ -38,14 +38,14 @@ label {
 }
 /* ----------------------------------------Hero-Section------------------------------------ */
 .hero-wrapper {
-  padding: 96px 0;
+  padding: 50px 0;
   text-align: center !important;
 }
 .heading h1 {
   font-size: 22px !important;
   font-weight: var(--font-weight-medium) !important;
   margin-bottom: 20px !important;
-  text-align: center !important;
+  text-align: start !important;
   color: var(--text-heading-color);
 }
 .heading-span {
@@ -59,7 +59,7 @@ label {
   line-height: 30px !important;
   color: var(--text-color);
   margin-bottom: 20px !important;
-  text-align: center !important;
+  text-align: start !important;
   color: #475467;
 }
 
@@ -73,7 +73,7 @@ label {
 }
 .btn-header {
   width: 100%;
-  height: 52px;
+  height: 36px;
   font-size: 16px;
   background-color: var(--success-color) !important;
   color: var(--white-color) !important;
@@ -163,6 +163,8 @@ label {
   width: 100%;
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: start;
 }
 .filter input {
   width: 100% !important;
@@ -185,7 +187,7 @@ textarea::placeholder {
   flex-direction: column;
   gap: 10px;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 .w-25{
   width: 25%;
@@ -222,6 +224,13 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 1px solid var(--border-color);
+}
+select, #inputText{
+  padding: 8px 12px !important;
+  font-size: 13px;
+}
+.fields-wrapper input{
+  padding: 6px 12px !important;
 }
 .field-wrapper-main {
   display: flex;
@@ -377,12 +386,13 @@ select {
 .border-line {
   border-bottom: 1px solid rgba(234, 236, 240, 1);
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .price-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4px;
 }
 
 .price-info-main {
@@ -393,6 +403,7 @@ select {
   font-size: 16px;
   font-weight: 600;
   color: rgba(71, 84, 103, 1);
+  margin-bottom: 0px !important;
 }
 .info-question {
   display: flex;
@@ -500,12 +511,12 @@ select {
   transform: translateX(200%);
 }
 .toggle-summary{
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   background-color: #05aaa5;
   color: #fff;
-  font-size: 25px;
-  border-radius: 50%;
+  font-size: 15px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,7 +531,7 @@ select {
   background-color: #058a85;
 }
 .table-responsive{
-  height: 220px;
+  height: 400px;
   overflow-y: scroll;
   position: relative;
 }
@@ -528,11 +539,14 @@ select {
   position: sticky;
   top: 0;
 }
+.trans-y-50{
+  transform: translateY(50%);
+}
 .Photo-wrapper .heading{
   height: 100%;
 }
 .drag-drop-image{
-  height: 79%;
+  height: 81%;
   border: 1px solid #d5d5d5;
   border-radius: 8px;
   display: flex;
@@ -541,7 +555,7 @@ select {
   align-items: center;
 }
 .Photo-wrapper .heading h1{
-  height: 76px;
+  height: 64px;
   margin-bottom: 0px !important;
   display: flex;
   justify-content: start;
@@ -559,6 +573,11 @@ select {
   }
   .file-structure .option-wrapper ul li a {
     padding: 11px 13px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .heading h1, .para p{
+    text-align: center !important;
   }
 }
 @media screen and (max-width:767px) {
