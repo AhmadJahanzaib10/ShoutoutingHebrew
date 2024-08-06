@@ -14,6 +14,9 @@
     right: 0 !important;
     left: auto !important;
 }
+.mt-2-cus{
+    margin-top: 2rem !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
