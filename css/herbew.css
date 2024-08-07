@@ -17,6 +17,23 @@
 .mt-2-cus{
     margin-top: 2rem !important;
 }
+.social-group-ul li {
+    list-style: none !important;
+    text-align: end;
+    padding-right: 20px;
+    position: relative;
+}
+.social-group-ul li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #05AAA5;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
