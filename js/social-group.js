@@ -31,23 +31,23 @@ question_m.forEach((qm, index)=>{
     })
 })
 
-const instructionBtn = document.querySelector(".insturction");
-const instructions = document.querySelector(".instructions-form");
+// const instructionBtn = document.querySelector(".insturction");
+// const instructions = document.querySelector(".instructions-form");
 
-instructionBtn.addEventListener("click",()=>{
-  if(instructions.classList.contains("d-none")){
-    instructions.classList.remove("d-none");
-    instructionBtn.querySelector("span").innerText = "Hide Instructions";
-    instructionBtn.querySelector("i").classList.remove("ri-arrow-down-s-line");
-    instructionBtn.querySelector("i").classList.add("ri-arrow-up-s-line");
-  }
-  else{
-    instructions.classList.add("d-none");
-    instructionBtn.querySelector("span").innerText = "View Instructions";
-    instructionBtn.querySelector("i").classList.add("ri-arrow-down-s-line");
-    instructionBtn.querySelector("i").classList.remove("ri-arrow-up-s-line");
-  }
-})
+// instructionBtn.addEventListener("click",()=>{
+//   if(instructions.classList.contains("d-none")){
+//     instructions.classList.remove("d-none");
+//     instructionBtn.querySelector("span").innerText = "Hide Instructions";
+//     instructionBtn.querySelector("i").classList.remove("ri-arrow-down-s-line");
+//     instructionBtn.querySelector("i").classList.add("ri-arrow-up-s-line");
+//   }
+//   else{
+//     instructions.classList.add("d-none");
+//     instructionBtn.querySelector("span").innerText = "View Instructions";
+//     instructionBtn.querySelector("i").classList.add("ri-arrow-down-s-line");
+//     instructionBtn.querySelector("i").classList.remove("ri-arrow-up-s-line");
+//   }
+// })
 
 // const groupBox = document.querySelector(".group-status");
 // const assetBox = document.querySelector(".asset-type");
