@@ -31,23 +31,9 @@ question_m.forEach((qm, index)=>{
     })
 })
 
-const instructionBtn = document.querySelector(".insturction");
-const instructions = document.querySelector(".instructions-form");
-
-instructionBtn.addEventListener("click",()=>{
-  if(instructions.classList.contains("d-none")){
-    instructions.classList.remove("d-none");
-    instructionBtn.querySelector("span").innerText = "הסתר הוראות";
-    instructionBtn.querySelector("i").classList.remove("ri-arrow-down-s-line");
-    instructionBtn.querySelector("i").classList.add("ri-arrow-up-s-line");
-  }
-  else{
-    instructions.classList.add("d-none");
-    instructionBtn.querySelector("span").innerText = "צפה בהוראות";
-    instructionBtn.querySelector("i").classList.add("ri-arrow-down-s-line");
-    instructionBtn.querySelector("i").classList.remove("ri-arrow-up-s-line");
-  }
-})
+$(document).ready(function() {
+  $('.js-example-basic-multiple').select2();
+});
 
 // const groupBox = document.querySelector(".group-status");
 // const assetBox = document.querySelector(".asset-type");

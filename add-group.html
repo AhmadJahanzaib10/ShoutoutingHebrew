@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/social-groups-offer.css">
   <link rel="stylesheet" href="css/account.css" />
   <link rel="stylesheet" href="css/herbew.css">
@@ -469,8 +470,7 @@
                   class="d-flex pass w-33 half-width flex-column align-items-end mt-3 gap-2 position-relative"
                 >
                   <label for="n-pass" dir="rtl">נושאי הקבוצה <span style="color:red">*</span></label>
-                  <select name="state" id="cars" class="dropdown w-100">
-                    <option selected>Select Topics</option>
+                  <select name="topics[]" multiple="multiple" id="cars" class="dropdown w-100 js-example-basic-multiple">
                     <option value="twitter">Twitter</option>
                     <option value="facebook">Facebook</option>
                     <option value="youtube">Youtube</option>
@@ -664,9 +664,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="js/navbar.js"></script>
   <script src="./js/add-group-he.js"></script>
   <script src="https://kit.fontawesome.com/84fc85d233.js" crossorigin="anonymous"></script>
