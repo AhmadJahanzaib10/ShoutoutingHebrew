@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/facebook-marketing.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/hebrew.css">
     <title>Facebook Advertising | ShoutOuting.com</title>
   </head>
   <body>
@@ -45,88 +46,9 @@
             <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dd dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-index="0"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Social Platforms
-                  <i class="ri-arrow-down-s-line arrows-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="facebook-advertising.html">
-                      <div
-                        class="d-flex justify-content-start align-items-start gap-2"
-                      >
-                        <img src="images/icons/Social icon.png" alt="" />
-                        <div class="sub-li">
-                          <h5>Facebook Marketing</h5>
-                          <p>
-                            Targeted engagement for your <br />
-                            audience.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div
-                        class="d-flex justify-content-start align-items-start gap-2"
-                      >
-                        <img src="images/icons/instagram.png" alt="" />
-                        <div class="sub-li">
-                          <h5>Instagram Marketing</h5>
-                          <p>
-                            Visual storytelling at its best for the <br />
-                            audience.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div
-                        class="d-flex justify-content-start align-items-start gap-2"
-                      >
-                        <img src="images/icons/tiktok.png" alt="" />
-                        <div class="sub-li">
-                          <h5>TikTok Marketing</h5>
-                          <p>
-                            Connect authentically with short <br />
-                            videos.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div
-                        class="d-flex justify-content-start align-items-start gap-2"
-                      >
-                        <img src="images/icons/twitter.png" alt="" />
-                        <div class="sub-li">
-                          <h5>Twitter Marketing</h5>
-                          <p>
-                            Real-time engagement, concise <br />
-                            messaging.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+            <ul class="navbar-nav menu-rev mb-2 mb-lg-0 gap-4">
+              <li class="nav-item text-end">
+                <a class="nav-link active" aria-current="page" href="index.html" dir="rtl">בית</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -136,8 +58,9 @@
                   data-bs-index="1"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  dir="rtl"
                 >
-                  How it works
+                איך זה עובד
                   <i class="ri-arrow-down-s-line arrows-down"></i>
                 </a>
                 <ul class="dropdown-menu">
@@ -146,14 +69,12 @@
                       <div
                         class="d-flex justify-content-start align-items-start gap-2"
                       >
-                        <img src="images/icons/marketing.png" alt="" />
-                        <div class="sub-li">
-                          <h5>Advertisers</h5>
-                          <p>
-                            Crafting strategies that captivate <br />
-                            audiences.
-                          </p>
+                        <div class="sub-li w-100">
+                          <h5 class="text-end" dir="rtl">מפרסמים</h5>
+                          <p class="text-end" dir="rtl">
+                            פרסום בקבוצות וערוצים ממוקדי קהל                        </p>
                         </div>
+                        <img src="images/icons/marketing.png" alt="" />
                       </div>
                     </a>
                   </li>
@@ -162,38 +83,36 @@
                       <div
                         class="d-flex justify-content-start align-items-start gap-2"
                       >
-                        <img src="images/icons/puzzle.png" alt="" />
-                        <div class="sub-li">
-                          <h5>Marketers</h5>
-                          <p>
-                            Promoting products and services to <br />
-                            targeted audiences.
-                          </p>
+                        <div class="sub-li w-100">
+                          <h5 class="text-end" dir="rtl">מפיצים/ מנהלי ערוצים</h5>
+                          <p class="text-end" dir="rtl">
+                            מוניטיזציה של קבוצות וערוצים בניהולכם                        </p>
                         </div>
+                        <img src="images/icons/puzzle.png" alt="" />
                       </div>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Blog</a>
+              <li class="nav-item text-end">
+                <a class="nav-link" aria-disabled="true" dir="rtl">בלוג</a>
               </li>
             </ul>
             <div class="d-flex gap-2 btns">
-              <a href="Login.html" class="btn-login btn">Login</a>
+                <a href="Login.html" class="btn-login btn" dir="rtl">התחברות</a>
               <button class="btn-signup btn" data-bs-toggle="dropdown"
-              aria-expanded="false" role="button" type="submit">Signup</button>
+              aria-expanded="false" role="button" type="submit" dir="rtl">הירשם</button>
               <ul class="dropdown-menu register-dropdown">
                 <li>
-                  <a href="RegisterAsAdvertiser.html" class="dropdown-item fw-semibold">
+                  <a href="RegisterAsAdvertiser.html" class="dropdown-item fw-semibold" dir="rtl">
                     <img src="images/icons/marketing.png" alt="">
-                    Register as Advertiser
+                    הירשם כמפרסם
                   </a>
                 </li>
                 <li>
-                  <a href="RegusterAsShoutouter.html" class="dropdown-item fw-semibold">
+                  <a href="RegusterAsShoutouter.html" class="dropdown-item fw-semibold" dir="rtl">
                     <img src="images/icons/puzzle.png" alt="">
-                    Register as Marketer
+                    הרשם כמפיץ
                   </a>
                 </li>
               </ul>
@@ -208,19 +127,19 @@
         <div class="container">
           <div class="hero-main">
             <div class="upword">
-              <span>Social Platforms</span>
+              <span dir="rtl">פלטפורמות חברתיות</span>
               <i class="fa-solid fa-chevron-right"></i>
-              <span>Facebook Advertising</span>
+              <span dir="rtl">פרסום בפייסבוק</span>
             </div>
             <div class="heading">
-              <h1>Facebook Advertising Buzz Impact</h1>
+              <h1 dir="rtl">השפעת באז פרסום בפייסבוק</h1>
             </div>
             <div class="para">
-              <p>
-                Welcome to Shoutouting.com, where groundbreaking advertising meets the world’s largest social media platform! Are you ready to elevate your brand to new heights, reaching audiences like never before? Look no further. Shoutouting.com is your ultimate partner in harnessing the true potential of Facebook advertising.
+              <p dir="rtl">
+                ברוכים הבאים ל-Shoutouting.com, שם פרסום פורץ דרך פוגש את פלטפורמת המדיה החברתית הגדולה בעולם! האם אתה מוכן להעלות את המותג שלך לגבהים חדשים, להגיע לקהלים כמו שלא היה מעולם? אל תחפש עוד. Shoutouting.com הוא השותף האולטימטיבי שלך במימוש הפוטנציאל האמיתי של פרסום בפייסבוק.
               </p>
             </div>
-            <button class="btn-header">Become an Advertiser</button>
+            <button class="btn-header" dir="rtl">הפוך למפרסם</button>
           </div>
         </div>
       </div>
@@ -231,29 +150,28 @@
         <div class="container">
           <div class="Shoutouting-wrapper-main">
             <div class="heading">
-              <h1>Key Features</h1>
+              <h1 dir="rtl">תכונות עיקריות</h1>
             </div>
             <div class="para">
-              <p>
-                Ready to make your brand shout loud and clear? Join
-                <a href="#">shoutouting.com</a> today, and let our community of
-                micro-influencers help you leave a lasting impression on social
-                media!
+              <p dir="rtl">
+                מוכן לגרום למותג שלך לצעוק חזק וברור? לְהִצְטַרֵף
+                <a href="#">shoutouting.com</a> היום, ותנו לקהילת המיקרו-משפיענים שלנו לעזור לכם להשאיר רושם מתמשך בחברתיים
+                כְּלֵי תִקְשׁוֹרֶת!
               </p>
             </div>
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="cards my-3">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/marketing-white.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Targeted Advertising</h5>
+                        <h5 dir="rtl">פרסום ממוקד</h5>
                       </div>
-                      <p>
-                        Our micro-influencers are real people who genuinely connect with their followers, ensuring authentic brand engagement.
+                      <p dir="rtl">
+                        המיקרו-משפיענים שלנו הם אנשים אמיתיים שמתחברים באמת לעוקבים שלהם, מה שמבטיח מעורבות אותנטית במותג.
                       </p>
                     </div>
                   </div>
@@ -261,16 +179,16 @@
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="cards my-3">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/chat.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Authentic Engagement</h5>
+                        <h5 dir="rtl">אירוסין אותנטי</h5>
                       </div>
-                      <p>
-                        Tailor your campaign to match your brand's unique identity and reach specific audience segments.
+                      <p dir="rtl">
+                        התאם את מסע הפרסום שלך כך שיתאים לזהות הייחודית של המותג שלך והגיע לפלחי קהל ספציפיים.
                       </p>
                     </div>
                   </div>
@@ -278,16 +196,16 @@
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="cards my-3">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/presentation.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Detailed Analytics</h5>
+                        <h5 dir="rtl">ניתוח מפורט</h5>
                       </div>
-                      <p>
-                        Streamlined processes and clear communication make collaborating with influencers hassle-free.
+                      <p dir="rtl">
+                        תהליכים יעילים ותקשורת ברורה הופכים את שיתוף הפעולה עם משפיענים ללא טרחה.
                       </p>
                     </div>
                   </div>
@@ -295,16 +213,16 @@
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="cards my-3">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/user.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Creative Collaboration</h5>
+                        <h5 dir="rtl">שיתוף פעולה יצירתי</h5>
                       </div>
-                      <p>
-                        Witness the impact of your campaign through increased brand awareness, website traffic, and sales conversions.
+                      <p dir="rtl">
+                        ראה את ההשפעה של מסע הפרסום שלך באמצעות הגברת המודעות למותג, תנועה לאתר והמרות מכירות.
                       </p>
                     </div>
                   </div>
@@ -322,22 +240,22 @@
         <div class="container">
           <div class="advertisment-inner">
             <div class="heading">
-              <h1>Why Choose Shoutouting.com For Facebook Advertising?</h1>
+              <h1 dir="rtl">מדוע לבחור ב-Shoutouting.com לפרסום בפייסבוק?</h1>
             </div>
 
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="cards">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/share-07.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Multiply Your Reach with Genuine Shares </h5>
+                        <h5 dir="rtl">תכפיל את טווח ההגעה שלך עם שיתופים אמיתיים </h5>
                       </div>
-                      <p>
-                        Shoutouting.com ensures your brand's visibility by facilitating multiple shares and posts by authentic individuals with real friends. No bots, no gimmicks – just genuine, heartfelt recommendations from real people who believe in your product. With every share, your message resonates across vast social circles, creating a ripple effect that expands your reach exponentially.
+                      <p dir="rtl">
+                        Shoutouting.com מבטיח את הנראות של המותג שלך על ידי מתן שיתוף ופוסטים מרובים על ידי אנשים אותנטיים עם חברים אמיתיים. בלי בוטים, בלי גימיקים - רק המלצות אמיתיות ומלבבות מאנשים אמיתיים שמאמינים במוצר שלך. עם כל שיתוף, המסר שלך מהדהד במעגלים חברתיים עצומים, ויוצר אפקט אדווה שמרחיב את טווח ההגעה שלך באופן אקספוננציאלי.
                       </p>
                     </div>
                   </div>
@@ -345,16 +263,16 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="cards">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/zap-fast.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Experience the Buzz Impact</h5>
+                        <h5 dir="rtl">חווה את השפעת הבאז</h5>
                       </div>
-                      <p>
-                        Ever witnessed the thrill of a buzz-worthy campaign? Prepare to be amazed by the unparalleled buzz impact of Shoutouting.com on Facebook. When your product is recommended by multiple accounts, the buzz generated is electric. Your brand becomes the talk of the town, sparking conversations and curiosity among users. This buzz is not just a momentary spark but a sustained flame that keeps your audience engaged and excited.
+                      <p dir="rtl">
+                        ראית פעם את הריגוש של קמפיין ראוי לבזז? התכוננו להיות מופתעים מהשפעת הבאזז שאין שני לה של Shoutouting.com בפייסבוק. כאשר המוצר שלך מומלץ על ידי מספר חשבונות, הבאז שנוצר הוא חשמלי. המותג שלך הופך לשיחת העיר, ומעורר שיחות וסקרנות בקרב המשתמשים. הבאזז הזה הוא לא רק ניצוץ רגעי אלא להבה מתמשכת ששומרת על הקהל שלך מעורב ונרגש.
                       </p>
                     </div>
                   </div>
@@ -362,16 +280,16 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="cards">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/user.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Real People, Real Connections</h5>
+                        <h5 dir="rtl">אנשים אמיתיים, קשרים אמיתיים</h5>
                       </div>
-                      <p>
-                        Shoutouting.com connects you with individuals who genuinely love your product or resonate with your message. These are not faceless profiles but real people with real friends. When they recommend your product, it carries the weight of authenticity and trust. The connections forged through Shoutouting.com on Facebook are the building blocks of long-lasting customer relationships.
+                      <p dir="rtl">
+                        Shoutouting.com מחבר אותך עם אנשים שבאמת אוהבים את המוצר שלך או מהדהדים את המסר שלך. אלו לא פרופילים חסרי פנים אלא אנשים אמיתיים עם חברים אמיתיים. כאשר הם ממליצים על המוצר שלך, הוא נושא משקל של אותנטיות ואמון. הקשרים שנוצרו דרך Shoutouting.com בפייסבוק הם אבני הבניין של קשרי לקוחות ארוכי טווח.
                       </p>
                     </div>
                   </div>
@@ -381,16 +299,16 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="cards">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/check-verified-01.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Build Credibility with Multiple Endorsements</h5>
+                        <h5 dir="rtl">בנה אמינות עם המלצות מרובות</h5>
                       </div>
-                      <p>
-                        In the digital age, credibility is key. Shoutouting.com empowers your brand by enabling multiple accounts to endorse your product or message. Each endorsement adds a layer of credibility, reinforcing your brand's value in the eyes of potential customers. The more endorsements you receive, the stronger your brand's reputation becomes, setting you apart from competitors.
+                      <p dir="rtl">
+                        בעידן הדיגיטלי, אמינות היא המפתח. Shoutouting.com מעצימה את המותג שלך על ידי מתן אפשרות למספר חשבונות לאמץ את המוצר או המסר שלך. כל תמיכה מוסיפה שכבה של אמינות, ומחזקת את הערך של המותג שלך בעיני לקוחות פוטנציאליים. ככל שתקבל יותר המלצות, כך המוניטין של המותג שלך מתחזק ומבדיל אותך מהמתחרים.
                       </p>
                     </div>
                   </div>
@@ -398,16 +316,16 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="cards">
-                  <div class="cards-inner">
+                  <div class="cards-inner align-items-end">
                     <div class="cards-icon">
                       <img src="images/icons/puzzle-white.png" alt="">
                     </div>
                     <div class="cards-info">
                       <div class="heading">
-                        <h5>Tailored Strategies for Maximum Impact</h5>
+                        <h5 dir="rtl">אסטרטגיות מותאמות להשפעה מרבית</h5>
                       </div>
-                      <p>
-                        We understand that every brand is unique, requiring a customized approach to Facebook advertising. Shoutouting.com offers tailored strategies that align with your brand's goals and target audience. Our experts craft campaigns designed to maximize impact, ensuring your message resonates with the right demographic, at the right time, and in the right way. 
+                      <p dir="rtl">
+                        אנו מבינים שכל מותג הוא ייחודי, הדורש גישה מותאמת אישית לפרסום בפייסבוק. Shoutouting.com מציע אסטרטגיות מותאמות המתאימות למטרות ולקהל היעד של המותג שלך. המומחים שלנו יוצרים קמפיינים שנועדו למקסם את ההשפעה, ומבטיחים שהמסר שלך מהדהד עם הדמוגרפיה הנכונה, בזמן הנכון ובדרך הנכונה. 
                       </p>
                     </div>
                   </div>
@@ -420,7 +338,7 @@
                       <div class="cards-info">
                         <div class="heading">
                           <p>
-                            In the dynamic world of Facebook advertising, don’t settle for ordinary. Choose Shoutouting.com and experience the extraordinary. Let your brand flourish through multiple shares and posts by real people with real friends. Embrace the buzz impact and witness the magic of multiple accounts recommending your product or message. Your journey to Facebook advertising success starts here.  
+                            בעולם הדינמי של הפרסום בפייסבוק, אל תסתפקו ברגיל. בחרו ב-Shoutouting.com ותחוו את היוצא דופן. תן למותג שלך לפרוח באמצעות מספר שיתופים ופוסטים של אנשים אמיתיים עם חברים אמיתיים. אמצו את השפעת הבאז והיו עדים לקסם של מספר חשבונות הממליצים על המוצר או המסר שלכם. המסע שלך להצלחת פרסום בפייסבוק מתחיל כאן.  
                           </p>
                         </div>
                       </div>
@@ -441,17 +359,16 @@
           <div class="marketing-main">
             <div class="market-inner">
               <div class="heading">
-                <h1>
-                  Ready to unlock the full potential of Facebook marketing?
+                <h1 dir="rtl">
+                  מוכן לנצל את מלוא הפוטנציאל של שיווק בפייסבוק?
                 </h1>
               </div>
               <div class="para">
-                <p>
-                  Start shouting with Shoutouting.com today and watch your brand
-                  soar to unprecedented heights!
+                <p dir="rtl">
+                  התחל לצעוק עם Shoutouting.com עוד היום וראה את המותג שלך מתנשא לגבהים חסרי תקדים!
                 </p>
               </div>
-              <button class="btn-header">Get Started</button>
+              <button class="btn-header" dir="rtl">התחל</button>
             </div>
           </div>
         </div>
@@ -459,35 +376,38 @@
     </section>
     <!-- ----------------------------------Footer-Section------------------------------- -->
     <section>
-      <footer>
+          <!-- Footer -->
+    <footer>
       <div class="container top-footer">
         <div class="col-66">
           <img src="images/logo.png" alt="">
-          <p>Shoutouting is a marketplace that connects companies that are looking to improve their online ranking score with reviews writers for hire.
+          <p dir="rtl">Shoutouting היא זירת מסחר המחברת בין חברות המעוניינות לפרסם ברשתות חברתיות לבין מנהלי ערוצים וקבוצות הנכונים לפרסם מודעות ממומנות.
           </p>
         </div>
         <div class="d-flex justify-content-between align-items-start footer-link">
-          <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-            <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">How it works ( Companies)</a>
-            <a href="#">How it works ( Influencers)</a>
-            <a href="affiliate.html">Affiliate Program</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
+          <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+            <h4>חֶברָה</h4>
+            <a href="#">עלינו</a>
+            <a href="#">איך זה עובד (חברות)</a>
+            <a href="#">איך זה עובד (משפיענים)</a>
+            <a href="affiliate.html">תכנית שותפים</a>
+            <a href="#">תנאים והגבלות</a>
+            <a href="#">מדיניות הפרטיות</a>
           </div>
-          <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-            <h4>Social Platforms</h4>
-            <a href="#">Facebook Marketing</a>
-            <a href="#">Instagram Marketing</a>
-            <a href="#">Tiktok Marketing</a>
-            <a href="#">Twitter Marketing</a>
+          <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+            <h4>פלטפורמות חברתיות</h4>
+            <a href="#">פרסום בפייסבוק</a>
+            <a href="#">פרסום באינסטגרם</a>
+            <a href="#">פרסום בטיקטוק</a>
+            <a href="#">פרסום בטוויטר</a>
+            <a href="#">פרסום בטלגרם</a>
+            <a href="#">פרסום בווטסאפ</a>
           </div>
         </div>
       </div>
       <hr>
       <div class="container bottom-footer d-flex justify-content-between align-items-center">
-        <p>Shoutouting © 2024 All Rights Reserved.</p>
+        <p dir="rtl">Shoutouting © 2024 כל הזכויות שמורות.</p>
         <div class="social-icons d-flex gap-4">
           <img src="images/icons/telegram.png" alt="">
           <img src="images/icons/linkdin.png" alt="">

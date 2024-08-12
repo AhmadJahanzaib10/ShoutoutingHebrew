@@ -41,6 +41,9 @@
     border: 1px solid #D0D5DD;
     border-radius: 10px;
 }
+.advertisment-inner .cards-info .heading h5{
+    max-width: 100% !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
