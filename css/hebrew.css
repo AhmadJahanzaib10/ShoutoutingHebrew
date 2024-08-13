@@ -49,3 +49,16 @@
         flex-direction: row-reverse !important;
     }
 }
+@media screen and (max-width: 992px) {
+    .nav-link{
+        text-align: start;
+    }
+    .dashboard-navbar{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .select2-container{
+        width: 100% !important;
+    }
+}
