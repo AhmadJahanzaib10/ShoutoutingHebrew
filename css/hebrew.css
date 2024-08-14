@@ -44,6 +44,10 @@
 .advertisment-inner .cards-info .heading h5{
     max-width: 100% !important;
 }
+.toggle-tab{
+    padding-left: 0px !important;
+    padding-right: 20px;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;

@@ -116,20 +116,23 @@
       <Section class="register-as-advertiser-page container mx-auto ">
         <div class="register-as-advertiser-page-sub d-flex flex-column mx-auto justify-content-center align-items-center">
         <img src="./images/login-logo.png" class="" alt="">
-        <h2 dir="rtl">שם החברה (כפי שתופיע בקבלה)</h2>
         <h2 dir="rtl">הירשם כמפרסם</h2>
         <p dir="rtl">אנא קרא בעיון את ההוראות להלן לתהליך רישום מוצלח</p>
         <form class="d-flex flex-column mx-auto mt-2" action="">
 
             <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
-                <label for="f-name" dir="rtl">שם פרטי *</label>
-                <input class="w-100" type="text" name="f-name" placeholder="שם פרטי" dir="rtl">
+              <div class="d-flex w-33 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
+                <label for="l-name" dir="rtl">שם החברה (כפי שתופיע בקבלה)   *</label>
+                <input class="w-100" type="text" name="company" placeholder="שם החברה" dir="rtl">
             </div>
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
+            <div class="d-flex w-33 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
                 <label for="l-name" dir="rtl">שם משפחה *</label>
                 <input class="w-100" type="text" name="l-name" placeholder="שם משפחה" dir="rtl">
             </div>
+            <div class="d-flex w-33 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
+              <label for="f-name" dir="rtl">שם פרטי *</label>
+              <input class="w-100" type="text" name="f-name" placeholder="שם פרטי" dir="rtl">
+          </div>
         </div>
 
             <div class="d-flex flex-column align-items-start mt-3 gap-2 align-end-herbew">
@@ -415,7 +418,7 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
             </div>
-            <div id="state" class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 mt-2-cus gap-2 align-end-herbew">
+            <div id="state" class="d-flex d-none c-pass w-50 half-width flex-column align-items-start mt-3 mt-2-cus gap-2 align-end-herbew">
               <label for="c-pass" dir="rtl">מְדִינָה*</label>
               <input class="w-100" type="text" name="state" placeholder="מְדִינָה" dir="rtl">
           </div>
@@ -504,20 +507,19 @@
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
           initialCountry:"il"
         });
-
-        const country = document.getElementById("country");
-        const state = document.getElementById("state");
-        if(country.value != "Israel"){
-          state.classList.add("d-none");
-        }
-        country.addEventListener("change",()=>{
-          if(country.value != "Israel"){
-            state.classList.add("d-none");
-          }
-          else{
-            state.classList.remove("d-none");
-          }
+        document.addEventListener("DOMContentLoaded",()=>{
+          const country = document.getElementById("country");
+          const state = document.getElementById("state");
+          country.addEventListener("change",()=>{
+              if(country.value != "Israel"){
+                state.classList.remove("d-none");
+              }
+              else{
+                state.classList.add("d-none");
+              }
+          })
         })
+        
       </script>
      
 </body>
