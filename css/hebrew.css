@@ -51,6 +51,9 @@
 .social-media-info-inner{
     justify-content: end !important;
 }
+.file-structure .button{
+    margin-left: 0px !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
