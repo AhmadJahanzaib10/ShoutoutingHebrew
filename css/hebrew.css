@@ -60,6 +60,9 @@
 .notification-menu ul{
     width: 270px !important;
 }
+#user_notification_icon{
+    color: #333 !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
