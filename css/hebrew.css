@@ -54,6 +54,12 @@
 .file-structure .button{
     margin-left: 0px !important;
 }
+.notification-menu {
+    left: -55px !important;
+}
+.notification-menu ul{
+    width: 270px !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
@@ -65,6 +71,19 @@
     }
     .dashboard-navbar{
         width: 100% !important;
+    }
+    .dashboard-navbar-2 {
+        width: 100% !important;
+    }
+    .nav-right {
+        align-items: end !important;
+    }
+    .notification-responsive{
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+    .notification-menu {
+        left: -10px !important;
     }
 }
 @media screen and (max-width: 768px) {
