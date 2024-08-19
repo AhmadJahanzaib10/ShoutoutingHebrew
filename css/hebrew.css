@@ -88,6 +88,22 @@
     .notification-menu {
         left: -10px !important;
     }
+    .heading h1{
+        text-align: start !important;
+    }
+    .upword{
+        justify-content: end !important;
+    }
+    .para p, .marketing-main .heading h1{
+        text-align: start !important;
+    }
+    .ps-h-right{
+        display: block;
+        margin-left: auto;
+    }
+    .cards-info .heading h5{
+        max-width: 100% !important;
+    }
 }
 @media screen and (max-width: 768px) {
     .select2-container{
