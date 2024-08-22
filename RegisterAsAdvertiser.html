@@ -153,23 +153,15 @@
                     <input class="w-100" type="tel" id="phone" name="phone" placeholder="+972-A-XXX-XXXX">
                 </div>
             </div>
-
-            <div class="d-flex w-100 gap-3 two-boxes">
-                <div class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative align-end-herbew">
-                    <label for="pass" dir="rtl">סיסמה *</label>
-                    <input class="w-100" type="password" name="pass" placeholder="הכנס את הסיסמה שלך" dir="rtl">
-                    <p class="position-absolute mb-0 r-0" dir="rtl">הסיסמה חייבת לכלול לפחות 6 תווים</p>
-                </div>
-                <div class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
-                    <label for="c-pass" dir="rtl">אשר סיסמה *</label>
-                    <input class="w-100" type="password" name="c-pass" placeholder="הקלד מחדש את הסיסמה שלך" dir="rtl">
-                </div>
+            <div class="d-flex w-100 gap-3 justify-content-end two-boxes">
+              <div id="state" class="d-flex d-none c-pass w-50 half-width flex-column align-items-start mt-3 mt-2-cus gap-2 align-end-herbew">
+                <label for="c-pass" dir="rtl">מדינה*</label>
+                <input class="w-100" type="text" name="state" placeholder="מְדִינָה" dir="rtl">
             </div>
-            <div class="d-flex w-100 gap-3 two-boxes">
               <div
               class="d-flex c-pass w-50 half-width flex-column align-items-end mt-2-cus gap-2"
             >
-              <label for="c-pass" dir="rtl">מדינה *</label>
+              <label for="c-pass" dir="rtl">ארץ *</label>
               
               <select id="country" name="country" class="form-control">
                 <option value="Afghanistan">Afghanistan</option>
@@ -418,10 +410,18 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
             </div>
-            <div id="state" class="d-flex d-none c-pass w-50 half-width flex-column align-items-start mt-3 mt-2-cus gap-2 align-end-herbew">
-              <label for="c-pass" dir="rtl">מְדִינָה*</label>
-              <input class="w-100" type="text" name="state" placeholder="מְדִינָה" dir="rtl">
-          </div>
+            </div>
+
+            <div class="d-flex w-100 gap-3 two-boxes">
+                <div class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative align-end-herbew">
+                    <label for="pass" dir="rtl">סיסמה *</label>
+                    <input class="w-100" type="password" name="pass" placeholder="הכנס את הסיסמה שלך" dir="rtl">
+                    <p class="position-absolute mb-0 r-0" dir="rtl">הסיסמה חייבת לכלול לפחות 6 תווים</p>
+                </div>
+                <div class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2 align-end-herbew">
+                    <label for="c-pass" dir="rtl">אשר סיסמה *</label>
+                    <input class="w-100" type="password" name="c-pass" placeholder="הקלד מחדש את הסיסמה שלך" dir="rtl">
+                </div>
             </div>
 
             <div class="d-flex align-items-center justify-content-end mt-5 mb-3">
