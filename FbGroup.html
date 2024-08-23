@@ -93,22 +93,20 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 my-4">
-              <div class="hero-main row">
+              <div class="hero-main row flex-row-reverse">
                 <div class="col-lg-4 ">
                   <div class="heading">
                     <h1 dir="rtl">פרסומים חוצי פלטפורמות</h1>
                   </div>
                   <div class="para">
                     <p dir="rtl">
-                      קבל חשיפה לקהלים מגוונים על ידי פרסום פוסטים ממומנים בקבוצות פייסבוק שנאספו בקפידה, ערוצי טלגרם,
-                      קהילות לינקדאין וקבוצות ווטסאפ. הרשת הענפה שלנו מאפשרת לך למקד נתונים דמוגרפיים ותחומי עניין
-                      ספציפיים, תוך הבטחת מעורבות והשפעה מרבית על התוכן הפרסומי שלך
+                      קבל חשיפה לקהלים מגוונים בפרסום פוסטים ממומנים בקבוצות פייסבוק שנאספו בקפידה, ערוצי טלגרם, קהילות לינקדאין וקבוצות ווטסאפ. הרשת הענפה שלנו מאפשרת לך למקד נתונים דמוגרפיים ותחומי עניין ספציפיים, תוך שמירה על מיקוד קהל היעד של הפרסומי שלך
                     </p>
                   </div>
                 </div>
                 <div class="col-lg-8">
                   <div class="hero-form">
-                    <div class="field-wrapper-main">
+                    <div class="field-wrapper-main flex-row-reverse">
                       <div class="fields-wrapper w-25">
                         <label for="html" dir="rtl">בחר פלטפורמה</label>
                         <select name="select">
@@ -487,7 +485,7 @@
                         <img src="./images/icons/chevron-down.png" alt="" />
                       </div>
                       <div class="fields-wrapper w-25">
-                        <label for="html" dir="rtl">שפה גיאוגרפית</label>
+                        <label for="html" dir="rtl">שפה</label>
                         <select name="select">
                           <option value="Afrikaans">Afrikaans</option>
                           <option value="Albanian">Albanian</option>
@@ -557,7 +555,7 @@
                         <img src="./images/icons/chevron-down.png" alt="" />
                       </div>
                     </div>
-                    <div class="field-wrapper-main">
+                    <div class="field-wrapper-main flex-row-reverse">
                       <div class="fields-wrapper w-33">
                         <label for="html">מפרסם המודעה הוא</label>
                         <select name="select">
@@ -587,10 +585,10 @@
                       </div>
                     </div>
 
-                    <div class="fields-wrapper">
+                    <div class="fields-wrapper align-items-end">
                       <label for="html" dir="rtl">שם הקבוצה</label>
-                      <div class="filter">
-                        <input type="text" name="text" id="inputText" placeholder="הזן טקסט" dir="rtl" />
+                      <div class="filter flex-row-reverse">
+                        <input type="text" name="text" id="inputText" placeholder="בחירת מילה שחייבת להופיע בשם הקבוצה (אופציונאלי)" dir="rtl" />
                         <div class="btnCpst">
                           <button class="btn-header" dir="rtl">החל מסננים</button>
                         </div>
@@ -604,18 +602,18 @@
 
                 <div class="package">
                   <div class="packages">
-                    <form action="#">
+                    <form action="#" class="flex-row-reverse">
                       <div class="radio">
+                        <label for="1day" dir="rtl">פוסט 1</label>
                         <input type="radio" checked name="package" id="1day" value="1day">
-                        <label for="1day" dir="rtl">1 פוסטים</label>
                       </div>
                       <div class="radio">
-                        <input type="radio" name="package" id="3day" value="3day">
                         <label for="3day" dir="rtl">3 פוסטים</label>
+                        <input type="radio" name="package" id="3day" value="3day">
                       </div>
                       <div class="radio">
-                        <input type="radio" name="package" id="7day" value="7day">
                         <label for="7day" dir="rtl">7 פוסטים</label>
+                        <input type="radio" name="package" id="7day" value="7day">
                       </div>
                     </form>
                   </div>
@@ -623,16 +621,16 @@
                 </div>
 
                 <div class="share-groups border-line">
-                  <div class="heading">
-                    <h1 dir="rtl">קבוצות ברשתות חברתיות</h1>
-                  </div>
                   <div class="shares">
-                    <span dir="rtl">לַחֲלוֹק</span>
+                    <span dir="rtl">תוצאות מסוננות</span>
                     <div class="ups-down">
                       <span>25</span>
                       <i class="ri-expand-up-down-line"></i>
                     </div>
-                    <span dir="rtl">ערכים</span>
+                    <span dir="rtl">תוצאות מסוננות</span>
+                  </div>
+                  <div class="heading">
+                    <h1 dir="rtl">קבוצות ברשתות חברתיות</h1>
                   </div>
                 </div>
 
@@ -642,72 +640,73 @@
                       <thead>
 
                         <tr>
-                          <th scope="col"><input type="checkbox"></th>
-                          <th scope="col" dir="rtl">מעוניין</th>
-                          <th scope="col" dir="rtl" style="text-align: start;">שם הקבוצה/דף</th>
-                          <th scope="col" dir="rtl">מפורסם על ידי</th>
-                          <th scope="col" dir="rtl">קְבוּצָה</th>
-                          <th scope="col" class="d-flex justify-content-center align-items-center trans-y-50">
+                          <th scope="col" dir="rtl">הנחיות</th>
+                          <th scope="col" dir="rtl">מחיר</th>
+                          <th scope="col" dir="rtl">קָטֵגוֹרִיָה</th>
+                          <th scope="col" dir="rtl">מִקוּם</th>
+                          <th scope="col" dir="rtl" class="d-flex justify-content-center align-items-center trans-y-50">
                             <span dir="rtl">חברים</span> <i class="ri-question-line"></i>
                           </th>
-                          <th scope="col" dir="rtl">מִקוּם</th>
-                          <th scope="col" dir="rtl">קָטֵגוֹרִיָה</th>
-                          <th scope="col" dir="rtl">עֲלוּת</th>
-                          <th scope="col" dir="rtl">הוראות</th>
+                          <th scope="col" dir="rtl">קְבוּצָה</th>
+                          <th scope="col" dir="rtl">מפורסם על ידי</th>
+                          <th scope="col" dir="rtl" style="text-align: start;">שם הקבוצה/דף</th>
+                          <th scope="col" dir="rtl">הוספה לסל</th>
+                          <th scope="col"><input type="checkbox"></th>
                         </tr>
+                        
 
                       </thead>
                       <tbody>
                         <tr>
-                          <td><input type="checkbox"></td>
-                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td>$50.00</td>
+                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
+                          <td dir="rtl">יִשְׂרָאֵל</td>
+                          <td>1000</td>
+                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
+                          <td dir="rtl">אדמין</td>
                           <td>
                             <h6 style="color: #05AAA5;" class="group-title" dir="rtl">דוגמה להוספת קבוצת TG</h6>
                             <p class="group-desc" dir="rtl">תיאור הקבוצה - Lorem ipsum dolor sit amet, consectetur adipiscing elit.תיאור אודות הקבוצה </p>
                           </td>
-                          <td dir="rtl">אדמין</td>
-                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
-                          <td>1000</td>
-                          <td dir="rtl">יִשְׂרָאֵל</td>
-                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
-                          <td>$50.00</td>
-                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><input type="checkbox"></td>
                         </tr>
                         <tr>
-                          <td><input type="checkbox"></td>
-                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td>$50.00</td>
+                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
+                          <td dir="rtl">יִשְׂרָאֵל</td>
+                          <td>1000</td>
+                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
+                          <td dir="rtl">אדמין</td>
                           <td>
                             <h6 style="color: #05AAA5;" class="group-title" dir="rtl">דוגמה להוספת קבוצת TG</h6>
                             <p class="group-desc" dir="rtl">תיאור הקבוצה - Lorem ipsum dolor sit amet, consectetur adipiscing elit.תיאור אודות הקבוצה </p>
                           </td>
-                          <td dir="rtl">אדמין</td>
-                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
-                          <td>1000</td>
-                          <td dir="rtl">יִשְׂרָאֵל</td>
-                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
-                          <td>$50.00</td>
-                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><input type="checkbox"></td>
                         </tr>
                         <tr>
-                          <td><input type="checkbox"></td>
-                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td>$50.00</td>
+                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
+                          <td dir="rtl">יִשְׂרָאֵל</td>
+                          <td>1000</td>
+                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
+                          <td dir="rtl">אדמין</td>
                           <td>
                             <h6 style="color: #05AAA5;" class="group-title" dir="rtl">דוגמה להוספת קבוצת TG</h6>
                             <p class="group-desc" dir="rtl">תיאור הקבוצה - Lorem ipsum dolor sit amet, consectetur adipiscing elit.תיאור אודות הקבוצה </p>
                           </td>
-                          <td dir="rtl">אדמין</td>
-                          <td><span class="private-badge" dir="rtl">פְּרָטִי</span></td>
-                          <td>1000</td>
-                          <td dir="rtl">יִשְׂרָאֵל</td>
-                          <td dir="rtl">כלי עזר &כלים... <i class="ri-question-line"></i></td>
-                          <td>$50.00</td>
-                          <td><a href="#" style="color: #05AAA5;" dir="rtl">לִקְרוֹא</a></td>
+                          <td><img src="images/fb.png" style="width: 20px;" alt=""></td>
+                          <td><input type="checkbox"></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <div class="d-flex mt-2 justify-content-between align-items-center">
-                    <button class="btn bg-green" dir="rtl"><i class="ri-arrow-left-line"></i> קוֹדֵם</button>
+                    <button class="btn bg-green" dir="rtl">הַבָּא <i class="ri-arrow-left-line"></i></button>
                     <nav aria-label="...">
                       <ul class="pagination pagination-sm">
                         <li class="page-item active" aria-current="page">
@@ -721,33 +720,10 @@
                         <li class="page-item"><a class="page-link" href="#">10</a></li>
                       </ul>
                     </nav>
-                    <button class="btn bg-green" dir="rtl">הַבָּא <i class="ri-arrow-right-line"></i></button>
+                    <button class="btn bg-green" dir="rtl"><i class="ri-arrow-right-line"></i> קוֹדֵם</button>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="editor-panel col-lg-6">
-                    <div class="file-structure flex-row-reverse">
-                      <!-- <div class="option-wrapper">
-                          <ul>
-                            <li><a href="#">File</a></li>
-                            <li><a href="#">Edit</a></li>
-                            <li><a href="#">View</a></li>
-                            <li><a href="#">Insert</a></li>
-                            <li><a href="#">Format</a></li>
-                            <li><a href="#">Tool</a></li>
-                            <li><a href="#">Help</a></li>
-                          </ul>
-                        </div> -->
-                      <p dir="rtl">כתוב את המודעה/פוסט שלך כאן</p>
-                      <div class="button ml-0">
-                        <button class="btn-header" dir="rtl">שֶׁלְאַחַר</button>
-                      </div>
-                    </div>
-                    <div id="div_editor1" style="width: 100%">
-
-                    </div>
-                  </div>
-
                   <div class="Photo-wrapper col-lg-6">
                     <div class="heading">
                       <h1 dir="rtl">הוסף תמונה/סרטון</h1>
@@ -762,6 +738,28 @@
                       </div>
                     </div>
                   </div>
+                  <div class="editor-panel col-lg-6">
+                    <div class="file-structure flex-row-reverse">
+                      <!-- <div class="option-wrapper">
+                          <ul>
+                            <li><a href="#">File</a></li>
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">View</a></li>
+                            <li><a href="#">Insert</a></li>
+                            <li><a href="#">Format</a></li>
+                            <li><a href="#">Tool</a></li>
+                            <li><a href="#">Help</a></li>
+                          </ul>
+                        </div> -->
+                      <p dir="rtl">כתוב את המודעה/פוסט שלך כאן</p>
+                      <div class="button d-none ml-0">
+                        <button class="btn-header" dir="rtl">שֶׁלְאַחַר</button>
+                      </div>
+                    </div>
+                    <div id="div_editor1" style="width: 100%">
+
+                    </div>
+                  </div>
                 </div>
                 <button class="btn btn-header mt-3">Place Order</button>
               </div>
@@ -773,7 +771,7 @@
               <div class="price-info-main">
                 <div class="price-info">
                   <span>$250</span>
-                  <h5 dir="rtlr">סכום משנה</h5>
+                  <h5 dir="rtlr">סכום סיניים</h5>
                 </div>
                 <div class="price-info border-line">
                   <span>$37.5</span>
@@ -786,7 +784,7 @@
                   <span>$287.5</span>
                   <div class="info-question">
                     <img src="./images/icons/help-circle.png" alt="" />
-                    <h5 dir="rtl">עמלת שירות</h5>
+                    <h5 dir="rtl">סה”כ כולל עמלה</h5>
                   </div>
                 </div>
               </div>

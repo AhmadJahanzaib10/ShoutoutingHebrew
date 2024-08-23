@@ -54,6 +54,10 @@
 .file-structure .button{
     margin-left: 0px !important;
 }
+.fields-wrapper{
+    align-items: end !important;
+}
+/* --------------Notification----------------- */
 .notification-menu {
     left: -55px !important;
 }
