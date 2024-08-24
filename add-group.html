@@ -26,25 +26,33 @@
         <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav menu-rev dashboard-navbar mb-2 mb-lg-0 gap-4">
+        <ul class="navbar-nav dashboard-navbar mb-2 mb-lg-0 gap-4">        
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" dir="rtl">בית</a>
+            <a class="nav-link" href="/blog.html" aria-disabled="true" dir="rtl">בלוג</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true" dir="rtl">המתחם שלי</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true" dir="rtl">ההצעות שלי</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true" dir="rtl">הקבוצות/ דפים שלי</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true" dir="rtl">בלוג</a>
+            <a class="nav-link" href="/social-groups-offer.html" aria-disabled="true" dir="rtl">ההצעות שלי</a>
           </li>
         </ul>
         <div class="d-flex dashboard-nav gap-2 justify-content-end align-items-center btns" data-bs-toggle="dropdown"
           aria-expanded="false" role="button">
+          <a href="/add-group.html" class="btn btn-primary place-order" dir="rtl">הוסף קבוצה חברתית</a>
+          <ul class="mb-0">
+            <li class="notification-desktop" role="button">
+                <div class="noti-icon-container" id="notificationToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i id="user_notification_icon" class="ri-notification-line notification"></i>
+                </div>
+                <div class="notification-menu dropdown-menu" aria-labelledby="notificationToggle">
+                    <ul id="user_notifications">
+                        <li>
+                            <a href="javascript:;">
+                                Please wait while we are loading your notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
           <div class="text">
             <h5 dir="rtl">אחראי קבוצה</h5>
             <p dir="rtl">משפיע : <span class="balance">$10000.00</span></p>

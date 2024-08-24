@@ -71,6 +71,13 @@
 .custom-table thead th{
     text-align: start !important;
 }
+/* ------------------NAvbar------------------- */
+.dashboard-navbar {
+    width: 66% !important;
+}
+.dashboard-nav ul{
+    padding-left: 1rem !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
