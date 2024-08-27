@@ -78,6 +78,14 @@
 .dashboard-nav ul{
     padding-left: 1rem !important;
 }
+
+/* -----------------------Account Settings-------------------- */
+.toggle-tab{
+    justify-content: end;
+}
+.content{
+    display: block !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;

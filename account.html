@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/social-groups-offer.css">
   <link rel="stylesheet" href="css/account.css" />
+  <link rel="stylesheet" href="css/hebrew.css">
 </head>
 
 <body>
@@ -24,43 +25,51 @@
         <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav dashboard-navbar mb-2 mb-lg-0 gap-4">
+        <ul class="navbar-nav dashboard-navbar mb-2 mb-lg-0 gap-4">        
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="/blog.html" aria-disabled="true" dir="rtl">בלוג</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true">My Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true">My Offers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true">My Social Groups</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-disabled="true">Blog</a>
+            <a class="nav-link" href="/social-groups-offer.html" aria-disabled="true" dir="rtl">ההצעות שלי</a>
           </li>
         </ul>
-        <div class="d-flex dashboard-nav gap-2 justify-content-center align-items-center btns" data-bs-toggle="dropdown"
+        <div class="d-flex dashboard-nav gap-2 justify-content-end align-items-center btns" data-bs-toggle="dropdown"
           aria-expanded="false" role="button">
+          <a href="/add-group.html" class="btn btn-primary place-order" dir="rtl">הוסף קבוצה/ ערוץ</a>
+          <ul class="mb-0">
+            <li class="notification-desktop" role="button">
+                <div class="noti-icon-container" id="notificationToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i id="user_notification_icon" class="ri-notification-line notification"></i>
+                </div>
+                <div class="notification-menu dropdown-menu" aria-labelledby="notificationToggle">
+                    <ul id="user_notifications">
+                        <li>
+                            <a href="javascript:;">
+                                Please wait while we are loading your notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+          <div class="text">
+            <h5 dir="rtl">אחראי קבוצה</h5>
+            <p dir="rtl">משפיע : <span class="balance">$10000.00</span></p>
+          </div>
           <div class="icon">
             <i class="ri-user-3-line"></i>
           </div>
-          <div class="text">
-            <h5>Group Admin</h5>
-            <p>Influencer : <span class="balance">$10000.00</span></p>
-          </div>
           <ul class="dropdown-menu profile-dropdown">
             <li>
-              <a href="#" class="dropdown-item fw-semibold">
+              <a href="#" class="dropdown-item fw-semibold" dir="rtl">
                 <img src="images/icons/user-color.png" alt="">
-                Account Information
+                פרטי חשבון
               </a>
             </li>
             <li>
-              <a href="#" class="dropdown-item fw-semibold">
+              <a href="#" class="dropdown-item fw-semibold" dir="rtl">
                 <img src="images/icons/log-out-01.png" alt="">
-                Logout
+                להתנתק
               </a>
             </li>
           </ul>
@@ -71,89 +80,55 @@
   <!-- Register as shoutouter - page -->
 
   <div class="container-fluid acc-navigate d-flex flex-column gap-5 align-items-center justify-content-center">
-    <div class="acc-navigate-box d-flex">
-      <a href="" class="w-50 h-100 d-flex align-items-center justify-content-center">My Offers</a>
-      <a href="" class="w-50 h-100 d-flex align-items-center justify-content-center">Account Settings</a>
+    <div class="acc-navigate-box btn-group d-flex">
+      <a href="" class="btn btn-outline btn-white" dir="rtl">ההצעות שלי</a>
+      <a href="" class="btn btn-outline" dir="rtl">הגדרות חשבון</a>
     </div>
-    <h2 class="acc-navigate-head">Account Settings</h2>
   </div>
 
   <div class="container acc-main d-flex gap-4 justify-content-between">
 
-    <!-- side-bar -->
-    <div class="toggle-tabs list-1 acc-main-left">
-      <div class="dropdown-items d-flex align-items-center justify-content-between">
-        <span class="selected-item">Account</span>
-        <span><i class="ri-arrow-down-s-line"></i></span>
-      </div>
-      <ul class="toggle-tabs-list w-100 gap-1 d-flex flex-column">
-        <li class="toggle-tab w-100 d-flex align-items-center active">
-          Account
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          My Social Groups
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          Change Picture
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          Link Accounts
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          Payout Details
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">Security</li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          Billing Information
-        </li>
-        <li class="toggle-tab w-100 d-flex align-items-center">Balance</li>
-        <li class="toggle-tab w-100 d-flex align-items-center">
-          Delete Account
-        </li>
-      </ul>
-    </div>
-
-    <!-- right-tabs -->
+    <!-- left-tabs -->
 
     <!-- tab-1 -->
     <div class="w-75 acc-main-right content active">
       <div class="w-100 d-flex flex-column gap-3">
         <div class="refer-shoutouter d-flex justify-content-center gap-2 flex-column">
-          <h2>Refer A ShoutOuter/Social Media Group Admin</h2>
-          <p class="ref-1">
-            Referrel Link:
+          <h2 dir="rtl">קישור להפניית מנהלי ערוצים וקבוצות</h2>
+          <p class="ref-1" dir="rtl">
+            קישור להפניה:
             https://WWW.shoutouting.com/Register/Influencer?ref=shoutouter
           </p>
-          <p class="ref-2">
-            Referrel Link: https://WWW.shoutouting.com/Register/<br />Influencer?ref=shoutouter
+          <p class="ref-2" dir="rtl">
+            קישור להפניה: https://WWW.shoutouting.com/Register/<br />Influencer?ref=shoutouter
           </p>
         </div>
 
         <div class="refer-advertiser d-flex mt-2 justify-content-center gap-2 flex-column">
-          <h2>Refer An Advertiser</h2>
-          <p class="ref-1">
-            Referrel Link:
+          <h2 dir="rtl">קישור להפניית מפרסמים</h2>
+          <p class="ref-1" dir="rtl">
+            קישור להפניה:
             https://WWW.shoutouting.com/Register/Advertiser?ref=shoutouter
           </p>
-          <p class="ref-2">
-            Referrel Link: https://WWW.shoutouting.com/Register/<br />Advertiser?ref=shoutouter
+          <p class="ref-2" dir="rtl">
+            קישור להפניה: https://WWW.shoutouting.com/Register/<br />Advertiser?ref=shoutouter
           </p>
         </div>
 
         <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
           <div>
-            <h2>Change your Current Email</h2>
-            <p>Please enter your new email.</p>
+            <h2 dir="rtl">שנה את האימייל הנוכחי שלך</h2>
+            <p dir="rtl">נא להזין את האימייל החדש שלך.</p>
           </div>
           <hr class="m-0" />
 
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="c-email">Current Email</label>
+          <div class="d-flex w-100 gap-3 two-boxes flex-row-reverse">
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="c-email" dir="rtl">אימייל נוכחי</label>
               <input class="w-100" type="email" name="c-email" placeholder="shoutouter@shoutouting.com" />
             </div>
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="n-email">Enter new Email</label>
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="n-email" dir="rtl">הזן אימייל חדש</label>
               <input class="w-100" type="email" name="n-email" placeholder="Enter new Email" />
             </div>
           </div>
@@ -161,40 +136,390 @@
 
         <div class="change-email mt-3 d-flex justify-content-center gap-2 flex-column">
           <div>
-            <h2>Change your Current Email</h2>
-            <p>Please enter your new email.</p>
+            <h2 dir="rtl">שנה את האימייל הנוכחי שלך</h2>
+            <p dir="rtl">נא להזין את האימייל החדש שלך.</p>
           </div>
           <hr class="m-0" />
 
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="f-name">First Name</label>
-              <input class="w-100" type="text" name="f-name" placeholder="First Name" />
+          <div class="d-flex w-100 gap-3 two-boxes flex-row-reverse">
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="f-name" dir="rtl">שֵׁם פְּרַטִי</label>
+              <input class="w-100" type="text" name="f-name" placeholder="שֵׁם פְּרַטִי" dir="rtl"/>
             </div>
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="l-name">Last Name</label>
-              <input class="w-100" type="text" name="l-name" placeholder="Last Name" />
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="l-name" dir="rtl">שֵׁם מִשׁפָּחָה</label>
+              <input class="w-100" type="text" name="l-name" placeholder="שֵׁם מִשׁפָּחָה" dir="rtl" />
             </div>
           </div>
 
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="u-name">Username</label>
-              <input class="w-100" type="text" name="u-name" placeholder="User Name" />
+          <div class="d-flex w-100 gap-3 two-boxes flex-row-reverse">
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="u-name" dir="rtl">שם משתמש</label>
+              <input class="w-100" type="text" name="u-name" placeholder="שם משתמש" dir="rtl"/>
             </div>
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="country">Country</label>
-              <select name="country" id="cars" class="dropdown w-100">
-                <option value="united states">United States</option>
-                <option value="canada">Canada</option>
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="country" dir="rtl">ארץ</label>
+              <select name="select" class="dropdown w-100">
+                <option value="Uzbekistan">אוזבקיסטן</option>
+                <option value="Uganda">אוגנדה</option>
+                <option value="Ukraine">אוקראינה</option>
+                <option value="Uruguay">אורוגוואי</option>
+                <option value="Azerbaijan">אזרבייג'ן</option>
+                <option value="Australia">אוסטרליה</option>
+                <option value="Austria">אוסטריה</option>
+                <option value="Estonia">אסטוניה</option>
+                <option value="Afghanistan">אפגניסטן</option>
+                <option value="United Arab Emirates">איחוד האמירויות הערביות</option>
+                <option value="Albania">אלבניה</option>
+                <option value="Algeria">אלג'יריה</option>
+                <option value="United Kingdom">הממלכה המאוחדת</option>
+                <option value="Western Sahara">סהרה המערבית</option>
+                <option value="Yemen">תימן</option>
+                <option value="Indonesia">אינדונזיה</option>
+                <option value="India">הודו</option>
+                <option value="Honduras">הונדורס</option>
+                <option value="Hungary">הונגריה</option>
+                <option value="Vanuatu">ונואטו</option>
+                <option value="Venezuela">ונצואלה</option>
+                <option value="Viet Nam">וייטנאם</option>
+                <option value="Germany">גרמניה</option>
+                <option value="Ghana">גאנה</option>
+                <option value="Greece">יוון</option>
+                <option value="Georgia">גאורגיה</option>
+                <option value="Gibraltar">גיברלטר</option>
+                <option value="Grenada">גרנדה</option>
+                <option value="Greenland">גרינלנד</option>
+                <option value="Guadeloupe">גוואדלופ</option>
+                <option value="Guam">גואם</option>
+                <option value="Guatemala">גואטמלה</option>
+                <option value="Guinea">גינאה</option>
+                <option value="Guinea-bissau">גינאה-ביסאו</option>
+                <option value="Guyana">גיאנה</option>
+                <option value="Denmark">דנמרק</option>
+                <option value="Djibouti">ג'יבוטי</option>
+                <option value="Dominican Republic">הרפובליקה הדומיניקנית</option>
+                <option value="Egypt">מצרים</option>
+                <option value="Zambia">זמביה</option>
+                <option value="Zimbabwe">זימבבואה</option>
+                <option value="Israel">ישראל</option>
+                <option value="Iceland">איסלנד</option>
+                <option value="Kazakhstan">קזחסטן</option>
+                <option value="Qatar">קטאר</option>
+                <option value="Cayman Islands">איי קיימן</option>
+                <option value="Cambodia">קמבודיה</option>
+                <option value="Cameroon">קמרון</option>
+                <option value="Canada">קנדה</option>
+                <option value="Cuba">קובה</option>
+                <option value="Comoros">קומורו</option>
+                <option value="Cote D'ivoire">חוף השנהב</option>
+                <option value="Kuwait">כווית</option>
+                <option value="Croatia">קרואטיה</option>
+                <option value="Kyrgyzstan">קירגיזסטן</option>
+                <option value="Kiribati">קיריבאטי</option>
+                <option value="Cyprus">קפריסין</option>
+                <option value="Kenya">קניה</option>
+                <option value="Czech Republic">צ'כיה</option>
+                <option value="Chad">צ'אד</option>
+                <option value="Chile">צ'ילה</option>
+                <option value="China">סין</option>
+                <option value="Switzerland">שווייץ</option>
+                <option value="Sweden">שוודיה</option>
+                <option value="Sri Lanka">סרי לנקה</option>
+                <option value="Ecuador">אקוודור</option>
+                <option value="Ethiopia">אתיופיה</option>
+                <option value="South Africa">דרום אפריקה</option>
+                <option value="South Georgia and The South Sandwich Islands">ג'ורג'יה הדרומית ואיי סנדוויץ'
+                  הדרומיים</option>
+                <option value="Sudan">סודאן</option>
+                <option value="Suriname">סורינאם</option>
+                <option value="Svalbard and Jan Mayen">סוואלבארד ויאן מאיין</option>
+                <option value="Spain">ספרד</option>
+                <option value="Slovenia">סלובניה</option>
+                <option value="Slovakia">סלובקיה</option>
+                <option value="Solomon Islands">איי שלמה</option>
+                <option value="Somalia">סומליה</option>
+                <option value="Seychelles">סיישל</option>
+                <option value="Serbia">סרביה</option>
+                <option value="Senegal">סנגל</option>
+                <option value="Singapore">סינגפור</option>
+                <option value="Syrian Arab Republic">סוריה</option>
+                <option value="Iraq">עיראק</option>
+                <option value="Iran, Islamic Republic of">איראן</option>
+                <option value="Falkland Islands (Malvinas)">איי פוקלנד</option>
+                <option value="Philippines">הפיליפינים</option>
+                <option value="Finland">פינלנד</option>
+                <option value="France">צרפת</option>
+                <option value="Fiji">פיג'י</option>
+                <option value="Pitcairn">פיטקרן</option>
+                <option value="Colombia">קולומביה</option>
+                <option value="Costa Rica">קוסטה ריקה</option>
+                <option value="Republic of Korea">קוריאה הדרומית</option>
+                <option value="Democratic People's Republic of Korea">קוריאה הצפונית</option>
+                <option value="Kuwait">כווית</option>
+                <option value="Pakistan">פקיסטן</option>
+                <option value="Panama">פנמה</option>
+                <option value="Papua New Guinea">פפואה גינאה החדשה</option>
+                <option value="Palau">פלאו</option>
+                <option value="Palestinian Territory, Occupied">הרשות הפלסטינית</option>
+                <option value="Luxembourg">לוקסמבורג</option>
+                <option value="Lebanon">לבנון</option>
+                <option value="Latvia">לטביה</option>
+                <option value="Laos">לאוס</option>
+                <option value="Lithuania">ליטא</option>
+                <option value="Lesotho">לסוטו</option>
+                <option value="Liberia">ליבריה</option>
+                <option value="Libyan Arab Jamahiriya">לוב</option>
+                <option value="Liechtenstein">ליכטנשטיין</option>
+                <option value="Malta">מלטה</option>
+                <option value="Malawi">מלאווי</option>
+                <option value="Malaysia">מלזיה</option>
+                <option value="Mali">מאלי</option>
+                <option value="Marshall Islands">איי מרשל</option>
+                <option value="Martinique">מרטיניק</option>
+                <option value="Mauritania">מאוריטניה</option>
+                <option value="Mauritius">מאוריציוס</option>
+                <option value="Mayotte">מיוט</option>
+                <option value="Mexico">מקסיקו</option>
+                <option value="Micronesia, Federated States of">מיקרונזיה</option>
+                <option value="Mongolia">מונגוליה</option>
+                <option value="Moldova, Republic of">מולדובה</option>
+                <option value="Monaco">מונקו</option>
+                <option value="Montserrat">מונטסראט</option>
+                <option value="Montenegro">מונטנגרו</option>
+                <option value="Morocco">מרוקו</option>
+                <option value="Mozambique">מוזמביק</option>
+                <option value="Myanmar">מיאנמר</option>
+                <option value="Nepal">נפאל</option>
+                <option value="Norfolk Island">איי נורפולק</option>
+                <option value="Nicaragua">ניקרגואה</option>
+                <option value="Niger">ניז'ר</option>
+                <option value="Nigeria">ניגריה</option>
+                <option value="Niue">ניווה</option>
+                <option value="New Zealand">ניו זילנד</option>
+                <option value="New Caledonia">קלדוניה החדשה</option>
+                <option value="Netherlands">הולנד</option>
+                <option value="Netherlands Antilles">איי האנטילים ההולנדיים</option>
+                <option value="Nauru">נאורו</option>
+                <option value="Namibia">נמיביה</option>
+                <option value="Norway">נורווגיה</option>
+                <option value="Oman">עומאן</option>
+                <option value="Uruguay">אורוגוואי</option>
+                <option value="Eritrea">אריתריאה</option>
+                <option value="El Salvador">אל סלוודור</option>
+                <option value="Angola">אנגולה</option>
+                <option value="Anguilla">אנגווילה</option>
+                <option value="Andorra">אנדורה</option>
+                <option value="Antarctica">אנטארקטיקה</option>
+                <option value="Antigua and Barbuda">אנטיגואה וברבודה</option>
+                <option value="Equatorial Guinea">גינאה המשוונית</option>
+                <option value="Estonia">אסטוניה</option>
+                <option value="Ethiopia">אתיופיה</option>
+                <option value="Ireland">אירלנד</option>
+                <option value="Ivory Coast">חוף השנהב</option>
+                <option value="Iceland">איסלנד</option>
+                <option value="Italy">איטליה</option>
+                <option value="Zambia">זמביה</option>
+                <option value="Zimbabwe">זימבבואה</option>
+                <option value="Vietnam">וייטנאם</option>
+                <option value="Jordan">ירדן</option>
+                <option value="Japan">יפן</option>
+                <option value="Yemen">תימן</option>
+                <option value="Venezuela">ונצואלה</option>
+                <option value="Vanuatu">ונואטו</option>
+                <option value="Uzbekistan">אוזבקיסטן</option>
+                <option value="Uganda">אוגנדה</option>
+                <option value="Ukraine">אוקראינה</option>
+                <option value="Turkey">טורקיה</option>
+                <option value="Tunisia">תוניסיה</option>
+                <option value="Trinidad and Tobago">טרינידד וטובגו</option>
+                <option value="Turkmenistan">טורקמניסטן</option>
+                <option value="Turks and Caicos Islands">איי טורקס וקייקוס</option>
+                <option value="United States">ארצות הברית</option>
+                <option value="United Kingdom">הממלכה המאוחדת</option>
+                <option value="Uganda">אוגנדה</option>
+                <option value="Uruguay">אורוגוואי</option>
+                <option value="Azerbaijan">אזרבייג'ן</option>
+                <option value="Australia">אוסטרליה</option>
+                <option value="Austria">אוסטריה</option>
+                <option value="Estonia">אסטוניה</option>
+                <option value="Afghanistan">אפגניסטן</option>
+                <option value="United Arab Emirates">איחוד האמירויות הערביות</option>
+                <option value="Albania">אלבניה</option>
+                <option value="Algeria">אלג'יריה</option>
+                <option value="United Kingdom">הממלכה המאוחדת</option>
+                <option value="Western Sahara">סהרה המערבית</option>
+                <option value="Yemen">תימן</option>
+                <option value="Indonesia">אינדונזיה</option>
+                <option value="India">הודו</option>
+                <option value="Honduras">הונדורס</option>
+                <option value="Hungary">הונגריה</option>
+                <option value="Vanuatu">ונואטו</option>
+                <option value="Venezuela">ונצואלה</option>
+                <option value="Viet Nam">וייטנאם</option>
+                <option value="Germany">גרמניה</option>
+                <option value="Ghana">גאנה</option>
+                <option value="Greece">יוון</option>
+                <option value="Georgia">גאורגיה</option>
+                <option value="Gibraltar">גיברלטר</option>
+                <option value="Grenada">גרנדה</option>
+                <option value="Greenland">גרינלנד</option>
+                <option value="Guadeloupe">גוואדלופ</option>
+                <option value="Guam">גואם</option>
+                <option value="Guatemala">גואטמלה</option>
+                <option value="Guinea">גינאה</option>
+                <option value="Guinea-bissau">גינאה-ביסאו</option>
+                <option value="Guyana">גיאנה</option>
+                <option value="Denmark">דנמרק</option>
+                <option value="Djibouti">ג'יבוטי</option>
+                <option value="Dominican Republic">הרפובליקה הדומיניקנית</option>
+                <option value="Egypt">מצרים</option>
+                <option value="Zambia">זמביה</option>
+                <option value="Zimbabwe">זימבבואה</option>
+                <option value="Israel" selected>ישראל</option>
+                <option value="Iceland">איסלנד</option>
+                <option value="Kazakhstan">קזחסטן</option>
+                <option value="Qatar">קטאר</option>
+                <option value="Cayman Islands">איי קיימן</option>
+                <option value="Cambodia">קמבודיה</option>
+                <option value="Cameroon">קמרון</option>
+                <option value="Canada">קנדה</option>
+                <option value="Cuba">קובה</option>
+                <option value="Comoros">קומורו</option>
+                <option value="Cote D'ivoire">חוף השנהב</option>
+                <option value="Kuwait">כווית</option>
+                <option value="Croatia">קרואטיה</option>
+                <option value="Kyrgyzstan">קירגיזסטן</option>
+                <option value="Kiribati">קיריבאטי</option>
+                <option value="Cyprus">קפריסין</option>
+                <option value="Kenya">קניה</option>
+                <option value="Czech Republic">צ'כיה</option>
+                <option value="Chad">צ'אד</option>
+                <option value="Chile">צ'ילה</option>
+                <option value="China">סין</option>
+                <option value="Switzerland">שווייץ</option>
+                <option value="Sweden">שוודיה</option>
+                <option value="Sri Lanka">סרי לנקה</option>
+                <option value="Ecuador">אקוודור</option>
+                <option value="Ethiopia">אתיופיה</option>
+                <option value="South Africa">דרום אפריקה</option>
+                <option value="South Georgia and The South Sandwich Islands">ג'ורג'יה הדרומית ואיי סנדוויץ'
+                  הדרומיים</option>
+                <option value="Sudan">סודאן</option>
+                <option value="Suriname">סורינאם</option>
+                <option value="Svalbard and Jan Mayen">סוואלבארד ויאן מאיין</option>
+                <option value="Spain">ספרד</option>
+                <option value="Slovenia">סלובניה</option>
+                <option value="Slovakia">סלובקיה</option>
+                <option value="Solomon Islands">איי שלמה</option>
+                <option value="Somalia">סומליה</option>
+                <option value="Seychelles">סיישל</option>
+                <option value="Serbia">סרביה</option>
+                <option value="Senegal">סנגל</option>
+                <option value="Singapore">סינגפור</option>
+                <option value="Syrian Arab Republic">סוריה</option>
+                <option value="Iraq">עיראק</option>
+                <option value="Iran, Islamic Republic of">איראן</option>
+                <option value="Falkland Islands (Malvinas)">איי פוקלנד</option>
+                <option value="Philippines">הפיליפינים</option>
+                <option value="Finland">פינלנד</option>
+                <option value="France">צרפת</option>
+                <option value="Fiji">פיג'י</option>
+                <option value="Pitcairn">פיטקרן</option>
+                <option value="Colombia">קולומביה</option>
+                <option value="Costa Rica">קוסטה ריקה</option>
+                <option value="Republic of Korea">קוריאה הדרומית</option>
+                <option value="Democratic People's Republic of Korea">קוריאה הצפונית</option>
+                <option value="Kuwait">כווית</option>
+                <option value="Pakistan">פקיסטן</option>
+                <option value="Panama">פנמה</option>
+                <option value="Papua New Guinea">פפואה גינאה החדשה</option>
+                <option value="Palau">פלאו</option>
+                <option value="Palestinian Territory, Occupied">הרשות הפלסטינית</option>
+                <option value="Luxembourg">לוקסמבורג</option>
+                <option value="Lebanon">לבנון</option>
+                <option value="Latvia">לטביה</option>
+                <option value="Laos">לאוס</option>
+                <option value="Lithuania">ליטא</option>
+                <option value="Lesotho">לסוטו</option>
+                <option value="Liberia">ליבריה</option>
+                <option value="Libyan Arab Jamahiriya">לוב</option>
+                <option value="Liechtenstein">ליכטנשטיין</option>
+                <option value="Malta">מלטה</option>
+                <option value="Malawi">מלאווי</option>
+                <option value="Malaysia">מלזיה</option>
+                <option value="Mali">מאלי</option>
+                <option value="Marshall Islands">איי מרשל</option>
+                <option value="Martinique">מרטיניק</option>
+                <option value="Mauritania">מאוריטניה</option>
+                <option value="Mauritius">מאוריציוס</option>
+                <option value="Mayotte">מיוט</option>
+                <option value="Mexico">מקסיקו</option>
+                <option value="Micronesia, Federated States of">מיקרונזיה</option>
+                <option value="Mongolia">מונגוליה</option>
+                <option value="Moldova, Republic of">מולדובה</option>
+                <option value="Monaco">מונקו</option>
+                <option value="Montserrat">מונטסראט</option>
+                <option value="Montenegro">מונטנגרו</option>
+                <option value="Morocco">מרוקו</option>
+                <option value="Mozambique">מוזמביק</option>
+                <option value="Myanmar">מיאנמר</option>
+                <option value="Nepal">נפאל</option>
+                <option value="Norfolk Island">איי נורפולק</option>
+                <option value="Nicaragua">ניקרגואה</option>
+                <option value="Niger">ניז'ר</option>
+                <option value="Nigeria">ניגריה</option>
+                <option value="Niue">ניווה</option>
+                <option value="New Zealand">ניו זילנד</option>
+                <option value="New Caledonia">קלדוניה החדשה</option>
+                <option value="Netherlands">הולנד</option>
+                <option value="Netherlands Antilles">איי האנטילים ההולנדיים</option>
+                <option value="Nauru">נאורו</option>
+                <option value="Namibia">נמיביה</option>
+                <option value="Norway">נורווגיה</option>
+                <option value="Oman">עומאן</option>
+                <option value="Uruguay">אורוגוואי</option>
+                <option value="Eritrea">אריתריאה</option>
+                <option value="El Salvador">אל סלוודור</option>
+                <option value="Angola">אנגולה</option>
+                <option value="Anguilla">אנגווילה</option>
+                <option value="Andorra">אנדורה</option>
+                <option value="Antarctica">אנטארקטיקה</option>
+                <option value="Antigua and Barbuda">אנטיגואה וברבודה</option>
+                <option value="Equatorial Guinea">גינאה המשוונית</option>
+                <option value="Estonia">אסטוניה</option>
+                <option value="Ethiopia">אתיופיה</option>
+                <option value="Ireland">אירלנד</option>
+                <option value="Ivory Coast">חוף השנהב</option>
+                <option value="Iceland">איסלנד</option>
+                <option value="Italy">איטליה</option>
+                <option value="Zambia">זמביה</option>
+                <option value="Zimbabwe">זימבבואה</option>
+                <option value="Vietnam">וייטנאם</option>
+                <option value="Jordan">ירדן</option>
+                <option value="Japan">יפן</option>
+                <option value="Yemen">תימן</option>
+                <option value="Venezuela">ונצואלה</option>
+                <option value="Vanuatu">ונואטו</option>
+                <option value="Uzbekistan">אוזבקיסטן</option>
+                <option value="Uganda">אוגנדה</option>
+                <option value="Ukraine">אוקראינה</option>
+                <option value="Turkey">טורקיה</option>
+                <option value="Tunisia">תוניסיה</option>
+                <option value="Trinidad and Tobago">טרינידד וטובגו</option>
+                <option value="Turkmenistan">טורקמניסטן</option>
+                <option value="Turks and Caicos Islands">איי טורקס וקייקוס</option>
+                <option value="United States">ארצות הברית</option>
+                <option value="United Kingdom">הממלכה המאוחדת</option>
+
+
               </select>
             </div>
           </div>
 
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="state">State</label>
-              <select name="state" id="cars" class="dropdown w-100">
+          <div class="d-flex w-100 gap-3 two-boxes flex-row-reverse">
+            <div class="d-flex w-50 half-width flex-column align-items-end mt-3 gap-2">
+              <label for="state" dir="rtl">מְדִינָה</label>
+              <select name="state" id="cars" disabled class="dropdown w-100">
                 <option selected>Select State</option>
                 <option value="canada">Canada</option>
               </select>
@@ -213,595 +538,86 @@
 
         <hr />
 
-        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-          <button class="acc-btn-1">Cancel</button>
-          <button class="acc-btn-2">Save</button>
+        <div class="acc-btns w-100 d-flex gap-2 justify-content-start">
+          <button class="acc-btn-2" dir="rtl">שמור</button>
         </div>
       </div>
     </div>
 
-    <!--tab-2  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 d-flex flex-column gap-3">
-        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
-          <div>
-            <h2>Add Your Social Media Groups - For Admins ONLY !</h2>
-            <p>
-              Generate revenue from your groups, channels, communities, or
-              pages on social media platforms like LinkedIn, Facebook,
-              Telegram, and WhatsApp by sharing sponsored content. If you're
-              an admin of a group, channel, page, or community with a
-              significant following, share your group details, and we'll
-              connect you with advertisers seeking collaboration
-              opportunities.
-            </p>
-            <p>
-              Ready to get started? Click the
-              <span style="color: #05aaa5">Add Group</span> button and
-              kickstart your monetisation journey.
-            </p>
+        <!-- side-bar -->
+        <div class="toggle-tabs list-1 acc-main-left">
+          <div class="dropdown-items d-flex align-items-center justify-content-between">
+            <span class="selected-item">Account</span>
+            <span><i class="ri-arrow-down-s-line"></i></span>
           </div>
-          <button class="social-group-add-btn">Add Group</button>
-          <hr class="my-2" />
-
-          <!-- Add table here -->
-          <div class="table-wrapper">
-            <div class="table-title">
-              <div class="text">
-                <h5>Your Social Groups</h5>
-                <p>Please enter  your new email.</p>
-              </div>
-              <img src="images/icons/dots-vertical.png" alt="">
-            </div>
-            <div class="table-responsive">
-              <table class="table custom-table">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Group Name</th>
-                    <th scope="col">Members</th>
-                    <th scope="col">Link</th>
-                    <th scope="col">Status</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/icons/fb-grey.png" alt=""> -33</td>
-                    <td style="color: #475467 !important;">Facebook Group Example 2	</td>
-                    <td>150</td>
-                    <td><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
-                    <td>
-                      <span class="badge-progress">Approved</span>
-                    </td>
-                    <td>
-                      <div class="d-flex gap-3 controls">
-                        <i class="ri-delete-bin-line"></i>
-                        <i class="ri-pencil-line"></i>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <ul class="toggle-tabs-list w-100 gap-1 d-flex flex-column">
+            <li class="toggle-tab w-100 d-flex align-items-center active">
+              <a href="/account.html" dir="rtl">חֶשְׁבּוֹן</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/social-group-add.html" dir="rtl">הקבוצות והערוצים שלי</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/change-pic.html" dir="rtl">שנה תמונה</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/link-accounts.html" dir="rtl">קישור חשבונות</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/payout-accounts.html" dir="rtl">אמצעי קבלת תגמול</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/security.html" dir="rtl">ניהול סיסמאות</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/bill-info.html" dir="rtl">מידע על חשבוניות</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/balance.html" dir="rtl">סיכום יתרה</a>
+            </li>
+            <li class="toggle-tab w-100 d-flex align-items-center">
+              <a href="/delete-account.html" dir="rtl">מחק חשבון</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-
-    <!--tab-3  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 d-flex flex-column gap-3">
-        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
-          <div>
-            <h2>Change Picture</h2>
-            <p>Please upload your profile picture</p>
-          </div>
-          <hr class="m-0" />
-
-          <div class="acc-image d-flex align-items-center justify-content-center">
-            <img src="./images/Icon.png" alt="" />
-          </div>
-
-          <div class="d-flex w-100 image-upload w-100 flex-column align-items-center justify-content-center mt-3 gap-2">
-            <div class="image-upload-icon d-flex align-items-center justify-content-center">
-              <img src="./images/upload-cloud-02.png" alt="" />
-            </div>
-            <label for="profile-pic" class="text-center profile-pic-label">
-              <span>Click to upload</span>
-              or drag and drop <br />
-              <span> SVG, PNG, JPG or GIF (max. 800x400px) </span>
-            </label>
-            <input id="profile-pic" type="file" />
-          </div>
-        </div>
-
-        <hr class="my-3" />
-
-        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-          <button class="acc-btn-1">Cancel</button>
-          <button class="acc-btn-2">Save</button>
-        </div>
-      </div>
-    </div>
-
-    <!--tab-4  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 social-accounts d-flex flex-column gap-3">
-        <h2 class="">Connect Your Social Accounts To Get More Jobs</h2>
-        <hr />
-        <form action="" class="w-100 d-flex flex-column mx-auto mt-2">
-          <!-- facebook -->
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Facebook Profile Link</label>
-              <div class="position-relative">
-                <p class="mb-0 d-flex gap-2">
-                  How to find your Facebook profile's link?<i class="question-pc ri-question-line"></i>
-                </p>
-                <div class="position-absolute question-line-div question-pc-div">
-                  <div class="triangle position-absolute"></div>
-                  <p>
-                    Click on your name or profile picture at the top left of
-                    Facebook URL and copy the URL
-                  </p>
-                </div>
-              </div>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="&#xf082; Facebook Profile URL"
-              style="font-family: Inter, FontAwesome" />
-            <div class="position-relative">
-              <p class="mb-0 d-flex gap-2 responsive-label d-none">
-                How to find your Facebook profile's link?<i class="question-m ri-question-line"></i>
-              </p>
-              <div class="position-absolute question-line-div question-m-div">
-                <div class="triangle position-absolute"></div>
-                <p>
-                  Click on your name or profile picture at the top left of
-                  Facebook URL and copy the URL
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- instagram -->
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Instagram Profile Link</label>
-              <div class="position-relative">
-                <p class="mb-0 d-flex gap-2">
-                  How to find your Instagram profile's link?<i class="question-pc ri-question-line"></i>
-                </p>
-                <div class="position-absolute question-line-div question-pc-div">
-                  <div class="triangle position-absolute"></div>
-                  <p>
-                    Click on your name or profile picture at the top left of
-                    Instagram URL and copy the URL
-                  </p>
-                </div>
-              </div>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="&#xf16d; Instagram Profile URL"
-              style="font-family: Inter, FontAwesome" />
-            <div class="position-relative">
-              <p class="mb-0 d-flex gap-2 d-none responsive-label">
-                How to find your Instagram profile's link?<i class="question-m ri-question-line"></i>
-              </p>
-              <div class="position-absolute question-line-div question-m-div">
-                <div class="triangle position-absolute"></div>
-                <p>
-                  Click on your name or profile picture at the top left of
-                  Instagram URL and copy the URL
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- tiktok -->
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Tiktok Profile Link</label>
-              <div class="position-relative">
-                <p class="mb-0 d-flex gap-2">
-                  How to find your Tiktok profile's link?<i class="question-pc ri-question-line"></i>
-                </p>
-                <div class="position-absolute question-line-div question-pc-div">
-                  <div class="triangle position-absolute"></div>
-                  <p>
-                    Click on your name or profile picture at the top left of
-                    Tiktok URL and copy the URL
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <input class="w-100" type="text" name="u-name" placeholder="&#xe07b; Tiktok Profile URL"
-              style="font-family: Inter, FontAwesome" />
-
-            <div class="position-relative">
-              <p class="mb-0 d-flex gap-2 d-none responsive-label">
-                How to find your Tiktok profile's link?
-                <i class="question-m ri-question-line"></i>
-              </p>
-              <div class="position-absolute question-line-div question-m-div">
-                <div class="triangle position-absolute"></div>
-                <p>
-                  Click on your name or profile picture at the top left of
-                  Tiktok URL and copy the URL
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Twitter -->
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Twitter Profile Link</label>
-              <div class="position-relative">
-                <p class="mb-0 d-flex gap-2">
-                  How to find your Twitter profile's link?<i class="question-pc ri-question-line"></i>
-                </p>
-                <div class="position-absolute question-line-div question-pc-div">
-                  <div class="triangle position-absolute"></div>
-                  <p>
-                    Click on your name or profile picture at the top left of
-                    Twitter URL and copy the URL
-                  </p>
-                </div>
-              </div>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="&#xe61b; Twitter Profile URL"
-              style="font-family: Inter, FontAwesome" />
-            <div class="position-relative">
-              <p class="mb-0 d-flex gap-2 d-none responsive-label">
-                How to find your Twitter profile's link?<i class="question-m ri-question-line"></i>
-              </p>
-              <div class="position-absolute question-line-div question-m-div">
-                <div class="triangle position-absolute"></div>
-                <p>
-                  Click on your name or profile picture at the top left of
-                  Twitter URL and copy the URL
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Youtube -->
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Youtube Profile Link</label>
-              <div class="position-relative">
-                <p class="mb-0 d-flex gap-2">
-                  How to find your Youtube profile's link?<i class="question-pc ri-question-line"></i>
-                </p>
-                <div class="position-absolute question-line-div question-pc-div">
-                  <div class="triangle position-absolute"></div>
-                  <p>
-                    Click on your name or profile picture at the top left of
-                    Youtube URL and copy the URL
-                  </p>
-                </div>
-              </div>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="&#xf167; Youtube Profile URL"
-              style="font-family: Inter, FontAwesome" />
-            <div class="position-relative">
-              <p class="mb-0 d-flex gap-2 d-none responsive-label">
-                How to find your Youtube profile's link?<i class="question-m ri-question-line"></i>
-              </p>
-              <div class="position-absolute question-line-div question-m-div">
-                <div class="triangle position-absolute"></div>
-                <p>
-                  Click on your name or profile picture at the top left of
-                  Youtube URL and copy the URL
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4" />
-
-          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-            <button class="acc-btn-1">Cancel</button>
-            <button class="acc-btn-2">Save</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!--tab-5  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 social-accounts d-flex flex-column gap-3">
-        <h2 class="">Your Payout Details</h2>
-        <hr />
-        <form action="" class="w-100 d-flex flex-column mx-auto mt-2">
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Paypal Email</label>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="Enter Paypal Email" />
-          </div>
-
-          <div class="d-flex w-100 half-width flex-column align-items-start mt-3 gap-2">
-            <div class="social-media-links-label w-100 d-flex justify-content-between">
-              <label for="u-name">Payoneer Email</label>
-            </div>
-            <input class="w-100" type="text" name="u-name" placeholder="Enter Payoneer Email" />
-          </div>
-
-          <hr class="my-4" />
-
-          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-            <button class="acc-btn-1">Cancel</button>
-            <button class="acc-btn-2">Save</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!--tab-6  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 d-flex flex-column gap-3">
-        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
-          <div>
-            <h2>Password</h2>
-            <p>Please enter your old password to change your password.</p>
-          </div>
-          <hr class="m-0" />
-
-          <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
-            <label for="o-pass">Enter old password</label>
-            <input class="w-100" type="password" name="0-pass" placeholder="Enter old password" />
-          </div>
-
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex pass w-50 half-width flex-column align-items-start mt-3 gap-2 position-relative">
-              <label for="n-pass">New password</label>
-              <input class="w-100" type="password" name="n-pass" placeholder="Enter New password" />
-
-              <p class="position-absolute mb-0">
-                Your new password must be more than 8 characters.
-              </p>
-            </div>
-            <div class="d-flex c-pass w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="cn-pass">Confirm new password</label>
-              <input class="w-100" type="password" name="cn-pass" placeholder="Confirm new password" />
-            </div>
-          </div>
-        </div>
-
-        <hr class="my-5 security-hr" />
-
-        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-          <button class="acc-btn-1">Cancel</button>
-          <button class="acc-btn-2 update-pass-btn">Update Password</button>
-        </div>
-      </div>
-    </div>
-
-    <!--tab-7  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 d-flex flex-column gap-3">
-        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
-          <div>
-            <h2>Billing Information</h2>
-            <p>Please enter your billing information.</p>
-          </div>
-          <hr class="m-0" />
-
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="state">Country</label>
-              <select name="state" id="cars" class="dropdown w-100 form-select">
-                <option selected>Select Country</option>
-                <option value="canada">Canada</option>
-                <option value="united states">United States</option>
-              </select>
-            </div>
-
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="n-email">State</label>
-              <select name="country" id="cars" class="dropdown w-100 form-select">
-                <option selected>Select State</option>
-                <option value="california">California</option>
-                <option value="texas">Texas</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="state">City</label>
-              <select name="state" id="cars" class="dropdown w-100 form-select">
-                <option selected>Select City</option>
-                <option value="new york">New York</option>
-                <option value="miami">Miami</option>
-              </select>
-            </div>
-
-            <!-- invisible for design concerns -->
-            <div class="d-flex invisible invisible-box w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="n-email">State</label>
-              <select name="country" id="cars" class="dropdown w-100">
-                <option selected>Select State</option>
-                <option value="california">California</option>
-                <option value="texas">Texas</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="d-flex w-100 flex-column align-items-start mt-3 gap-2">
-            <label for="o-pass">Address</label>
-            <textarea class="w-100" type="password" name="0-pass" placeholder="Enter your address"></textarea>
-          </div>
-
-          <div class="d-flex w-100 gap-3 two-boxes">
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="f-name">Zip Code</label>
-              <input class="w-100" type="text" name="f-name" placeholder="Enter your Zip Code" />
-            </div>
-            <div class="d-flex w-50 half-width flex-column align-items-start mt-3 gap-2">
-              <label for="l-name">VAT ID (For European countries)</label>
-              <input class="w-100" type="text" name="l-name" placeholder="VAT ID (For European countries)" />
-            </div>
-          </div>
-        </div>
-
-        <hr class="my-3" />
-
-        <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-          <button class="acc-btn-1">Cancel</button>
-          <button class="acc-btn-2">Save</button>
-        </div>
-      </div>
-    </div>
-
-    <!--tab-8  -->
-    <div class="w-75 acc-main-right content">
-      <div class="w-100 d-flex flex-column gap-3">
-        <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
-          <div>
-            <h2>Balance</h2>
-            <p>Minimum Withdraw Limit is $50</p>
-          </div>
-          <hr class="my-2" />
-
-          <div class="payouts">
-            <div class="d-flex px-3 my-4 align-items-center justify-content-between">
-              <h2 class="change-email d-flex justify-content-center gap-2 flex-column">
-                Payouts
-              </h2>
-              <i style="color: #98a2b3; cursor: pointer" class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="d-flex px-3 payouts-headings align-items-center justify-content-between">
-              <h2>Source</h2>
-              <h2>Balance</h2>
-            </div>
-
-            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
-              <h2>My Groups Publications</h2>
-              <h2>$10</h2>
-            </div>
-
-            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
-              <h2>Post Sharing Balance</h2>
-              <h2>$20</h2>
-            </div>
-
-            <div class="d-flex px-3 payouts-items align-items-center justify-content-between">
-              <h2>Referral Balance</h2>
-              <h2>$20</h2>
-            </div>
-
-            <div class="d-flex px-3 payouts-total align-items-center justify-content-between">
-              <h2>Total Balance</h2>
-              <h2>$50</h2>
-            </div>
-          </div>
-
-          <hr class="my-2" />
-
-          <div class="acc-btns w-100 d-flex gap-2 justify-content-end">
-            <button class="acc-btn-1">Cancel</button>
-            <button class="acc-btn-2">Withdraw</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--tab-9  -->
-    <div class="w-75 acc-main-right content">
-      <div class="d-acc w-100 d-flex justify-content-between">
-        <div class="d-content">
-          <h2>Deactivate your Account</h2>
-          <p>
-            Your profile will be hidden and it will be activated when you
-            login next time.
-          </p>
-        </div>
-
-        <button class="d-btn">Deactivate Account</button>
-      </div>
-
-      <hr />
-
-      <div class="d-acc w-100 d-flex justify-content-between">
-        <div class="d-content">
-          <h2>Permanently Delete Account</h2>
-          <p>Your profile will be deleted permanently.</p>
-        </div>
-
-        <button class="d-btn">Delete Account</button>
-      </div>
-    </div>
   </div>
 
   <!-- Footer -->
   <footer>
     <div class="container top-footer">
       <div class="col-66">
-        <img src="images/logo.png" alt="" />
-        <p>
-          Shoutouting is a marketplace that connects companies that are
-          looking to improve their online ranking score with reviews writers
-          for hire.
+        <img src="images/logo.png" alt="">
+        <p dir="rtl">Shoutouting היא זירת מסחר המחברת בין חברות המעוניינות לפרסם ברשתות חברתיות לבין מנהלי ערוצים
+          וקבוצות הנכונים לפרסם מודעות ממומנות.
         </p>
       </div>
       <div class="d-flex justify-content-between align-items-start footer-link">
-        <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-          <h4>Company</h4>
-          <a href="#">About Us</a>
-          <a href="#">How it works ( Companies)</a>
-          <a href="#">How it works ( Influencers)</a>
-          <a href="affiliate.html">Affiliate Program</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+          <h4>חֶברָה</h4>
+          <a href="#">עלינו</a>
+          <a href="#">איך זה עובד (חברות)</a>
+          <a href="#">איך זה עובד (משפיענים)</a>
+          <a href="affiliate.html">תכנית שותפים</a>
+          <a href="#">תנאים והגבלות</a>
+          <a href="#">מדיניות הפרטיות</a>
         </div>
-        <div class="col-33 d-flex justify-content-start align-items-start flex-column">
-          <h4>Social Platforms</h4>
-          <a href="#">Facebook Marketing</a>
-          <a href="#">Instagram Marketing</a>
-          <a href="#">Tiktok Marketing</a>
-          <a href="#">Twitter Marketing</a>
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+          <h4>פלטפורמות חברתיות</h4>
+          <a href="#">פרסום בפייסבוק</a>
+          <a href="#">פרסום באינסטגרם</a>
+          <a href="#">פרסום בטיקטוק</a>
+          <a href="#">פרסום בטוויטר</a>
+          <a href="#">פרסום בטלגרם</a>
+          <a href="#">פרסום בווטסאפ</a>
         </div>
       </div>
     </div>
-    <hr />
+    <hr>
     <div class="container bottom-footer d-flex justify-content-between align-items-center">
-      <p>Shoutouting © 2024 All Rights Reserved.</p>
+      <p dir="rtl">Shoutouting © 2024 כל הזכויות שמורות.</p>
       <div class="social-icons d-flex gap-4">
-        <img src="images/icons/telegram.png" alt="" />
-        <img src="images/icons/linkdin.png" alt="" />
+        <img src="images/icons/telegram.png" alt="">
+        <img src="images/icons/linkdin.png" alt="">
       </div>
     </div>
   </footer>
