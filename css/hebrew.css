@@ -86,6 +86,9 @@
 .content{
     display: block !important;
 }
+.pass p{
+    left: auto !important;
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
