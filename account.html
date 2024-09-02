@@ -37,8 +37,8 @@
           aria-expanded="false" role="button">
           <a href="/add-group.html" class="btn btn-primary place-order" dir="rtl">הוסף קבוצה/ ערוץ</a>
           <ul class="mb-0">
-            <li class="notification-desktop" role="button">
-                <div class="noti-icon-container" id="notificationToggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="notification-desktop" role="button" id="notificationToggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="noti-icon-container">
                     <i id="user_notification_icon" class="ri-notification-line notification"></i>
                 </div>
                 <div class="notification-menu dropdown-menu" aria-labelledby="notificationToggle">
@@ -56,7 +56,7 @@
             <h5 dir="rtl">אחראי קבוצה</h5>
             <p dir="rtl">משפיע : <span class="balance">$10000.00</span></p>
           </div>
-          <div class="icon">
+          <div class="icon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="ri-user-3-line"></i>
           </div>
           <ul class="dropdown-menu profile-dropdown">

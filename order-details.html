@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shout Out</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/order-process.css">
+  <link rel="stylesheet" href="css/social-groups-offer.css">
+  <link rel="stylesheet" href="css/hebrew.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav dashboard-navbar mb-2 mb-lg-0 gap-4">        
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html" aria-disabled="true" dir="rtl">בלוג</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/social-groups-offer.html" aria-disabled="true" dir="rtl">ההצעות שלי</a>
+          </li>
+        </ul>
+        <div class="d-flex dashboard-nav gap-2 justify-content-end align-items-center btns">
+          
+          <!-- Add Group Button -->
+          <a href="/add-group.html" class="btn btn-primary place-order" dir="rtl">הוסף קבוצה/ ערוץ</a>
+          
+          <!-- Notification Dropdown -->
+          <div class="dropdown">
+            <li class="notification-desktop" role="button" id="notificationToggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="noti-icon-container" >
+                <i id="user_notification_icon" class="ri-notification-line notification"></i>
+              </div>
+            </li>
+            
+            <div class="notification-menu dropdown-menu" aria-labelledby="notificationToggle">
+              <ul id="user_notifications">
+                <li>
+                  <a href="javascript:;">
+                    Please wait while we are loading your notifications
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Profile Dropdown -->
+          <div class="dropdown">
+            <div class="d-flex align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="text">
+                <h5 dir="rtl">אחראי קבוצה</h5>
+                <p dir="rtl">משפיע : <span class="balance">$10000.00</span></p>
+              </div>
+              <div class="icon">
+                <i class="ri-user-3-line"></i>
+              </div>
+            </div>
+            <ul class="dropdown-menu profile-dropdown">
+              <li>
+                <a href="#" class="dropdown-item fw-semibold" dir="rtl">
+                  <img src="images/icons/user-color.png" alt="">
+                  פרטי חשבון
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item fw-semibold" dir="rtl">
+                  <img src="images/icons/log-out-01.png" alt="">
+                  להתנתק
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid hero acc-navigate d-flex flex-column gap-5 align-items-center justify-content-center">
+    <div class="acc-navigate-box btn-group d-flex">
+      <a href="#" type="button" class="btn btn-outline" dir="rtl">ההצעות שלי</a>
+      <a href="#" type="button" class="btn btn-outline btn-white" dir="rtl">הגדרות חשבון</a>
+    </div>
+  </div>
+  <div class="main-section mb-5">
+    <div class="container">
+      <div class="row">
+        <div id="container" class="container mt-3">
+          
+
+          <form id="multi-step-form">
+            <div class="step step-1 mt-5">
+              <!-- Step 1 form fields here -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button align-items-end" type="button">
+                      <h6 dir="rtl">פרטי הזמנה</h6>
+                      <p dir="rtl">הצג את המשימה שיש להשלים</p>
+                    </button>                   
+                  </h2>
+                  <div class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row justify-content-end">
+                        <div class="data">
+                          <h5 dir="rtl">פרסם בקבוצת הפייסבוק</h5>
+                          <div class="icons">
+                            <div class="icon">
+                              <p>$ 40.00</p>
+                            </div>
+                            <div class="icon">
+                              <i class="ri-calendar-line"></i>
+                              <p>24/04/2024</p>
+                            </div>
+                          </div>
+                        </div>
+                        <img src="images/icons/fb-xxl.png" alt="">
+                        
+                        <div class="instruction">
+                          <h6 dir="rtl">הוראות למשימה</h6>
+                          <p dir="rtl">שלב 1: כתוב את הפוסט שלהלן לקבוצת הפייסבוק שלך - ReviewZerz</p>
+                          <p dir="rtl">פוסט:</p>
+                          <p dir="rtl">דוגמה לפרסום מודעה בעברית</p>
+                          <p dir="rtl">✅גגג</p>
+                          <p dir="rtl">שווה להיכנס עוד היום</p>
+                          <p dir="rtl">שלב 2: העלה את התמונה עם הפוסט</p>
+                          <div class="d-flex justify-content-end align-items-center gap-5">
+                            <button class="btn btn-sm" dir="rtl">3 ימים פרסום</button>
+                            <img src="images/details.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="step step-2 mt-5">
+              <!-- Step 2 form fields here -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h6>Order Details</h6>
+                      <p>View the task to be completed</p>
+                    </button>                   
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <img src="images/icons/fb-xxl.png" alt="">
+                        <div class="data">
+                          <h5>Publish In Facebook Group</h5>
+                          <div class="icons">
+                            <div class="icon">
+                              <p>$ 40.00</p>
+                            </div>
+                            <div class="icon">
+                              <i class="ri-calendar-line"></i>
+                              <p>24/04/2024</p>
+                            </div>
+                            <div class="icon">
+                              <i class="ri-information-line"></i>
+                              <p>Not Assigned</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="instruction">
+                          <h6>Instructions for the task</h6>
+                          <p>Step 1 : Write the below post to your Facebook Group - ReviewZerz</p>
+                          <button class="btn btn-sm">7 days advertising</button>
+                        </div>
+                        <div class="instruction">
+                          <p>Note : Proceed to submit proof only if task is completed</p>
+                          <button class="btn bg-green">Submit Proof <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-5">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <h6>Upload Proof</h6>
+                      <p>View the task to be completed</p>
+                    </button>                   
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Add the Published post link? <i class="ri-question-line"></i></label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Provide the URL">
+                        </div>
+                        <div>
+                          <hr>
+                        <button class="btn w-auto bg-green">Submit <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="step step-3 mt-5">
+              <!-- Step 3 form fields here -->
+              <img src="images/icons/green-tick.png" alt="">
+              <h4>Task Completed</h4>
+              <p>Congratulations! Task completed! You've successfully navigated the "My Offers" page, selected and executed tasks, and are now on your way to boosting your earnings through your social influence. With each successful action, you're one step closer to achieving your financial goals. Keep up the great work and watch your rewards grow!</p>
+              <button class="btn bg-green">My Offers</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container top-footer">
+      <div class="col-66">
+        <img src="images/logo.png" alt="">
+        <p dir="rtl">Shoutouting היא זירת מסחר המחברת בין חברות המעוניינות לפרסם ברשתות חברתיות לבין מנהלי ערוצים
+          וקבוצות הנכונים לפרסם מודעות ממומנות.
+        </p>
+      </div>
+      <div class="d-flex justify-content-between align-items-start footer-link">
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+          <h4>חֶברָה</h4>
+          <a href="#">עלינו</a>
+          <a href="#">איך זה עובד (חברות)</a>
+          <a href="#">איך זה עובד (משפיענים)</a>
+          <a href="affiliate.html">תכנית שותפים</a>
+          <a href="#">תנאים והגבלות</a>
+          <a href="#">מדיניות הפרטיות</a>
+        </div>
+        <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+          <h4>פלטפורמות חברתיות</h4>
+          <a href="#">פרסום בפייסבוק</a>
+          <a href="#">פרסום באינסטגרם</a>
+          <a href="#">פרסום בטיקטוק</a>
+          <a href="#">פרסום בטוויטר</a>
+          <a href="#">פרסום בטלגרם</a>
+          <a href="#">פרסום בווטסאפ</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container bottom-footer d-flex justify-content-between align-items-center">
+      <p dir="rtl">Shoutouting © 2024 כל הזכויות שמורות.</p>
+      <div class="social-icons d-flex gap-4">
+        <img src="images/icons/telegram.png" alt="">
+        <img src="images/icons/linkdin.png" alt="">
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/orderProcess.js"></script>
+</body>
+
+</html>

@@ -89,6 +89,14 @@
 .pass p{
     left: auto !important;
 }
+/* ------------Collapse Disable----------------- */
+.accordion-button:not(.collapsed)::after{
+    background-image: none !important;
+}
+.accordion-button::after{
+    border: 0px !important;
+    
+}
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
