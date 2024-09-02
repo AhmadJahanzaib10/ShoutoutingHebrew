@@ -93,9 +93,17 @@
 .accordion-button:not(.collapsed)::after{
     background-image: none !important;
 }
+.accordion-button:has(.acc-custom)::after{
+    background-image: initial !important;
+    left: 10px;
+    right: auto !important;
+}
 .accordion-button::after{
     border: 0px !important;
-    
+}
+.acc-custom::after{
+    left: 10px;
+    right: auto !important;
 }
 @media screen and (min-width: 992px) {
     .menu-rev {
