@@ -105,6 +105,11 @@
     left: 10px;
     right: auto !important;
 }
+.rtl-select img{
+    left: 3%;
+    right: auto !important;
+}
+
 @media screen and (min-width: 992px) {
     .menu-rev {
         flex-direction: row-reverse !important;
