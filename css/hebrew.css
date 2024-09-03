@@ -152,3 +152,8 @@
         width: 100% !important;
     }
 }
+@media screen and (max-width: 576px) {
+    .step-container{
+        flex-direction: column-reverse !important;
+    }
+}
