@@ -109,6 +109,12 @@
     left: 3%;
     right: auto !important;
 }
+.social-group-add-btn{
+    width: 180px !important;
+}
+.table-wrapper{
+    border: 0px !important;
+}
 
 @media screen and (min-width: 992px) {
     .menu-rev {

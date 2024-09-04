@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/social-groups-offer.css">
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="css/hebrew.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img class="nav-icon closed" src="images/icons/Icon.png" alt="" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav dashboard-navbar mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html" aria-disabled="true" dir="rtl">בלוג</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/social-groups-offer.html" aria-disabled="true" dir="rtl">ההצעות
+                            שלי</a>
+                    </li>
+                </ul>
+                <div class="d-flex dashboard-nav gap-2 justify-content-end align-items-center btns"
+                    data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                    <a href="/add-group.html" class="btn btn-primary place-order" dir="rtl">הוסף קבוצה/ ערוץ</a>
+                    <ul class="mb-0">
+                        <li class="notification-desktop" role="button" id="notificationToggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="noti-icon-container">
+                                <i id="user_notification_icon" class="ri-notification-line notification"></i>
+                            </div>
+                            <div class="notification-menu dropdown-menu" aria-labelledby="notificationToggle">
+                                <ul id="user_notifications">
+                                    <li>
+                                        <a href="javascript:;">
+                                            Please wait while we are loading your notifications
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text">
+                        <h5 dir="rtl">אחראי קבוצה</h5>
+                        <p dir="rtl">משפיע : <span class="balance">$10000.00</span></p>
+                    </div>
+                    <div class="icon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-user-3-line"></i>
+                    </div>
+                    <ul class="dropdown-menu profile-dropdown">
+                        <li>
+                            <a href="#" class="dropdown-item fw-semibold" dir="rtl">
+                                <img src="images/icons/user-color.png" alt="">
+                                פרטי חשבון
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item fw-semibold" dir="rtl">
+                                <img src="images/icons/log-out-01.png" alt="">
+                                להתנתק
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Register as shoutouter - page -->
+
+    <div class="container-fluid hero acc-navigate d-flex flex-column gap-5 align-items-center justify-content-center">
+        <div class="acc-navigate-box btn-group d-flex">
+            <a href="" class="btn btn-outline btn-white" dir="rtl">ההצעות שלי</a>
+            <a href="" class="btn btn-outline" dir="rtl">הגדרות חשבון</a>
+        </div>
+    </div>
+
+    <div class="container acc-main d-flex gap-4 justify-content-between">
+
+        <!-- left-tabs -->
+
+        <!--tab-2  -->
+        <div class="w-75 acc-main-right content">
+            <div class="w-100 d-flex flex-column gap-3">
+                <div class="change-email mt-2 d-flex justify-content-center gap-2 flex-column">
+                    <div>
+                        <h2 class="social-group-heading" dir="rtl">הוספת ערוצים, קבוצות וקהילות ברשתות חברתיות - מיועד
+                            לבעלי גישת אדמין בלבד</h2>
+                        <p dir="rtl">מנהלי ערוצים וקהילות בעלי הרשאת אדמין בפייסבוק, טלגרם, לינקדאין, ווטסאפ ורשתות
+                            חברתיות נוספות, מוזמנים להוסיף את פרטי הקהילות והערוצים במטרה לקבל חשיפה בקרב מפרסמים
+                            פוטנציאלים והזמנות של מודעות פרסום בתשלום. </p>
+
+                        <p dir="rtl">
+                            מוכנים להתחיל? לחץ על
+                            <a dir="rtl" href="#" style="color: #05aaa5">מלא את הטופס והתחל את מסע המונטיזציה שלך</a>
+                        </p>
+                    </div>
+                    <button class="social-group-add-btn ms-auto d-block" dir="rtl">הוספת קבוצה/ ערוץ</button>
+                    <hr class="my-2" />
+
+                    <!-- Add table here -->
+                    <div class="table-wrapper">
+                        <div class="table-responsive">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" dir="rtl">סטָטוּס</th>
+                                        <th scope="col" dir="rtl">קישור</th>
+                                        <th scope="col" dir="rtl">חברים</th>
+                                        <th scope="col" dir="rtl">שם הקבוצה</th>
+                                        <th scope="col" dir="rtl">מס' מזהה</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td dir="rtl">
+                                            <div class="d-flex gap-3 controls">
+                                                <i class="ri-delete-bin-line"></i>
+                                                <i class="ri-pencil-line"></i>
+                                            </div>
+                                        </td>
+                                        <td dir="rtl">
+                                            <span class="badge-progress">Approved</span>
+                                        </td>
+                                        <td dir="rtl"><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
+                                        <td dir="rtl">150</td>
+                                        <td dir="rtl" style="color: #475467 !important;">Facebook Group Example 2 </td>
+                                        <td dir="rtl"><img src="images/icons/fb-grey.png" alt=""> -33</td>
+                                    </tr>
+                                    <tr>
+                                        <td dir="rtl">
+                                            <div class="d-flex gap-3 controls">
+                                                <i class="ri-delete-bin-line"></i>
+                                                <i class="ri-pencil-line"></i>
+                                            </div>
+                                        </td>
+                                        <td dir="rtl">
+                                            <span class="badge-progress">Approved</span>
+                                        </td>
+                                        <td dir="rtl"><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
+                                        <td dir="rtl">150</td>
+                                        <td dir="rtl" style="color: #475467 !important;">Facebook Group Example 2 </td>
+                                        <td dir="rtl"><img src="images/icons/fb-grey.png" alt=""> -33</td>
+                                    </tr>
+                                    <tr>
+                                        <td dir="rtl">
+                                            <div class="d-flex gap-3 controls">
+                                                <i class="ri-delete-bin-line"></i>
+                                                <i class="ri-pencil-line"></i>
+                                            </div>
+                                        </td>
+                                        <td dir="rtl">
+                                            <span class="badge-progress">Approved</span>
+                                        </td>
+                                        <td dir="rtl"><a href="#" style="color: #05aaa5; font-weight: 500;">Visit</a></td>
+                                        <td dir="rtl">150</td>
+                                        <td dir="rtl" style="color: #475467 !important;">Facebook Group Example 2 </td>
+                                        <td dir="rtl"><img src="images/icons/fb-grey.png" alt=""> -33</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- side-bar -->
+        <div class="toggle-tabs list-1 acc-main-left">
+            <div class="dropdown-items d-flex align-items-center justify-content-between">
+                <span class="selected-item">Account</span>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <ul class="toggle-tabs-list w-100 gap-1 d-flex flex-column">
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/account.html" dir="rtl">חֶשְׁבּוֹן</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center active">
+                    <a href="/social-group-add.html" dir="rtl">הקבוצות והערוצים שלי</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/change-pic.html" dir="rtl">שנה תמונה</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/link-accounts.html" dir="rtl">קישור חשבונות</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/payout-accounts.html" dir="rtl">אמצעי קבלת תגמול</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/security.html" dir="rtl">ניהול סיסמאות</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/bill-info.html" dir="rtl">מידע על חשבוניות</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/balance.html" dir="rtl">סיכום יתרה</a>
+                </li>
+                <li class="toggle-tab w-100 d-flex align-items-center">
+                    <a href="/delete-account.html" dir="rtl">מחק חשבון</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container top-footer">
+            <div class="col-66">
+                <img src="images/logo.png" alt="">
+                <p dir="rtl">Shoutouting היא זירת מסחר המחברת בין חברות המעוניינות לפרסם ברשתות חברתיות לבין מנהלי
+                    ערוצים
+                    וקבוצות הנכונים לפרסם מודעות ממומנות.
+                </p>
+            </div>
+            <div class="d-flex justify-content-between align-items-start footer-link">
+                <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+                    <h4>חֶברָה</h4>
+                    <a href="#">עלינו</a>
+                    <a href="#">איך זה עובד (חברות)</a>
+                    <a href="#">איך זה עובד (משפיענים)</a>
+                    <a href="affiliate.html">תכנית שותפים</a>
+                    <a href="#">תנאים והגבלות</a>
+                    <a href="#">מדיניות הפרטיות</a>
+                </div>
+                <div class="col-33 d-flex justify-content-start align-items-start flex-column" dir="rtl">
+                    <h4>פלטפורמות חברתיות</h4>
+                    <a href="#">פרסום בפייסבוק</a>
+                    <a href="#">פרסום באינסטגרם</a>
+                    <a href="#">פרסום בטיקטוק</a>
+                    <a href="#">פרסום בטוויטר</a>
+                    <a href="#">פרסום בטלגרם</a>
+                    <a href="#">פרסום בווטסאפ</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container bottom-footer d-flex justify-content-between align-items-center">
+            <p dir="rtl">Shoutouting © 2024 כל הזכויות שמורות.</p>
+            <div class="social-icons d-flex gap-4">
+                <img src="images/icons/telegram.png" alt="">
+                <img src="images/icons/linkdin.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+    <script src="./js/account.js"></script>
+    <script src="https://kit.fontawesome.com/84fc85d233.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
