@@ -78,6 +78,9 @@
 .dashboard-nav ul{
     padding-left: 1rem !important;
 }
+.profile-dropdown .dropdown-item{
+    text-align: start !important;
+}
 
 /* -----------------------Account Settings-------------------- */
 .toggle-tab{
