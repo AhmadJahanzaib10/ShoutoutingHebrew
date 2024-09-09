@@ -167,8 +167,26 @@
     }
 }
 @media screen and (max-width: 576px) {
+    .tr-11{
+        transform: translateX(-29px);
+    }
     .step-container{
         flex-direction: column-reverse !important;
         align-items: end;
+    }
+    .progress{
+        position: absolute;
+        right: 90px;
+    }
+    .progress-bar{
+        margin-left: initial !important;
+    }
+}
+@media screen and (max-width:450px){
+    .progress{
+        right: 25px !important;
+    }
+    .tr-11{
+        transform: translateX(-25px) !important;
     }
 }
