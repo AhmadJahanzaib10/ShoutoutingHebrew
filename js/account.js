@@ -19,13 +19,16 @@ const selected_item = document.querySelector('.selected-item')
 dropdown.addEventListener('click',()=>{
     list.classList.toggle('show')
 })
-    toggleBtns.forEach((toggleBtn)=>{
-        toggleBtn.addEventListener('click',(e)=>{
-            selected_item.innerText = e.target.innerText
-            list.classList.remove('show')
-        })
-    })
+    // toggleBtns.forEach((toggleBtn)=>{
+    //     toggleBtn.addEventListener('click',(e)=>{
+    //         selected_item.innerText = e.target.innerText
+    //         list.classList.remove('show')
+    //     })
+    // })
 
+document.addEventListener("DOMContentLoaded",()=>{
+    selected_item.innerHTML = list.querySelector(".active").innerText;
+})
 
 // pop-up on hovering "?" sign for computers
 const question_pc = document.querySelectorAll('.question-pc')

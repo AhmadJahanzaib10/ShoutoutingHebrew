@@ -160,6 +160,12 @@
     .cards-info .heading h5{
         max-width: 100% !important;
     }
+    .acc-main{
+        flex-direction: column-reverse;
+    }
+    .toggle-tabs .dropdown-items{
+        flex-direction: row-reverse;
+    }
 }
 @media screen and (max-width: 768px) {
     .select2-container{
